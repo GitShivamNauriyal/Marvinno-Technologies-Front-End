@@ -407,6 +407,7 @@ html {
     }
 
     .aboutTopSectionDescriptionCss {
+        padding: 0 2rem;
         margin-left: 1%;
         font-size: small;
         text-align: justify;
