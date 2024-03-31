@@ -1,0 +1,147 @@
+*{
+  margin: 0%;
+  padding: 0%;
+}
+
+/* navbar marvinno image */
+.navBarLogoImageHeight{
+  height: 6vh;
+  width: auto;
+}
+
+/* marvinno image to align to center */
+.navbarLogoAlignCenterCss{
+  text-align: center;
+}
+
+/* home icon navbar */
+.homeLogoNavbar{
+  height: 25px;
+  width: auto;
+  background-color: white;
+  margin-bottom: 10px;
+}
+
+/* ul elements make decoration */
+.ulElementsNavbar{
+  text-align: center;
+  text-decoration: none;
+}
+
+/* li elements */
+.liElementsNavbar{
+  display: inline;
+  font-size: large;
+  margin: 0% 5%;
+}
+
+/* products nav item no margin left as it is the first element */
+.productsMarginLeft{
+  margin-left: 0%;
+}
+
+/* text alteration links */
+.liElementsLink{
+  text-decoration: none;
+  color: black;
+  font-size: large;
+}
+
+/* hovering li elements color change */
+.liElementsLink:hover{
+  color: black;
+}
+
+
+.a-elements-navbar {
+  position: relative;
+  font-size: 1rem;
+  font-weight: bold;
+  letter-spacing: 0.05em;
+}
+
+.a-elements-navbar::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #3e8a2dce;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.a-elements-navbar:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+.li-elements-navbar{
+  color: black;
+  transition: all 0.7s ease-in-out;
+}
+
+/* ----------------------media queries nav bar------------------------ */
+@media only screen and (max-width:768px){
+  /* navbar marvinno image */
+.navBarLogoImageHeight{
+  height: 6vh;
+  width: auto;
+}
+
+.liElementsLink:hover{
+  font-size: large;
+  text-decoration: none;
+}
+
+.ulElementsNavbar{
+  margin-bottom: 20px;
+  padding: 0% 5%;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+}
+
+/* marvinno image to align to center */
+.navbarLogoAlignCenterCss{
+  text-align: center;
+}
+  
+/* home icon navbar */
+.homeLogoNavbar{
+  height: 3vh;
+  width: auto;
+}
+
+.liElementsNavbar{
+  text-align: left;
+  width: fit-content;
+}
+
+.liElementsNavbar-home{
+  justify-self: center;
+}
+
+.liElementsNavbar-solutions{
+  margin-left: 10px;
+}
+
+/* text alteration links */
+.liElementsLink{
+  font-weight: 350;
+  text-align: left;
+}
+}
+
+@media(max-width:460px){
+  .liElementsLink{
+    font-size: 0.75em;
+  }
+
+  .liElementsLink:hover{
+    color: black;
+    font-size: 0.75em;
+    text-decoration: none;
+  }
+}

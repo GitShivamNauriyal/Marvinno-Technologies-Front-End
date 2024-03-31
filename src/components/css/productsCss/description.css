@@ -1,0 +1,857 @@
+/* navbar page highlight */
+.a-products {
+    text-decoration: underline;
+    text-decoration-color: #3e8a2dce;
+    text-decoration-thickness: 2px;
+    text-underline-offset: 3px;
+}
+
+.headingContainer {
+    background-color: rgb(154, 165, 152); /* good color donot miss it*/
+    padding: 2.7em;
+    margin: 0%;
+}
+
+.headingProducts {
+    text-align: center;
+    font-size: 1.3em;
+    font-weight: lighter;
+    padding: 7vh;
+}
+
+.products-top-bg-black {
+    background-color: rgb(10, 10, 37);
+    text-align: center;
+    margin: 0% auto;
+    padding: 10px 20px;
+}
+
+.anchor-tag-items-products-download-top {
+    text-decoration: none;
+    width: fit-content;
+    background-color: white;
+    color: black;
+    padding: 1% 3%;
+    font-weight: 700;
+    border-radius: 20px;
+    border: none;
+    transition: all 0.6s ease;
+}
+
+.anchor-tag-items-products-download-top:hover {
+    background-color: #2fd667;
+    color: black;
+    font-size: large;
+    transition: all 0.6s ease;
+}
+
+.descriptionProductsCss {
+    background: linear-gradient(
+        135deg,
+        rgba(255, 255, 255, 0.1),
+        rgba(255, 255, 255, 0)
+    );
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+
+    padding: 5%;
+    text-align: justify;
+    letter-spacing: 0.05em;
+    word-spacing: 0.1em;
+    font-size: large;
+    color: white;
+}
+
+.p-download-products {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.descriptionProductsCssBottom {
+    text-align: center;
+    font-size: 1em;
+    margin-top: 1%;
+}
+
+.moduleContainer {
+    border: none;
+    padding: 1.3em;
+}
+
+.imgCenter {
+    width: 100%;
+    height: auto;
+}
+
+.marginModuleRow {
+    margin: 0em auto;
+}
+
+.productsColorContainer {
+    margin: 0% auto;
+    display: grid;
+    gap: 3em 0;
+    padding: 3rem 2rem;
+}
+
+.centerModuleS {
+    margin-left: 10%;
+}
+
+.marginClass {
+    margin-left: 1em;
+}
+
+/* price and heading */
+
+.Add-more {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 6rem;
+    height: 3rem;
+    border: 2px solid#f0f1f3;
+    background-color: #fbfbfb;
+}
+.increment {
+    align-items: center;
+    justify-content: center;
+    /* margin:0 5px; */
+    font-size: 10px;
+}
+.increment-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    height: 45px;
+    padding: 0 10px;
+}
+.increment-container:hover {
+    background-color: #f1eef1;
+}
+.decrement {
+    align-items: center;
+    justify-content: center;
+    /* margin:0 5px; */
+    font-size: 10px;
+}
+.decrement-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    height: 45px;
+    padding: 0 10px;
+}
+.decrement-container:hover {
+    background-color: #f1eef1;
+}
+.Add-more-Value {
+    justify-self: center;
+
+    font-size: 1.5rem;
+}
+.textCenterCssPricing {
+    text-align: center;
+    background-color: rgb(180, 194, 200);
+    letter-spacing: 0.1em;
+    padding: 2em;
+}
+
+.headingPrice {
+    font-size: large;
+    background-color: rgb(114, 154, 106);
+    border-radius: 2em;
+    color: aliceblue;
+    font-weight: lighter;
+    padding: 1em;
+}
+
+.productsHeadingCss {
+    text-align-last: center;
+    font-size: 1.5em;
+    color: black;
+}
+
+.p-spectrum-products {
+    font-size: xx-large;
+    font-weight: bold;
+    letter-spacing: 0.01em;
+    text-align: center;
+    margin-top: 5rem;
+    font-family: "Borel", cursive;
+}
+
+.moduleElementsCss {
+    text-align: center;
+    font-size: 1.2em;
+}
+
+.moduleLinkCss {
+    text-decoration: none;
+    width: fit-content;
+    color: white;
+    padding: 0.4em 3em;
+    border-radius: 40px;
+    border: none;
+    font-size: large;
+    font-weight: bold;
+}
+
+.span-modulefullform-product {
+    font-size: medium;
+    font-weight: 200;
+}
+
+.moduleLinkCss:hover {
+    box-shadow: 2px 2px 2px 2px white;
+    font-size: 1.2em;
+    transition: 0.3s ease;
+    color: white;
+}
+
+.imgCenter:hover {
+    box-shadow: 3.5px 3.5px 3.5px 3.5px rgb(127, 127, 127);
+    transition: 0.3s ease;
+}
+
+.alignReadMoreToCenter {
+    width: 100%;
+    margin-top: 2%;
+    margin-bottom: 0%;
+    text-align: center;
+}
+
+.priceFontCss {
+    font-size: 1em;
+}
+
+.centerProductDescription {
+    margin: 2em auto;
+    width: 100%;
+    padding: 0em;
+    background-color: rgb(205, 208, 210);
+}
+
+.centerProductDescriptionRow {
+    margin: 2em auto;
+    width: 120vh;
+    padding: 1em;
+}
+
+.imageCenterModuleDescription {
+    margin-top: 1.5em;
+    margin-left: 0em;
+    width: 50%;
+}
+
+.imageCssProductImage {
+    margin: 10% 0% 0% 40%;
+}
+
+.descriptionCss {
+    font-size: medium;
+    word-spacing: 0%;
+    height: 30px;
+    letter-spacing: 0%;
+    color: rgb(119, 115, 115);
+    margin-top: 2%;
+    width: fit-content;
+}
+
+.textWidthProductDescription {
+    width: 50vh;
+    margin: 0.2em auto;
+    font-weight: lighter;
+    letter-spacing: 0.1em;
+    margin-top: 0.2em;
+}
+
+.headingColorWhite {
+    font-size: x-large;
+    color: rgb(0, 0, 0);
+    letter-spacing: 0.05em;
+}
+
+.moduleNameCss {
+    font-size: x-large;
+    font-weight: 700;
+    text-align: center;
+    letter-spacing: 0.07em;
+}
+
+.name-fullform {
+    grid-column: 1/-1;
+    padding-top: 2%;
+    place-self: center;
+}
+
+.module-hr {
+    width: 95%;
+    justify-self: center;
+    grid-column: 1/-1;
+}
+.price-hr {
+    width: 70%;
+    justify-self: left;
+}
+
+.moduleFullForm {
+    font-size: large;
+    text-align: center;
+    letter-spacing: 0.07em;
+}
+
+.rowMarginLeftWholeContent {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    padding-bottom: 35px;
+    gap: 0px 20px;
+    place-items: start center;
+}
+
+.leftSectionProduct {
+    grid-column: 1/4;
+    padding: 5%;
+}
+
+.middleSectionProduct {
+    margin-left: 50px;
+    margin-top: 8rem;
+    grid-column: 4/5;
+    width: 120%;
+}
+
+.rightSectionProduct {
+    margin-left: 100px;
+    width: 120%;
+    margin-top: 8rem;
+    grid-column: 5/6;
+}
+
+.moduleProductBottomCss {
+    margin: 0em 2em;
+}
+
+.headingHighlightsModuleDescription {
+    text-align: center;
+    width: 100%;
+    font-size: xx-large;
+    margin-top: 20px;
+    color: rgb(0, 0, 0);
+}
+
+.buttonGroupCss {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 10px 10px;
+    margin: 2% 1%;
+    place-items: center;
+}
+
+.buttonCssHighlights1 {
+    grid-column: 3/5;
+}
+
+.buttonCssHighlights2 {
+    grid-column: 1/3;
+}
+
+.buttonCssHighlights3 {
+    grid-column: 3/5;
+}
+
+.buttonCssHighlights4 {
+    grid-column: 5/-1;
+}
+
+.buttonCssHighlights5 {
+    grid-column: 1/3;
+}
+
+.buttonCssHighlights6 {
+    grid-column: 3/5;
+}
+
+.buttonCssHighlights7 {
+    grid-column: 5/-1;
+}
+
+.buttonCssHighlights8 {
+    grid-column: 1/-1;
+}
+
+.buttonCssHighlights {
+    width: fit-content;
+    border: none;
+    font-size: x-large;
+    font-weight: 300;
+}
+
+.suitableForLetterSpacingCss {
+    letter-spacing: 0.1em;
+}
+
+.carousel-inner-css {
+    height: auto;
+    width: fit-content;
+    padding: 5%;
+}
+
+/* products buy-now section newly added */
+.card-body-product {
+    padding: 0;
+}
+
+.module-buy-now-div {
+    display: grid;
+    grid-template-columns: 1fr;
+    place-items: center center;
+    padding: 15px 10px;
+}
+
+.sec-1-product-page {
+    place-self: start center;
+}
+
+.sec-2-product-page {
+    place-self: center;
+}
+
+.module-name {
+    font-size: large;
+    font-weight: bold;
+    text-transform: capitalize;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.module-fullform {
+    font-size: medium;
+    text-transform: capitalize;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.buy-now {
+    text-decoration: none;
+    width: fit-content;
+    background-color: #f9f7f7;
+    font-weight: bold;
+    padding: 3px 10px;
+    text-transform: uppercase;
+    border: none;
+    font-size: small;
+    height: 100%;
+    width: 100%;
+    transition: all 0.2s ease;
+}
+
+.buy-now:hover {
+    font-size: 0.7rem;
+    transition: all 0.2s ease;
+}
+/* .buy-now:hover{
+  box-shadow: 1px 1px 1px 1px #3e8a2dce;
+  transition: 0.2s ease;
+  color: white;
+} */
+
+.sec-2-product-page-plus-minus {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    place-items: center center;
+}
+
+.plus {
+    font-size: 30px;
+    border-left: 1px solid;
+    border-right: 1px solid;
+    border-top: none;
+    border-bottom: none;
+    padding: 0px 8px;
+    height: 100%;
+    background-color: #f9f7f7;
+    width: 100%;
+}
+
+.plus:hover {
+    background-color: aliceblue;
+    transition: all 0.6s ease;
+}
+
+@media (max-width: 1200px) {
+    .headingColorWhite {
+        font-size: medium;
+    }
+
+    .rightSectionProduct,
+    .middleSectionProduct {
+        margin-top: px;
+    }
+
+    .descriptionCss {
+        font-size: small;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    .headingColorWhite {
+        font-size: medium;
+    }
+
+    .descriptionCss {
+        font-size: small;
+    }
+
+    .buttonCssHighlights {
+        width: 100%;
+        text-align: center;
+        font-size: large;
+        grid-column: 1/-1;
+    }
+}
+
+/* -----------Media Queries------------------ */
+@media only screen and (max-width: 800px) {
+    /* heading para about marvinno */
+    .descriptionProductsCss {
+        font-size: medium;
+        width: 100%;
+        margin: 0%;
+        padding: 5%;
+        text-align: center;
+    }
+
+    .productsHeadingCss {
+        font-size: x-large;
+        text-align: center;
+    }
+
+    .descriptionProductsCssBottom {
+        width: fit-content;
+        font-size: small;
+        text-align: center;
+        margin-top: 3%;
+    }
+
+    .headingContainer {
+        padding: 3.99% 5%;
+    }
+
+    /* modules page-----------------------------here---------- */
+
+    /* -----------------new queries 15/07/2022------------------ */
+    .rowMarginLeftWholeContent {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        padding: 30px;
+    }
+
+    .name-fullform {
+        grid-column: 1/3;
+        margin-top: 30px;
+    }
+
+    .leftSectionProduct {
+        grid-column: 1/3;
+        margin-left: 0%;
+    }
+
+    .middleSectionProduct {
+        margin: 0% auto;
+        width: fit-content;
+        grid-column: 1/-1;
+    }
+
+    .rightSectionProduct {
+        grid-column: 1/-1;
+        margin: 0% auto;
+        margin-top: 20px;
+        width: 60%;
+    }
+
+    /* module name, image and full form */
+    .imageCssProductImage {
+        width: fit-content;
+        margin: 0% auto;
+    }
+
+    .carousel-inner-css {
+        height: auto;
+        min-width: 100%;
+    }
+
+    /* module name */
+    .moduleNameCss {
+        font-size: x-large;
+    }
+
+    /* headings of the module */
+    .headingColorWhite {
+        text-align: center;
+        font-size: large;
+        font-weight: 700;
+        margin: 0%;
+    }
+
+    /* description products */
+    .descriptionCss {
+        font-size: medium;
+        text-align: center;
+        width: 100%;
+    }
+
+    /* highlights section module */
+
+    .headingHighlightsModuleDescription {
+        font-size: x-large;
+        text-decoration: none;
+    }
+
+    .buttonCssHighlights {
+        width: 100%;
+        text-align: center;
+        font-size: large;
+        grid-column: 1/-1;
+    }
+
+    .moduleFullForm {
+        font-size: large;
+    }
+
+    .imgCenter:hover {
+        box-shadow: none;
+    }
+
+    .moduleLinkCss:hover {
+        box-shadow: none;
+        font-size: large;
+    }
+
+    .anchor-tag-items-products-download-top:hover {
+        background-color: white;
+        color: black;
+        font-size: medium;
+    }
+}
+
+@media only screen and (max-width: 370px) {
+    .headingColorWhite {
+        font-size: medium;
+    }
+
+    .descriptionCss {
+        font-size: medium;
+    }
+
+    .headingHighlightsModuleDescription {
+        font-size: large;
+    }
+
+    .buttonCssHighlights {
+        font-size: x-small;
+    }
+
+    .moduleNameCss {
+        font-size: large;
+    }
+
+    .moduleFullForm {
+        font-size: medium;
+    }
+
+    .descriptionProductsCss {
+        font-size: x-small;
+    }
+
+    .imgCenter:hover {
+        box-shadow: none;
+    }
+
+    .moduleLinkCss:hover {
+        box-shadow: none;
+    }
+
+    .anchor-tag-items-products-download-top:hover {
+        background-color: white;
+        color: black;
+        font-size: x-small;
+    }
+}
+
+/* ----- Banner for product section ----*/
+.banner-container {
+    width: 100%;
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    overflow: hidden;
+}
+
+.banner {
+    /* background: url("../../images/b.png") no-repeat center top; */ /*Align the image to the bottom */
+    background-size: cover;
+    width: 100vw;
+    height: 100%;
+}
+
+/* -----   Product section outer display ---*/
+.sepratorLine {
+    display: grid;
+    align-items: center;
+    margin: auto;
+    width: 75%;
+    height: 0.1rem;
+    border-radius: 0.1rem;
+    background-color: grey;
+}
+.product {
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 0.27fr));
+    justify-content: center;
+}
+.productCard__cart {
+    display: flex;
+    align-items: flex-start;
+    visibility: hidden;
+    margin-bottom: 1rem;
+    width: auto;
+    height: 1.5rem;
+}
+.productCard:hover .productCard__cart {
+    visibility: visible;
+    cursor: pointer;
+}
+.productList {
+    margin-top: 3rem;
+    background-color: #f7f7f7;
+}
+.productImageContainer {
+    width: 100%;
+    height: 18rem;
+    overflow: hidden; /* Ensure image doesn't overflow */
+    display: flex;
+    justify-content: center;
+    object-fit: cover;
+    align-items: center;
+}
+
+.productImageContainer img {
+    transition: all ease 1s;
+}
+.productImageContainer :hover img {
+    transform: scale(1.1);
+}
+
+.productImage {
+    max-width: 100%;
+    max-height: 100%;
+    cursor: pointer;
+}
+.productCard {
+    width: 20rem;
+    height: 33rem;
+    transition: all ease 0.3s;
+    padding: 1.3rem 1.5rem;
+    box-sizing: content-box;
+}
+.productCard:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    background-color: #f7f7f7;
+    border-radius: 0.5rem;
+    transform: translateY(-20px);
+}
+
+.productContent {
+    padding: 20px;
+}
+
+a {
+    text-decoration: none;
+}
+.productName {
+    font-size: 1.5rem;
+    font-weight: bolder;
+    margin-bottom: 0.9rem;
+    text-align: center;
+    cursor: pointer;
+    color: black;
+    letter-spacing: 0.9px;
+    font-family: "Montserrat", sans-serif;
+}
+
+.displayStack_1 {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+
+.displayStack__2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 0.7rem;
+}
+
+.icon-style {
+    width: auto;
+    height: 1.1rem;
+    color: #ffe134e2;
+}
+.productPrice {
+    font-weight: bold;
+}
+
+.productSales {
+    color: #888;
+}
+.productBtnContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 0.5rem;
+}
+.productCard:hover .productBtn {
+    opacity: 1;
+    visibility: visible;
+    cursor: pointer;
+}
+
+.productBtn {
+    border-radius: 0.5rem;
+    width: 12rem;
+    height: 2.4rem;
+    background-color: black;
+    color: #fff;
+    font-size: 1rem;
+    position: relative;
+    opacity: 0; /* Initially hidden */
+    visibility: hidden; /* Initially hidden */
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+@media screen and (max-width: 440px) {
+    .banner-container {
+        width: 100%;
+        height: 30vh;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        overflow: hidden;
+    }
+    .banner {
+        width: 100%;
+        height: 100%;
+        background-size: contain;
+        background-position: center center;
+    }
+}

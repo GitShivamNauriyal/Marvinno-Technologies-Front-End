@@ -1,0 +1,906 @@
+@import url("https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+body {
+    margin: 0%;
+    padding: 0%;
+    width: 100%;
+    font-family: "Montserrat", sans-serif;
+}
+
+html,
+body {
+    width: auto !important;
+    overflow-x: hidden !important;
+}
+
+.a-home {
+    text-decoration: underline;
+    text-decoration-color: #3e8a2dce;
+    text-decoration-thickness: 2px;
+    text-underline-offset: 3px;
+}
+
+.cardInfoCss {
+    width: 200vh;
+}
+
+.imageTopGap {
+    margin-top: 10px;
+    margin-bottom: 25px;
+    width: 100%;
+    height: auto;
+}
+
+.backgroundShadowOfTemplate {
+    background-color: #00101b;
+}
+
+.paragraphCss {
+    padding: 5%;
+}
+
+.paragraphBodyCss {
+    margin-top: 2vh;
+    text-align: center;
+    word-spacing: 0.01em;
+    font-size: 1.4rem;
+}
+
+.paragraphHeadingCss {
+    text-align: center;
+    word-spacing: 0.1em;
+    font-size: 2.5rem;
+    margin-bottom: 2%;
+    font-weight: lighter;
+    color: black;
+}
+
+.alignIconsCenter {
+    background-color: rgb(250, 248, 245);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.iconSize {
+    height: 20vh;
+    width: fit-content;
+    border-radius: 10vh;
+    padding: 4vh;
+}
+
+.alignIconsCenterElements {
+    margin-left: 38vh;
+}
+
+.logoAndText {
+    text-align: center;
+    margin-top: 1rem;
+}
+
+.textPositionUnderLogo {
+    margin-top: 1em;
+    letter-spacing: 0.1em;
+    font-weight: lighter;
+    font-size: medium;
+}
+
+.headingCssNumbers {
+    text-align: center;
+    letter-spacing: 0.1em;
+    word-spacing: 0.1em;
+    text-transform: uppercase;
+    font-style: italic;
+    color: rgb(255, 255, 255);
+}
+
+.numbersCssFootprints {
+    text-align: center;
+    letter-spacing: 0.1em;
+    color: rgb(19, 17, 14);
+}
+
+.numberDescriptionFootprints {
+    text-align: center;
+    font-size: 3vh;
+    color: rgb(212, 212, 212);
+    margin-top: 3vh;
+}
+
+.lineBreakCss {
+    padding: 0.15vh;
+}
+
+.lineBreakCssFooter {
+    padding: 0.2vh;
+    color: aliceblue;
+}
+
+.reviewsAlignCenterCss {
+    margin: 0% auto;
+}
+
+.reviewStar {
+    width: 14vh;
+    margin-bottom: 1em;
+}
+
+.centerReviewCSS {
+    text-align: center;
+}
+
+.centerReviewCSSHeading {
+    background-color: white;
+    text-align: center;
+    font-size: xx-large;
+    padding: 2% 0%;
+    font-weight: 700;
+    margin-bottom: 0%;
+}
+
+.imgCenterReview {
+    margin-top: 1em;
+    text-align: center;
+    border-radius: 60%;
+    width: 100%;
+    height: auto;
+}
+
+.descriptionReviews {
+    margin-bottom: 3%;
+}
+
+.home-cards-span {
+    color: white;
+}
+
+/* readMoreButton styling */
+.ReadMoreButton {
+    text-decoration: none;
+    margin: 5% 0% 0% 0%;
+    width: fit-content;
+    border-radius: 5%;
+    background-color: #3e8a2dce;
+    color: white;
+    padding: 2% 7%;
+    border-radius: 20px;
+    border: none;
+}
+
+.ReadMoreButton:hover {
+    box-shadow: 1px 1px 1px 1px #3e8a2dce;
+    font-size: large;
+    transition: 0.2s ease;
+    color: white;
+}
+
+.centerReadMoreButton {
+    text-align: center;
+}
+
+.hoverReview {
+    padding: 0% 5%;
+    background-color: white;
+    border-radius: 0%;
+    border: none;
+}
+
+.backgroundShadowOfTemplate {
+    padding: 0;
+    margin: 0%;
+    width: 100%;
+}
+
+.cardBodyWidth {
+    padding: 1rem 1.2rem;
+    height: 100%;
+    width: 125%;
+}
+
+.toCenterTemplateCss {
+    padding: 3%;
+    margin: 0% auto;
+    margin-left: 0%;
+    border-radius: 2%;
+    width: 30%;
+}
+
+.toCenterTemplateCss-3 {
+    margin-right: 5%;
+}
+
+.toCenterTemplateCss-2 {
+    margin-right: 2.3%;
+}
+
+.paraHeadingCss {
+    text-align: center;
+    /* font-size: 1.6em; */
+    font-size: x-large;
+    letter-spacing: 0.05em;
+    margin-bottom: 5%;
+    padding: 0rem 0.2rem;
+}
+
+.marginLeftSection1 {
+    margin-left: 5%;
+}
+
+.paraPaddingDescription,
+.paraPaddingDescription1 {
+    padding: 0.8rem 0rem 0rem 0rem;
+    font-size: medium;
+    text-align: justify;
+}
+
+.aboutTopSectionDescriptionCss {
+    margin-right: 70%;
+    text-align: center;
+}
+
+.imageRight {
+    height: 2vh;
+    width: auto;
+}
+
+/* features div */
+.featuresImageCss {
+    height: 3rem;
+    width: auto;
+}
+
+.imageBGPadding {
+    text-align: center;
+    width: 150%;
+    padding: 0%;
+    margin: 0%;
+}
+
+.headingFeatures {
+    font-size: 3em;
+    padding-top: 2%;
+    text-align: center;
+    color: black;
+    background-color: rgb(215, 215, 215);
+    margin: 0%;
+    /* font-family: 'Borel', cursive; */
+}
+
+.rowPaddingFeatures {
+    padding: 1.5% 5% 2% 5%;
+}
+
+.rowFeaturesCss {
+    background-color: rgb(206, 206, 206);
+    padding: 0% 5rem 1rem 0rem;
+    margin: 0%;
+}
+
+.featuresHeadingCss {
+    width: 100%;
+    font-style: italic;
+    font-size: larger;
+    text-align: center;
+    margin-top: 5%;
+}
+
+/* ------------------------changes here 17/07/22---------------------- */
+.descriptionFeaturesCss {
+    width: 150%;
+    height: 80px;
+    margin: 0%;
+    text-align: center;
+    color: #303030;
+}
+
+.centerFeaturesText {
+    margin-left: 5%;
+    text-align: center;
+}
+
+.descriptionIconsLineSeperator {
+    width: 150%;
+    margin-bottom: 1.5%;
+    margin-top: 0%;
+    color: black;
+}
+
+.firstRowMarginLeft {
+    margin-left: 17%;
+}
+
+.headingFeaturesCss {
+    text-align: center;
+    width: 150%;
+    font-size: 1.3em;
+    margin-top: 1rem;
+    margin-bottom: 0.2em;
+    font-family: "Kanit", sans-serif;
+}
+
+.reviewMarginTop {
+    margin-top: 15%;
+}
+
+.homeImageRightDivFlex {
+    position: relative;
+    display: flex;
+}
+
+.cardBodyWidth {
+    padding: 6%;
+}
+
+.carouselCSSREVIEWS {
+    width: 30%;
+    margin-left: 2%;
+}
+
+/* marvinno app, voice control using alexa flaunt your smart home css */
+.completeDivFlexbox {
+    padding: 0%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.completeDivFlexbox-1 {
+    background-color: #0a3642e9;
+}
+
+.completeDivFlexbox-2 {
+    background-color: #39606d;
+}
+
+.completeDivFlexbox-3 {
+    background-color: #5d8d9d;
+}
+
+.dataCss-2,
+.dataCss-3,
+.dataCss-1 {
+    margin: 2%;
+}
+
+.imageDivCSS {
+    margin: 0%;
+    max-width: 30vw;
+}
+
+.imageCSS {
+    height: auto;
+    width: 100%;
+}
+
+.dataCss {
+    width: 85%;
+    padding: 6% 5%;
+    background-color: rgba(229, 229, 229, 0.52);
+}
+
+.headingCSS {
+    font-size: xx-large;
+    margin-bottom: 7%;
+    text-transform: uppercase;
+    font-weight: 750;
+    /* font-family: 'Borel', cursive; */
+}
+
+.descriptionCSS {
+    font-size: medium;
+    font-weight: 500;
+    text-align: justify;
+}
+
+/* ---------new reviews---------------- */
+.reviews-star-rating {
+    height: 38px;
+    text-align: center;
+    width: auto;
+}
+
+.center-review-image {
+    text-align: center;
+}
+
+.complete-reviews-div {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 5rem;
+}
+
+.image-reviews {
+    height: 300px;
+    width: auto;
+    place-self: center center;
+    box-shadow: 0px 0px 0px 0px;
+}
+
+.data-review {
+    place-self: center center;
+    padding: 0px 25px;
+}
+
+.review-para {
+    font-size: medium;
+    text-align: center;
+    margin: 0px;
+    text-transform: capitalize;
+}
+
+.review-person-name {
+    font-size: medium;
+    font-weight: bold;
+    font-style: italic;
+    text-transform: capitalize;
+    text-align: center;
+    margin: 10px 0px 0px 0px;
+}
+
+.review-person-city {
+    font-size: medium;
+    font-weight: bold;
+    font-style: italic;
+    text-transform: capitalize;
+    text-align: center;
+    margin: 2px 0px 0px 0px;
+}
+
+.reviews-heading {
+    font-size: xx-large;
+    text-transform: capitalize;
+    font-weight: bold;
+    color: #1cbe24a7;
+    text-align: center;
+    margin: 30px;
+}
+
+.trending-info {
+    font-size: xx-large;
+    text-align: left;
+    text-align: center;
+    color: #1cbe24a7;
+    font-weight: 600;
+    margin: 30px 0px 20px 20px;
+}
+
+/* ------------------------media queries----------------------- */
+
+@media (max-width: 1050px) {
+    .headingFeaturesCss {
+        text-align: center;
+        /* width: 200%; */
+        font-size: x-small;
+        margin: 3.1px 0px;
+    }
+
+    .descriptionFeaturesCss {
+        font-size: xx-small;
+    }
+
+    .paraPaddingDescription,
+    .paraPaddingDescription1 {
+        font-size: small;
+    }
+
+    .paraHeadingCss {
+        font-size: medium;
+    }
+    .imageDivCSS {
+        margin: 0%;
+        max-width: 100%;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    html,
+    body {
+        width: auto !important;
+        overflow-x: hidden !important;
+    }
+
+    /* no hovering */
+    .ReadMoreButton:hover {
+        box-shadow: none;
+        font-size: small;
+        color: white;
+    }
+
+    /* discover infinite possibilities & etc..... cards */
+    .toCenterTemplateCss {
+        width: fit-content;
+        margin: 0% auto;
+    }
+
+    .backgroundShadowOfTemplate {
+        width: 100%;
+        margin: 0%;
+        padding: 2%;
+    }
+
+    .paraHeadingCss {
+        font-size: medium;
+    }
+
+    .paraPaddingDescription,
+    .paraPaddingDescription1 {
+        font-size: small;
+    }
+
+    .cardBodyWidth {
+        width: 100%;
+    }
+
+    /* ----------features --------------------------------------------------------------------------------------- */
+    .hoverReview {
+        margin: 3% 0% 2% 7%;
+    }
+
+    .aboutTopSectionDescriptionCss {
+        display: flex;
+        width: 45%;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .aboutTopSectionHeadingCss {
+        width: 45%;
+        text-align: center;
+    }
+
+    .firstRowMarginLeft {
+        margin-left: 0%;
+    }
+
+    /* -------------   features -------------------- */
+
+    .rowFeaturesCss {
+        margin: 0%;
+        padding: 2% 0% 0% 0%;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        /* grid-template-columns: repeat(auto-fit, 150px); */
+    }
+
+    .featuresDiv {
+        width: fit-content;
+        padding: 0%;
+        margin: 0%;
+        display: grid;
+        justify-items: center;
+    }
+
+    .featuresImageCss {
+        margin: 2%;
+    }
+
+    .imageBGPadding {
+        width: fit-content;
+    }
+
+    .headingFeaturesCss {
+        max-width: fit-content;
+        font-size: medium;
+    }
+
+    .descriptionFeaturesCss {
+        height: 60px;
+        max-width: 100%;
+        font-size: small;
+        text-align: center;
+        margin: 1%;
+    }
+
+    /* ------------------------- new reviews---------------------------------*/
+    .complete-reviews-div {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 20px;
+        padding: 20px;
+    }
+
+    .reviews-star-rating {
+        height: 35px;
+        width: auto;
+    }
+
+    .image-reviews {
+        height: 200px;
+        width: auto;
+        box-shadow: 0px 0px 0px 0px;
+    }
+
+    .data-review {
+        place-self: center center;
+        padding: 0px 10px;
+    }
+
+    .review-para {
+        font-size: small;
+    }
+
+    .review-person-name {
+        font-size: small;
+        margin: 5px 0px 0px 0px;
+    }
+
+    .review-person-city {
+        font-size: small;
+        margin: 1.5px 0px 0px 0px;
+    }
+
+    .reviews-heading,
+    .trending-info {
+        font-size: x-large;
+        text-align: center;
+    }
+
+    /* marvinno app, voice control using alexa flaunt your smart home css */
+    .completeDivFlexbox {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .imageDivCSS,
+    .imageCSSCenter,
+    .imageCSS,
+    .completeDivFlexbox {
+        margin: 0%;
+    }
+
+    .dataCss {
+        width: fit-content;
+    }
+
+    .headingCSS {
+        font-size: large;
+        margin: 0% 0% 4% 0%;
+    }
+
+    .descriptionCSS {
+        font-size: small;
+        margin: 0%;
+    }
+}
+
+@media (max-width: 360px) {
+    .featuresDiv {
+        margin-bottom: 4%;
+    }
+
+    .headingCSS {
+        font-size: medium;
+    }
+
+    .descriptionCSS {
+        font-size: x-small;
+    }
+
+    .reviewNameCss {
+        font-size: medium;
+    }
+
+    .descriptionReviews {
+        font-size: small;
+    }
+
+    .blockQuote {
+        font-size: x-small;
+    }
+
+    .data-review {
+        place-self: center center;
+    }
+
+    .review-para {
+        font-size: xx-small;
+        margin-top: 5px;
+    }
+
+    .review-person-name {
+        font-size: xx-small;
+        margin: 2.5px 0px 0px 0px;
+    }
+
+    .review-person-city {
+        font-size: xx-small;
+        margin: 1px 0px 0px 0px;
+    }
+
+    .reviews-heading,
+    .trending-info {
+        font-size: large;
+    }
+
+    .image-reviews {
+        height: 170px;
+        width: auto;
+    }
+
+    .reviews-star-rating {
+        height: 25px;
+        width: auto;
+    }
+}
+
+@media (max-width: 370px) {
+    .descriptionFeaturesCss {
+        text-align: center;
+        font-weight: lighter;
+        font-size: x-small;
+    }
+
+    .featuresDiv {
+        margin: 0%;
+    }
+
+    .headingFeaturesCss {
+        width: 200%;
+        font-weight: 200;
+        font-size: small;
+    }
+
+    .reviews-star-rating {
+        height: 25px;
+        width: auto;
+    }
+}
+
+/* ----- Banner for product section ----*/
+.banner-container {
+    width: 100%;
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* Align items to the bottom */
+    overflow: hidden; /* Ensure no overflow */
+}
+
+.banner {
+    background: url("../../images/homePageImage-2.png") no-repeat center top; /* Align the image to the bottom */
+    background-size: cover;
+    width: 100vw;
+    height: 100%; /* Fill the container */
+}
+
+/* -----   Product section outer display ---*/
+
+.sepratorLine {
+    display: grid;
+    align-items: center;
+    margin: auto;
+    width: 75%;
+    height: 0.1rem;
+    border-radius: 0.1rem;
+    background-color: grey;
+}
+
+/*		/\/\/\==PRODUCTS GRID==/\/\/\		*/
+.product {
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 0.25fr));
+    justify-content: center;
+    /* grid-template-columns:repeat(3,0.27fr); */
+    /* margin: 1rem 0; */
+}
+
+.productCard__cart {
+    display: flex;
+    align-items: flex-start;
+    visibility: hidden;
+    /* margin-bottom:1rem ; */
+    width: auto;
+    height: 1.5rem;
+}
+.productCard:hover .productCard__cart {
+    visibility: visible;
+    cursor: pointer;
+}
+.productList {
+    margin-top: 3rem;
+    background-color: #f7f7f7;
+}
+.productImageContainer {
+    width: 100%;
+    height: 18rem;
+    overflow: hidden; /*Ensure image doesn't overflow */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.productImageContainer img {
+    transition: all ease 1s;
+}
+.productImageContainer :hover img {
+    transform: scale(1.1);
+}
+
+.productImage {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+    cursor: pointer;
+}
+.productCard {
+    width: 20rem;
+    height: 33rem;
+    transition: all ease 0.3s;
+    padding: 1.3rem 1.6rem;
+    box-sizing: content-box;
+}
+.productCard:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    background-color: #f7f7f7;
+    border-radius: 0.5rem;
+    transform: translateY(-20px);
+}
+
+.productContent {
+    padding: 20px;
+}
+
+a {
+    text-decoration: none;
+}
+.productName {
+    font-size: 1.5rem;
+    font-weight: bolder;
+    margin-bottom: 0.9rem;
+    text-align: center;
+    cursor: pointer;
+    color: black;
+    letter-spacing: 0.9px;
+    font-family: "Montserrat", sans-serif;
+}
+
+.displayStack_1 {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+
+.displayStack__2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 0.7rem;
+}
+
+.icon-style {
+    width: auto;
+    height: 1.1rem;
+    color: #ffe134e2;
+}
+.productPrice {
+    font-weight: bold;
+}
+
+.productSales {
+    color: #888;
+}
+.productBtnContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 0.5rem;
+}
+.productCard:hover .productBtn {
+    opacity: 1;
+    visibility: visible;
+    cursor: pointer;
+}
+
+.productBtn {
+    border-radius: 0.5rem;
+    width: 12rem;
+    height: 2.4rem;
+    background-color: black;
+    color: #fff;
+    font-size: 1rem;
+    position: relative;
+    opacity: 0; /* Initially hidden */
+    visibility: hidden; /* Initially hidden */
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+}
