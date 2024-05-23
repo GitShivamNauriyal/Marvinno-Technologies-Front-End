@@ -29,15 +29,7 @@ export default function footer() {
                                 className="anchor-tag-items-footer"
                                 to="/products/s1-module"
                             >
-                                S1 - Module
-                            </Link>
-                        </li>
-                        <li className="li-items-footer">
-                            <Link
-                                className="anchor-tag-items-footer"
-                                to="/products/s2-module"
-                            >
-                                S2 - Module
+                                S - Module
                             </Link>
                         </li>
                         <li className="li-items-footer">
@@ -91,9 +83,41 @@ export default function footer() {
                         <li className="li-items-footer">
                             <Link
                                 className="anchor-tag-items-footer"
-                                to="/products/m-module"
+                                to="/products/m1-module"
                             >
-                                M - Module
+                                M1 - Module
+                            </Link>
+                        </li>
+                        <li className="li-items-footer">
+                            <Link
+                                className="anchor-tag-items-footer"
+                                to="/products/3-module"
+                            >
+                                M3 - Module
+                            </Link>
+                        </li>
+                        <li className="li-items-footer">
+                            <Link
+                                className="anchor-tag-items-footer"
+                                to="/products/x-module"
+                            >
+                                X - Module
+                            </Link>
+                        </li>
+                        <li className="li-items-footer">
+                            <Link
+                                className="anchor-tag-items-footer"
+                                to="/products/y-module"
+                            >
+                                Y - Module
+                            </Link>
+                        </li>
+                        <li className="li-items-footer">
+                            <Link
+                                className="anchor-tag-items-footer"
+                                to="/products/z-module"
+                            >
+                                Z - Module
                             </Link>
                         </li>
                     </div>
@@ -214,17 +238,27 @@ export default function footer() {
                                 />
                             </a>
                         </div>
+                        <p className="footer-address exp-center">
+                            Experience Center: Dilshad Garden, New Delhi
+                        </p>
                         <p className="footer-address footer-address-new-delhi">
-                            New Delhi, India
+                            Head Office: New Delhi, India
                         </p>
                         <p className="footer-address">
                             Email: info@marvinno.in,
                         </p>
                         <p className="footer-address">
-                            info.marvinno@gmail.com
+                            {" "}
+                            info.marvinno@gmail.com,
                         </p>
                         <p className="footer-address">
-                            Service Hours: 24/7, 365 days
+                            Phone Number: +91-8527972527,
+                        </p>
+                        <p className="footer-address">
+                            Customer Care: +011-41731619,
+                        </p>
+                        <p className="footer-address">
+                            Service Hours: 9AM to 9PM, 365 days
                         </p>
                         <div className="footer-download-links">
                             <a

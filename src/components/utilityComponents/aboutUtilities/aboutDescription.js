@@ -1,5 +1,9 @@
 import React from "react";
-import { Carousel } from "react-bootstrap";
+// import { Carousel } from "react-bootstrap";
+
+import Carousel from "react-multi-carousel";
+import "react-multi-carousel/lib/styles.css";
+
 import "../../css/aboutCss/aboutDescription.css";
 import customerExperienceImage from "../../images/customerExperienceAbout.png";
 import qualityImage from "../../images/qualityIconAbout.png";
@@ -10,9 +14,9 @@ import blogsImage2 from "../../images/blogImage-2.jfif";
 import blogsImage3 from "../../images/blogImage-3.jpg";
 
 // team images
-import teamImg1 from "../../images/team-img-1.jpg";
-import teamImg2 from "../../images/team-img-2.jpg";
-import teamImg3 from "../../images/team-img-1.jpg";
+// import teamImg1 from "../../images/team-img-1.jpg";
+// import teamImg2 from "../../images/team-img-2.jpg";
+// import teamImg3 from "../../images/team-img-1.jpg";
 
 // how to video 1
 import HowToVideo1 from "../../images/How-to-video-2.mp4";
@@ -22,6 +26,23 @@ import Team from "./Team";
 
 // <img src={whoWeAreImage} className="aboutTopSectionImagesCss" alt="Who We Are Img" />
 export default function aboutDescription() {
+    const responsive = {
+        desktop: {
+            breakpoint: { max: 3000, min: 1024 },
+            items: 3,
+            slidesToSlide: 1, // optional, default to 1.
+        },
+        tablet: {
+            breakpoint: { max: 1024, min: 464 },
+            items: 2,
+            slidesToSlide: 1, // optional, default to 1.
+        },
+        mobile: {
+            breakpoint: { max: 464, min: 0 },
+            items: 1,
+            slidesToSlide: 1, // optional, default to 1.
+        },
+    };
     return (
         <div className="whole-about">
             <div className="products-who-we-are-div">
@@ -113,76 +134,103 @@ export default function aboutDescription() {
                     Team MARVINNO{" "}
                 </p>
                 <hr />
-                <Carousel>
-                    <Carousel.Item interval={2000}>
-                        <div className="team-grid">
-                            <Team
-                                img={teamImg1}
-                                name="Gaurav Varma"
-                                role="Chief Excutive Officer (CEO)"
-                                exp="5Y"
-                            />
-                            <Team
-                                img={teamImg2}
-                                name="Sarthak Vig"
-                                role="Marketing & Distribution"
-                                exp="3.5Y"
-                            />
-                            <Team
-                                img={teamImg3}
-                                name="Mohd Mujeeb"
-                                role="Application Developer"
-                                exp="1Y"
-                            />
-                        </div>
-                    </Carousel.Item>
+                <Carousel
+                    swipeable={false}
+                    draggable={false}
+                    responsive={responsive}
+                    showDots={true}
+                    // customDot={<CustomDot />}
+                    infinite={true}
+                    removeArrowOnDeviceType={["tablet", "mobile"]}
+                    autoPlay={true}
+                    autoPlaySpeed={3 * 1000}
+                    // dotListClass="custom-dot-list-style"
+                    // itemClass="carousel-item-padding-40-px"
+                >
+                    {/* <div className="carousel-item"> */}
+                    <div className="carousel-content">
+                        <Team
+                            name="Dr. Gaurav Verma"
+                            role="Founder & Director"
+                        />
+                    </div>
+                    <div className="carousel-content">
+                        <Team
+                            name="Mr. Sarthak Vig"
+                            role="Founder & Director"
+                        />
+                    </div>
+                    <div className="carousel-content">
+                        <Team name="Mr. Rishabh Sati" role="Technical Lead" />
+                    </div>
+                    <div className="carousel-content">
+                        <Team
+                            name="Mr. Rahul Mittal"
+                            role="Partner and promoter"
+                        />
+                    </div>
+                    <div className="carousel-content">
+                        <Team
+                            name="Mr. Satish Chandra"
+                            role="DGM - Sales Operations"
+                        />
+                    </div>
+                    <div className="carousel-content">
+                        <Team
+                            name="Mr. Mohd Mujeeb"
+                            role="Full Stack Web Developer"
+                        />
+                    </div>
+                    <div className="carousel-content">
+                        <Team name="Mr. Ayush Dobriyal" role="Web Developer" />
+                    </div>
+                    <div className="carousel-content">
+                        <Team name="Mr. Shivam Nauriyal" role="Web Developer" />
+                    </div>
+                    <div className="carousel-content">
+                        <Team
+                            name="Mr. Praveen Kumar"
+                            role="On-Site Electrician"
+                        />
+                    </div>
+                    <div className="carousel-content">
+                        <Team
+                            name="Mr. Rakesh Kumar"
+                            role="On-Site Electrician"
+                        />
+                    </div>
 
-                    <Carousel.Item interval={2000}>
-                        <div className="team-grid">
-                            <Team
-                                img={teamImg1}
-                                name="Gaurav Varma"
-                                role="Chief Excutive Officer (CEO)"
-                                exp="5Y"
-                            />
-                            <Team
-                                img={teamImg2}
-                                name="Sarthak Vig"
-                                role="Marketing & Distribution"
-                                exp="3.5Y"
-                            />
-                            <Team
-                                img={teamImg3}
-                                name="Mohd Mujeeb"
-                                role="Application Developer"
-                                exp="1Y"
-                            />
-                        </div>
-                    </Carousel.Item>
-
-                    <Carousel.Item interval={2000}>
-                        <div className="team-grid">
-                            <Team
-                                img={teamImg1}
-                                name="Gaurav Varma"
-                                role="Chief Excutive Officer (CEO)"
-                                exp="5Y"
-                            />
-                            <Team
-                                img={teamImg2}
-                                name="Sarthak Vig"
-                                role="Marketing & Distribution"
-                                exp="3.5Y"
-                            />
-                            <Team
-                                img={teamImg3}
-                                name="Mohd Mujeeb"
-                                role="Application Developer"
-                                exp="1Y"
-                            />
-                        </div>
-                    </Carousel.Item>
+                    <div className="carousel-content">
+                        <Team
+                            name="Shaded Feather Productions"
+                            role="Studio and Multimedia Partner"
+                        />
+                    </div>
                 </Carousel>
+                {/* <Carousel>
+                    <Carousel.Item interval={2000}>
+                        <div className="team-grid">
+                            <Team
+                                img={teamImg1}
+                                name="Gaurav Varma"
+                                role="Chief Excutive Officer (CEO)"
+                                exp="5Y"
+                            />
+                            <Team
+                                img={teamImg2}
+                                name="Sarthak Vig"
+                                role="Marketing & Distribution"
+                                exp="3.5Y"
+                            />
+                            <Team
+                                img={teamImg3}
+                                name="Mohd Mujeeb"
+                                role="Application Developer"
+                                exp="1Y"
+                            />
+                        </div>
+                    </Carousel.Item>
+                </Carousel> */}
             </div>
             <div className="section-3-about">
                 <p className="heading-about-cursive">How To VIDEOS</p>

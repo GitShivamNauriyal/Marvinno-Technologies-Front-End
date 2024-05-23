@@ -301,6 +301,63 @@ html {
 .team-marvinno {
     margin: 2rem auto;
 }
+/***************************************/
+.carousel-content {
+    margin: 20px;
+    position: relative;
+    /* width: 200px; */
+    aspect-ratio: 1.5;
+    box-shadow: 0 0 16px 4px rgba(0, 0, 0, 0.1);
+    background-color: rgb(40, 40, 40);
+    /* background-color: #266a76; */
+    color: aliceblue;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+    transition: all 0.3s ease;
+    cursor: default;
+}
+
+.carousel-content:hover {
+    scale: 101%;
+}
+
+.react-multi-carousel-dot button {
+    /* display:inline-block; */
+    /* background: #fff; */
+    width: 2rem;
+    height: 2px;
+    border-radius: 2px;
+    opacity: 1;
+    padding: 5px 5px 5px 5px;
+    box-shadow: 0 0 1px 1px rgb(0, 0, 0, 0.05);
+    transition: background 0.5s;
+    border-style: none;
+    border-width: 0;
+    padding: 0;
+    margin: 5px;
+    outline: 0;
+    cursor: pointer;
+}
+
+.react-multi-carousel-dot-list {
+    bottom: 0;
+}
+
+.react-multi-carousel-dot button:hover {
+    background: #6c6b6b;
+}
+.react-multi-carousel-dot button:active {
+    background: #333;
+}
+
+.react-multiple-carousel__arrow {
+    z-index: 2;
+}
+
+/***************************************/
 
 .team-grid {
     margin-top: 5rem;
@@ -327,7 +384,8 @@ html {
 
 .team-role {
     margin-top: 0.8rem;
-    font-weight: 200;
+    font-weight: 400;
+    color: #5bc743ce;
 }
 
 .team-name {
@@ -338,7 +396,6 @@ html {
 
 .team-exp-bold {
     font-weight: bold;
-    color: #3e8a2dce;
 }
 
 /* features 16/07/2022 */

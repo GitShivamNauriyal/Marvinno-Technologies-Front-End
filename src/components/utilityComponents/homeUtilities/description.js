@@ -1,9 +1,9 @@
 import React from "react";
 import "../../css/homeCss/description.css";
 import AllFeaturesComponent from "../homeUtilities/allFeaturesComponent";
-import descriptionImage1 from "../../images/descriptionImage-1.png";
-import descriptionImage2 from "../../images/descriptionImage-2.png";
-import descriptionImage3 from "../../images/descriptionImage-3.png";
+import descriptionImage1 from "../../images/dec_img_1.png";
+import descriptionImage2 from "../../images/dec_img_2.png";
+import descriptionImage3 from "../../images/dec_img_3.png";
 import voiceControlUsingAlexaImage from "../../images/website icons/Alexa pic .png";
 import marvinnoApplicationImage from "../../images/website icons/marvinnoAppImageCascade.png";
 import flauntYourSmartHomeOnSocialMedia from "../../images/flauntYourHomeOnSocialMediaAbout.png";
