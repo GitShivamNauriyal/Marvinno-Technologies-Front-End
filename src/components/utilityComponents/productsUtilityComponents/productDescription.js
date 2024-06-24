@@ -1,10 +1,11 @@
 import React, { useState } from "react";
-// import Carousel from "react-multi-carousel";
-// import "react-multi-carousel/lib/styles.css";
+import Carousel from "react-multi-carousel";
+import "react-multi-carousel/lib/styles.css";
 // import { Carousel } from "react-bootstrap";
 import "../../css/productsCss/description.css";
 import Navbar from "../commonUtilities/nonRespNavbar";
 import Footer from "../commonUtilities/footer";
+import image from "../../images/1.jpg";
 
 export default function ProductDescription(props) {
     const [value, setValue] = useState(1);
@@ -18,24 +19,21 @@ export default function ProductDescription(props) {
         }
     };
     /**/
-    // const responsive = {
-    //     desktop: {
-    //         breakpoint: { max: 3000, min: 1024 },
-    //         items: 1,
-    //         slidesToSlide: 1, // optional, default to 1.
-    //     },
-    //     tablet: {
-    //         breakpoint: { max: 1024, min: 464 },
-    //         items: 1,
-    //         slidesToSlide: 1, // optional, default to 1.
-    //     },
-    //     mobile: {
-    //         breakpoint: { max: 464, min: 0 },
-    //         items: 1,
-    //         slidesToSlide: 1, // optional, default to 1.
-    //     },
-    // };
-    // /**/
+    const responsive = {
+        desktop: {
+            breakpoint: { max: 3000, min: 1024 },
+            items: 1,
+        },
+        tablet: {
+            breakpoint: { max: 1024, min: 464 },
+            items: 1,
+        },
+        mobile: {
+            breakpoint: { max: 464, min: 0 },
+            items: 1,
+        },
+    };
+    /**/
     return (
         <div>
             <Navbar />
@@ -47,49 +45,43 @@ export default function ProductDescription(props) {
                     </div>
                     <hr className="module-hr" />
                     <div className="leftSectionProduct">
-                        {/* <Carousel
-                            swipeable={false}
-                            draggable={false}
+                        <Carousel
+                            swipeable={true}
+                            draggable={true}
                             showDots={true}
                             responsive={responsive}
                             // ssr={true} // means to render carousel on server-side.
                             infinite={true}
                             autoPlay={true}
-                            // autoPlay={this.prop.deviceType !== "mobile" ? true : false}
-                            autoPlaySpeed={5 * 1000}
-                            // customTransition="all .5"
-                            // transitionDuration={5000}
-                            containerClass="carousel-container"
-                            // removeArrowOnDeviceType={["tablet", "mobile"]}
-                            // deviceType={this.prop.deviceType}
+                            autoPlaySpeed={3 * 1000}
+                            containerClass="pd-carousel-container"
                             dotListClass="custom-dot-list-style"
-                            // itemClass="carousel-item-padding-40-px"
                         >
-                            <div className="fs-carousel-image">
+                            <div className="product-carousel-image">
                                 <img
                                     src={props.img1}
                                     alt="Image_1 Loading..."
                                 />
                             </div>
-                            <div className="fs-carousel-image">
+                            <div className="product-carousel-image">
                                 <img
                                     src={props.img2}
                                     alt="Image_2 Loading..."
                                 />
                             </div>
-                            <div className="fs-carousel-image">
+                            <div className="product-carousel-image">
                                 <img
                                     src={props.img3}
                                     alt="Image_3 Loading..."
                                 />
                             </div>
-                            <div className="fs-carousel-image">
+                            <div className="product-carousel-image">
                                 <img
                                     src={props.img4}
                                     alt="Image_4 Loading..."
                                 />
                             </div>
-                        </Carousel> */}
+                        </Carousel>
                         {/*----------------------------------old carousel-----------------------------------*/}
                         {/* <Carousel>
                             <Carousel.Item interval={3000}>
@@ -135,6 +127,7 @@ export default function ProductDescription(props) {
                             )}
                         </Carousel> */}
                     </div>
+
                     <div className="middleSectionProduct">
                         <h5 className="card-title headingColorWhite">Size</h5>
                         <p className="card-text descriptionCss">{props.size}</p>

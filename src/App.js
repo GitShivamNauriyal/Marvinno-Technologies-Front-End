@@ -8,13 +8,14 @@ import ProductDescription from "./components/utilityComponents/productsUtilityCo
 import BlogPhotos from "./components/routeComponents/BlogPhotos";
 import Solutions from "./components/routeComponents/solutions";
 import PrivacyPolicy from "./components/routeComponents/Privacy";
+import ScrollToTop from "./components/utilityComponents/commonUtilities/ScrollToTop";
 
 import moduleS1Image1 from "../src/components/images/image/Marvinno (15) PNG/S/S black1.png";
 import moduleS1Image2 from "./components/images/image/Marvinno (15) PNG/S/10/0P5A4424.png";
 import moduleS1Image3 from "./components/images/image/Marvinno (15) PNG/S/S white silver 2.png";
 
-import moduleS2Image1 from "./components/images/S2 LED Black.png";
-import moduleS2Image2 from "./components/images/S2 LED.png";
+// import moduleS2Image1 from "./components/images/S2 LED Black.png";
+// import moduleS2Image2 from "./components/images/S2 LED.png";
 
 import moduleRImage1 from "./components/images/image/Marvinno (15) PNG/R/0P5A4396.png";
 import moduleRImage2 from "./components/images/image/Marvinno (15) PNG/R/R white silver 2.png";
@@ -56,6 +57,7 @@ import moduleZImage3 from "./components/images/image/Marvinno (15) PNG/Z/Module 
 export default function App() {
     return (
         <>
+            <ScrollToTop />
             <Routes>
                 <Route exact path="/" element={<Home />} />
                 <Route exact path="/blogs/indore" element={<BlogPhotos />} />
@@ -199,9 +201,9 @@ export default function App() {
                             bgcolor="#f6cc2668"
                             img1={moduleRImage1}
                             img2={moduleRImage2}
-                            price="Revealing Soon"
                             img3={moduleRImage3}
                             img4={moduleRImage4}
+                            price="Revealing Soon"
                             name="Module R"
                             fullform="Room Module"
                             loadcapacity="1 x 20A Switch, 4 x 10A Switches, 1 x 6A Socket "
