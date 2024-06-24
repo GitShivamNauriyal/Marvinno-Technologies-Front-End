@@ -1,24 +1,24 @@
 import React from "react";
-import "../../css/homeCss/description.css";
+import AOS from "aos";
+import "aos/dist/aos.css";
+import "../../css/homeCss/FeatureComponent.css"; // Ensure this path is correct
 
-export default function featuresComponent(props) {
+export default function FeatureComponent({ icon, heading, description }) {
+    AOS.init({ duration: 1500 });
+
     return (
-        <div>
-            <div className="featuresDiv">
+        <div className="featureMaster" data-aos="fade-up">
+            <div className="feature">
                 <div className="imageBGPadding">
                     <img
                         className="featuresImageCss"
-                        src={props.icon}
-                        alt="icon"
+                        src={icon}
+                        alt={heading}
                     />
                 </div>
-                <p className="headingFeaturesCss">{props.heading}</p>
+                <p className="headingFeaturesCss">{heading}</p>
                 <hr className="descriptionIconsLineSeperator" />
-                <p className="centerFeaturesText">
-                    <p className="descriptionFeaturesCss">
-                        {props.description}
-                    </p>
-                </p>
+                <p className="descriptionFeaturesCss">{description}</p>
             </div>
         </div>
     );

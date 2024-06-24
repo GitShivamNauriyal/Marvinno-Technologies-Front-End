@@ -81,7 +81,8 @@ export default function App() {
                             touchbuttons="2"
                             maxloadsocket="1 x 2500W"
                             maxloadswitch="1 x 300W"
-                            color="Base: Black and White Frame: Gold and Silver"
+                            color="Base: Black and White"
+                            frame="Frame: Gold and Silver"
                         />
                     }
                 />
@@ -121,7 +122,8 @@ export default function App() {
                             touchbuttons="4"
                             maxloadsocket="No Socket"
                             maxloadswitch="(1 x 2000W) and (3 x 300W)"
-                            color="Base: Black and White Frame: Gold and Silver" /*** */
+                            color="Base: Black and White"
+                            frame="Frame: Gold and Silver"
                         />
                     }
                 />
@@ -141,7 +143,8 @@ export default function App() {
                             touchbuttons="2"
                             Sensor="Real Time Tank Water Level Sensor (Wired/Wireless)"
                             maxloadswitch="1000W"
-                            color="Base: Black and White Frame: Gold and Silver" /*/*** */
+                            color="Base: Black and White"
+                            frame="Frame: Gold and Silver"
                             maxloadsocket="No Socket"
                         />
                     }
@@ -162,7 +165,8 @@ export default function App() {
                             touchbuttons="2 (Open & Close Curtain)"
                             maxloadsocket="No Socket"
                             maxloadswitch="1000W"
-                            color="Base: Black and White Frame: Gold and Silver" /** */
+                            color="Base: Black and White"
+                            frame="Frame: Gold and Silver"
                         />
                     }
                 />
@@ -182,7 +186,8 @@ export default function App() {
                             touchbuttons="4"
                             maxloadsocket="1 x 2500W and 1 x 500W"
                             maxloadswitch="2 x 300W"
-                            color="Base: Black and White Frame: Gold and Silver"
+                            color="Base: Black and White"
+                            frame="Frame: Gold and Silver"
                         />
                     }
                 />
@@ -204,7 +209,8 @@ export default function App() {
                             touchbuttons="6"
                             maxloadsocket="1 x 500W"
                             maxloadswitch="1 x 2500W and 4 x 300W"
-                            color="Base: Black and White Frame: Gold and Silver" /**/
+                            color="Base: Black and White"
+                            frame="Frame: Gold and Silver"
                             // rmodule="Max Load at Power Switch: 2500W"
                         />
                     }
@@ -226,7 +232,8 @@ export default function App() {
                             touchbuttons="7"
                             maxloadsocket="1 x 500W"
                             maxloadswitch="3 x 300W"
-                            color="Base: Black and White Frame: Gold and Silver" /** */
+                            color="Base: Black and White"
+                            frame="Frame: Gold and Silver"
                         />
                     }
                 />
@@ -247,7 +254,8 @@ export default function App() {
                             touchbuttons="9"
                             maxloadsocket="2 x 500W"
                             maxloadswitch="5 x 300W"
-                            color="Base: Black and White Frame: Gold and Silver" /*** */
+                            color="Base: Black and White"
+                            frame="Frame: Gold and Silver"
                         />
                     }
                 />
@@ -268,7 +276,8 @@ export default function App() {
                             touchbuttons="8"
                             maxloadsocket="1 x 500W"
                             maxloadswitch="1 x 2500W and 3 x 300W"
-                            color="Base: Black and White Frame: Gold and Silver" /*** */
+                            color="Base: Black and White"
+                            frame="Frame: Gold and Silver"
                         />
                     }
                 />

@@ -2,11 +2,11 @@ import React from "react";
 // import { Carousel } from "react-bootstrap";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
-import homePageImage1 from "../../images/1.png";
-import homePageImage2 from "../../images/2.png";
-import homePageImage3 from "../../images/3.png";
-import homePageImage4 from "../../images/4.png";
-import homePageImage5 from "../../images/5.png";
+import homePageImage1 from "../../images/1.jpg";
+import homePageImage2 from "../../images/2.jpg";
+import homePageImage3 from "../../images/3.jpg";
+import homePageImage4 from "../../images/4.jpg";
+import homePageImage5 from "../../images/5.jpg";
 
 export default function CarouselHome() {
     const responsive = {

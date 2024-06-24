@@ -4,13 +4,19 @@ body {
     margin: 0%;
     padding: 0%;
     width: 100%;
-    font-family: "Montserrat", sans-serif;
+    /* font-family: "Montserrat", sans-serif; */
+    font-family: "Kanit", sans-serif;
 }
 
 html,
 body {
     width: auto !important;
     overflow-x: hidden !important;
+}
+
+.home-description {
+    padding-bottom: 2rem;
+    position: relative;
 }
 
 .a-home {
@@ -72,7 +78,7 @@ body {
 }
 
 .backgroundShadowOfTemplate {
-    background-color: #00101b;
+    background-color: #ffffff;
 }
 
 .paragraphCss {
@@ -205,12 +211,11 @@ body {
     padding: 2% 7%;
     border-radius: 20px;
     border: none;
+    transition: all 0.2s ease;
 }
 
 .ReadMoreButton:hover {
-    box-shadow: 1px 1px 1px 1px #3e8a2dce;
-    font-size: large;
-    transition: 0.2s ease;
+    scale: 104%;
     color: white;
 }
 
@@ -232,9 +237,10 @@ body {
 }
 
 .cardBodyWidth {
-    padding: 1rem 1.2rem;
+    padding: 8%;
     height: 100%;
     width: 125%;
+    box-shadow: 0 0 16px 8px rgb(0, 0, 0, 0.1);
 }
 
 .toCenterTemplateCss {
@@ -254,6 +260,11 @@ body {
 }
 
 .paraHeadingCss {
+    background: linear-gradient(45deg, #48a136, #3e8a2dce);
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+    display: inline-block;
     text-align: center;
     /* font-size: 1.6em; */
     font-size: x-large;
@@ -284,7 +295,7 @@ body {
 }
 
 /* features div */
-.featuresImageCss {
+/* .featuresImageCss {
     height: 3rem;
     width: auto;
 }
@@ -296,14 +307,21 @@ body {
     margin: 0%;
 }
 
+.headingFeatureContainer {
+    display: flex;
+    margin: auto;
+}
+
 .headingFeatures {
-    font-size: 3em;
-    padding-top: 2%;
+    font-size: 3.5em;
+    letter-spacing: 0.2rem;
     text-align: center;
-    color: black;
-    background-color: rgb(215, 215, 215);
-    margin: 0%;
-    /* font-family: 'Borel', cursive; */
+    padding: 30px 0;
+    background: linear-gradient(90deg, #3e8a2dce, #5bc743ce, #3e8a2dce);
+    color: transparent;
+    background-clip: text;
+    display: inline-block;
+    margin: auto;
 }
 
 .rowPaddingFeatures {
@@ -322,10 +340,16 @@ body {
     font-size: larger;
     text-align: center;
     margin-top: 5%;
+} */
+/* 
+.featuresDiv {
+    border: none;
 }
+.featuresDiv:hover {
+    border: 1px solid rgba(0, 0, 0, 0.2);
+} */
 
-/* ------------------------changes here 17/07/22---------------------- */
-.descriptionFeaturesCss {
+/* .descriptionFeaturesCss {
     width: 150%;
     height: 80px;
     margin: 0%;
@@ -356,7 +380,7 @@ body {
     margin-top: 1rem;
     margin-bottom: 0.2em;
     font-family: "Kanit", sans-serif;
-}
+} */
 
 .reviewMarginTop {
     margin-top: 15%;
@@ -365,10 +389,6 @@ body {
 .homeImageRightDivFlex {
     position: relative;
     display: flex;
-}
-
-.cardBodyWidth {
-    padding: 6%;
 }
 
 .carouselCSSREVIEWS {
@@ -419,20 +439,29 @@ body {
 }
 
 .headingCSS {
-    font-size: xx-large;
-    margin-bottom: 7%;
+    font-size: 2.5rem;
+    /* margin-bottom: 7%; */
+    background: linear-gradient(45deg, #0a3642e9, #25511bce, #0a3642e9);
+    color: transparent;
+    background-clip: text;
+    display: inline-block;
     text-transform: uppercase;
-    font-weight: 750;
+    font-weight: 700;
     /* font-family: 'Borel', cursive; */
 }
 
 .descriptionCSS {
-    font-size: medium;
+    font-size: 1.2rem;
     font-weight: 500;
     text-align: justify;
+    color: #303030;
 }
 
 /* ---------new reviews---------------- */
+.reviews-carousel-container {
+    padding: 40px 80px;
+}
+
 .reviews-star-rating {
     height: 38px;
     text-align: center;
@@ -445,20 +474,23 @@ body {
 
 .complete-reviews-div {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    padding: 5rem;
+    grid-template-columns: 1fr;
+    padding: 3rem;
 }
 
 .image-reviews {
     height: 300px;
-    width: auto;
+    aspect-ratio: 3/4;
+    /* width: auto; */
+    border-radius: 8px;
     place-self: center center;
     box-shadow: 0px 0px 0px 0px;
+    object-fit: cover;
 }
 
 .data-review {
     place-self: center center;
-    padding: 0px 25px;
+    padding: 25px;
 }
 
 .review-para {
@@ -529,6 +561,9 @@ body {
     .imageDivCSS {
         margin: 0%;
         max-width: 100%;
+    }
+    .reviews-carousel-container {
+        padding: 40px;
     }
 }
 
@@ -633,6 +668,10 @@ body {
     }
 
     /* ------------------------- new reviews---------------------------------*/
+    .reviews-carousel-container {
+        padding: 40px 0;
+    }
+
     .complete-reviews-div {
         grid-template-columns: repeat(1, 1fr);
         gap: 20px;
@@ -681,6 +720,10 @@ body {
         grid-template-columns: 1fr;
     }
 
+    .imageCSS {
+        grid-row: 1/2;
+    }
+
     .imageDivCSS,
     .imageCSSCenter,
     .imageCSS,
@@ -690,6 +733,7 @@ body {
 
     .dataCss {
         width: fit-content;
+        grid-row: 2/3;
     }
 
     .headingCSS {

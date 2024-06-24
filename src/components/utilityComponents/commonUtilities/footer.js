@@ -91,7 +91,7 @@ export default function footer() {
                         <li className="li-items-footer">
                             <Link
                                 className="anchor-tag-items-footer"
-                                to="/products/3-module"
+                                to="/products/m3-module"
                             >
                                 M3 - Module
                             </Link>

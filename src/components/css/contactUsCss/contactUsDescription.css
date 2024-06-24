@@ -126,11 +126,6 @@
     .commentsWidth {
         width: 450px;
     }
-
-    .link-social-media-footer {
-        height: 3vh;
-        width: auto;
-    }
 }
 
 @media only screen and (max-width: 800px) {

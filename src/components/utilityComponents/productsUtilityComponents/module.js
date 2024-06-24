@@ -1,16 +1,20 @@
 import React from "react";
+// import Module from "./module";
+import AOS from "aos";
 import { Link } from "react-router-dom";
 import "../../css/productsCss/description.css";
 import { FaShoppingCart, FaStar } from "react-icons/fa";
 
 export default function module(props) {
+    AOS.init({ duration: 1500 });
+
     let stars = [];
     for (let i = 0; i < props.rating; i++) {
         stars.push(<FaStar key={i} className="icon-style" />);
     }
     return (
         <>
-            <div className="productList">
+            <div className="productList" data-aos="fade-up">
                 <div className="productCard">
                     <FaShoppingCart className={"productCard__cart"} />
                     <div className="productImageContainer">
@@ -25,7 +29,9 @@ export default function module(props) {
 
                     <div className="productContent">
                         <Link to={props.url}>
-                            <h3 className="productName">{props.name}</h3>
+                            <div className="productNameContainer">
+                                <h3 className="productName">{props.name}</h3>
+                            </div>
                         </Link>
                         <div className="displayStack__2">
                             <div className="productRating">{stars}</div>

@@ -17,25 +17,25 @@ export default function ProductDescription(props) {
             setValue(value - 1);
         }
     };
-    /*
-    const responsive = {
-        desktop: {
-            breakpoint: { max: 3000, min: 1024 },
-            items: 1,
-            slidesToSlide: 1, // optional, default to 1.
-        },
-        tablet: {
-            breakpoint: { max: 1024, min: 464 },
-            items: 1,
-            slidesToSlide: 1, // optional, default to 1.
-        },
-        mobile: {
-            breakpoint: { max: 464, min: 0 },
-            items: 1,
-            slidesToSlide: 1, // optional, default to 1.
-        },
-    };
-*/
+    /**/
+    // const responsive = {
+    //     desktop: {
+    //         breakpoint: { max: 3000, min: 1024 },
+    //         items: 1,
+    //         slidesToSlide: 1, // optional, default to 1.
+    //     },
+    //     tablet: {
+    //         breakpoint: { max: 1024, min: 464 },
+    //         items: 1,
+    //         slidesToSlide: 1, // optional, default to 1.
+    //     },
+    //     mobile: {
+    //         breakpoint: { max: 464, min: 0 },
+    //         items: 1,
+    //         slidesToSlide: 1, // optional, default to 1.
+    //     },
+    // };
+    // /**/
     return (
         <div>
             <Navbar />
@@ -47,7 +47,7 @@ export default function ProductDescription(props) {
                     </div>
                     <hr className="module-hr" />
                     <div className="leftSectionProduct">
-                        {/*<Carousel
+                        {/* <Carousel
                             swipeable={false}
                             draggable={false}
                             showDots={true}
@@ -89,7 +89,8 @@ export default function ProductDescription(props) {
                                     alt="Image_4 Loading..."
                                 />
                             </div>
-                        </Carousel>*/}
+                        </Carousel> */}
+                        {/*----------------------------------old carousel-----------------------------------*/}
                         {/* <Carousel>
                             <Carousel.Item interval={3000}>
                                 <img
@@ -144,8 +145,11 @@ export default function ProductDescription(props) {
                             {props.touchbuttons}
                         </p>
                         <h5 className="card-title headingColorWhite">Color</h5>
-                        <p className="card-text descriptionCss">
+                        <p className="card-text descriptionCss productColorPara">
                             {props.color}
+                        </p>
+                        <p className="card-text descriptionCss productColorPara">
+                            {props.frame}
                         </p>
                         <hr className="price-hr" />
                         <h3 className="module-price">Price: {props.price}</h3>

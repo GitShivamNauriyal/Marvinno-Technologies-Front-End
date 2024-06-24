@@ -1,4 +1,6 @@
 import React from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 import "../../css/homeCss/description.css";
 import AllFeaturesComponent from "../homeUtilities/allFeaturesComponent";
 import descriptionImage1 from "../../images/dec_img_1.png";
@@ -10,11 +12,16 @@ import flauntYourSmartHomeOnSocialMedia from "../../images/flauntYourHomeOnSocia
 import ReadMore from "./readMore";
 
 export default function description(props) {
+    AOS.init({ duration: 1500 });
+
     return (
-        <div>
+        <div className="home-description">
             <div className="backgroundShadowOfTemplate row">
                 <div className="toCenterTemplateCss col-md-3 toCenterTemplateCss-1">
-                    <div className="card-body cardBodyWidth card">
+                    <div
+                        className="card-body cardBodyWidth card"
+                        data-aos="fade-right"
+                    >
                         <h5 className="card-title paraHeadingCss">
                             <span className="home-cards-span">n</span>Discover
                             Infinite Possibilities
@@ -38,7 +45,10 @@ export default function description(props) {
                         </p>
                     </div>
                 </div>
-                <div className="toCenterTemplateCss col-md-3 toCenterTemplateCss-2">
+                <div
+                    className="toCenterTemplateCss col-md-3 toCenterTemplateCss-2"
+                    data-aos="fade-up"
+                >
                     <div className="card-body cardBodyWidth card">
                         <h5 className="card-title paraHeadingCss">
                             <span className="home-cards-span">l</span>Choose
@@ -62,7 +72,10 @@ export default function description(props) {
                         </p>
                     </div>
                 </div>
-                <div className="toCenterTemplateCss col-md-3 toCenterTemplateCss-3">
+                <div
+                    className="toCenterTemplateCss col-md-3 toCenterTemplateCss-3"
+                    data-aos="fade-left"
+                >
                     <div className="card-body cardBodyWidth card">
                         <h5 className="card-title paraHeadingCss">
                             <span className="home-cards-span"></span>With you,
@@ -94,7 +107,7 @@ export default function description(props) {
             <AllFeaturesComponent />
 
             <div className="completeDivFlexbox completeDivFlexbox-1">
-                <div className="dataCss dataCss-1">
+                <div className="dataCss dataCss-1" data-aos="fade-right">
                     <h5 className="headingCSS">Marvinno APP</h5>
                     <p className="descriptionCSS">
                         Our specially designed and developed mobile applications
@@ -104,7 +117,7 @@ export default function description(props) {
                         friendly and all the features are built in.
                     </p>
                 </div>
-                <div className="imageDivCSS">
+                <div className="imageDivCSS" data-aos="fade-left">
                     <p className="imageCSSCenter">
                         <img
                             className="imageCSS"
@@ -115,7 +128,7 @@ export default function description(props) {
                 </div>
             </div>
             <div className="completeDivFlexbox completeDivFlexbox-2">
-                <div className="imageDivCSS">
+                <div className="imageDivCSS" data-aos="fade-right">
                     <p className="imageCSSCenter">
                         <img
                             className="imageCSS"
@@ -124,7 +137,7 @@ export default function description(props) {
                         />
                     </p>
                 </div>
-                <div className="dataCss dataCss-2">
+                <div className="dataCss dataCss-2" data-aos="fade-left">
                     <h5 className="headingCSS">Voice Control Using Alexa</h5>
                     <p className="descriptionCSS">
                         Control your devices handsfree using voice commands with
@@ -143,7 +156,7 @@ export default function description(props) {
                 </div>
             </div>
             <div className="completeDivFlexbox completeDivFlexbox-3">
-                <div className="dataCss dataCss-3">
+                <div className="dataCss dataCss-3" data-aos="fade-right">
                     <h5 className="headingCSS">
                         Flaunt Your Smart Home on Social Media
                     </h5>
@@ -159,7 +172,7 @@ export default function description(props) {
                         and discounts on your recurrent purchases.
                     </p>
                 </div>
-                <div className="imageDivCSS">
+                <div className="imageDivCSS" data-aos="fade-left">
                     <p className="imageCSSCenter">
                         <img
                             className="imageCSS"

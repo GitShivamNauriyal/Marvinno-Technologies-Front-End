@@ -3,6 +3,8 @@
     padding: 0%;
 }
 .navbar-master {
+    display: flex;
+    flex-direction: column;
     border-bottom: 1px solid rgb(0, 0, 0, 0.1);
 }
 /* navbar marvinno image */
@@ -26,12 +28,15 @@
 
 /* ul elements make decoration */
 .ulElementsNavbar {
+    /* margin: auto; */
+    /* max-width: 1500px; */
     text-align: center;
     text-decoration: none;
 }
 
 /* li elements */
 .liElementsNavbar {
+    justify-content: center;
     display: inline;
     font-size: large;
     margin: 0% 5%;
@@ -44,6 +49,7 @@
 
 /* text alteration links */
 .liElementsLink {
+    margin: auto;
     text-decoration: none;
     color: black;
     font-size: large;
@@ -91,7 +97,7 @@
 @media only screen and (max-width: 768px) {
     /* navbar marvinno image */
     .navBarLogoImageHeight {
-        height: 6vh;
+        height: 32px;
         width: auto;
     }
 
@@ -119,8 +125,9 @@
     }
 
     .liElementsNavbar {
-        text-align: left;
-        width: fit-content;
+        /* width: fit-content; */
+        display: flex;
+        place-content: center;
     }
 
     .liElementsNavbar-home {
@@ -133,13 +140,14 @@
 
     /* text alteration links */
     .liElementsLink {
-        font-weight: 350;
+        font-weight: 400;
         text-align: left;
     }
 }
 
 @media (max-width: 460px) {
     .liElementsLink {
+        font-weight: 350;
         font-size: 0.75em;
     }
 

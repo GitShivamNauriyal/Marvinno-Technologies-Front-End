@@ -1,0 +1,61 @@
+@import url("https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+body {
+    margin: 0%;
+    padding: 0%;
+    width: 100%;
+    /* font-family: "Montserrat", sans-serif; */
+    font-family: "Kanit", sans-serif;
+}
+
+.featuresImageCss {
+    height: 3rem;
+    width: auto;
+}
+
+.imageBGPadding {
+    text-align: center;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+.feature {
+    display: flex;
+    flex-direction: column;
+    place-content: center;
+    text-align: center;
+    padding: 1.5rem;
+    background-color: #fff;
+    border-radius: 2px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    height: 100%;
+}
+.feature:hover {
+    border-radius: 8px;
+    scale: 102%;
+}
+
+.headingFeaturesCss {
+    font-size: 1.4rem;
+    font-weight: 600;
+    padding: 1rem 0;
+    margin: 0 auto;
+    color: #3e8a2dce;
+}
+
+.descriptionIconsLineSeperator {
+    width: 90%;
+    margin: 0.5rem auto;
+}
+
+.descriptionFeaturesCss {
+    font-size: 1rem;
+    color: #555;
+}
+
+@media screen and (max-width: 800px) {
+    .headingFeaturesCss {
+        padding-bottom: 0;
+    }
+}

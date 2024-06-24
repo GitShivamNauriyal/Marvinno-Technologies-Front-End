@@ -1,20 +1,23 @@
 import React from "react";
-// import { Carousel } from 'react-bootstrap';
+import AOS from "aos";
+import "aos/dist/aos.css";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import fiveStarReview from "../../images/5StarImageReviews.png";
 import "../../css/homeCss/description.css";
 
 export default function reviews({ users }) {
+    AOS.init({ duration: 1500 });
+
     const responsive = {
         desktop: {
             breakpoint: { max: 3000, min: 1024 },
-            items: 1,
+            items: 3,
             slidesToSlide: 1, // optional, default to 1.
         },
         tablet: {
             breakpoint: { max: 1024, min: 464 },
-            items: 1,
+            items: 2,
             slidesToSlide: 1, // optional, default to 1.
         },
         mobile: {
@@ -24,7 +27,7 @@ export default function reviews({ users }) {
         },
     };
     return (
-        <div>
+        <div className="reviews-carousel-container" data-aos="fade-left">
             <Carousel
                 swipeable={false}
                 draggable={false}

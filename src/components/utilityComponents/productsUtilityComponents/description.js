@@ -1,17 +1,21 @@
 import React from "react";
 import Module from "./module";
+import AOS from "aos";
+import "aos/dist/aos.css";
 import data from "./cardDetails";
 import "../../css/productsCss/description.css";
 import brochure from "../../images/Marvinno SPECTRUM Range Brochure.pdf";
 
 export default function description() {
+    AOS.init({ duration: 1500 });
+
     return (
         <div>
             {/* <div className="banner-container">
                 <div className="banner"></div>
             </div> */}
             <div className="products-top-bg-black">
-                <p className="descriptionProductsCss">
+                <p className="descriptionProductsCss" data-aos="fade-left">
                     We offer 12 different modules in various styles (Gloss or
                     Matte) & colors (Base: Black or White, Frame: Gold or
                     Silver). Choose according to your need or customise as you
@@ -30,8 +34,12 @@ export default function description() {
                     </p>
                 </p>
             </div>
-            <p className="p-spectrum-products">MARVINNO Spectrum Range</p>
-            <div className="sepratorLine" />
+            <div className="productHeadingContainer">
+                <p className="p-spectrum-products-heading">
+                    MARVINNO Spectrum Range
+                </p>
+            </div>
+            {/* <div className="sepratorLine" /> */}
             <div className="product row1">
                 {data.map((item) => (
                     <Module
