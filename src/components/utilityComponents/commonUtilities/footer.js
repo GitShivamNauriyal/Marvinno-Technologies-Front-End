@@ -295,7 +295,7 @@ export default function footer() {
                             src={footerMarvinnoLogo}
                         />
                         <p className="footer-copyright-text">
-                            &#169; 2022 Marvinno Technologies India Pvt. Ltd.
+                            &#169; 2024 Marvinno Technologies India Pvt. Ltd.
                             All rights reserved. Privacy Policy Terms of Use
                         </p>
                     </div>

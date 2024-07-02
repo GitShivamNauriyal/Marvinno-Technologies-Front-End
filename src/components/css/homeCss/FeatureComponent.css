@@ -27,13 +27,23 @@ body {
     padding: 1.5rem;
     background-color: #fff;
     border-radius: 2px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 4px 4px 8px 2px rgba(255, 255, 255, 0.1);
     transition: all 0.3s ease;
     height: 100%;
 }
 .feature:hover {
     border-radius: 8px;
+    box-shadow: 5px 5px 16px 2px rgba(255, 255, 255, 0.2);
     scale: 102%;
+}
+
+.feature .imageBGPadding {
+    transition: all 0.3s ease;
+}
+
+.feature:hover .imageBGPadding {
+    scale: 104%;
+    transform: translateY(-4px);
 }
 
 .headingFeaturesCss {
@@ -42,6 +52,7 @@ body {
     padding: 1rem 0;
     margin: 0 auto;
     color: #3e8a2dce;
+    cursor: default;
 }
 
 .descriptionIconsLineSeperator {

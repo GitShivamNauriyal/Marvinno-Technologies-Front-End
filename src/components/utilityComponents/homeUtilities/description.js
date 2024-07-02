@@ -9,6 +9,11 @@ import descriptionImage3 from "../../images/dec_img_3.png";
 import voiceControlUsingAlexaImage from "../../images/website icons/Alexa pic .png";
 import marvinnoApplicationImage from "../../images/website icons/marvinnoAppImageCascade.png";
 import flauntYourSmartHomeOnSocialMedia from "../../images/flauntYourHomeOnSocialMediaAbout.png";
+import instagramLogo from "../../images/icons/instagram.jpg";
+import facebookLogo from "../../images/icons/facebook.jpg";
+import youtubeLogo from "../../images/icons/youtube.png";
+import twitterLogo from "../../images/icons/twitter.png";
+import quoraLogo from "../../images/icons/quora.jpg";
 import ReadMore from "./readMore";
 
 export default function description(props) {
@@ -171,6 +176,63 @@ export default function description(props) {
                         us to others and we will reward you with exiting offers
                         and discounts on your recurrent purchases.
                     </p>
+                    <div className="icons-footer">
+                        <a
+                            className="socialMediaFooterYoutube"
+                            target="blank"
+                            href="https://www.youtube.com/channel/UCO9cJ8f5HztqR2HcM9XFY0w"
+                        >
+                            <img
+                                src={youtubeLogo}
+                                className="youtube-link link-social-media-footer"
+                                alt="..."
+                            />
+                        </a>
+                        <a
+                            className="socialMediaFooterQuora"
+                            target="blank"
+                            href="https://pin.it/3gPNrJy"
+                        >
+                            <img
+                                src={quoraLogo}
+                                className="link-social-media-footer"
+                                alt="..."
+                            />
+                        </a>
+                        <a
+                            className="socialMediaFooterInstagram"
+                            target="blank"
+                            href="https://www.instagram.com/marvinnotechnologies/"
+                        >
+                            <img
+                                src={instagramLogo}
+                                className="instagram-link link-social-media-footer"
+                                alt="..."
+                            />
+                        </a>
+                        <a
+                            className="socialMediaFooterFacebook"
+                            target="blank"
+                            href="https://www.facebook.com/marvinnotechnologies/"
+                        >
+                            <img
+                                src={facebookLogo}
+                                className="facebook-link link-social-media-footer"
+                                alt="..."
+                            />
+                        </a>
+                        <a
+                            className="socialMediaFooterTwitter"
+                            target="blank"
+                            href="https://www.twitter.com/marvinnotech"
+                        >
+                            <img
+                                src={twitterLogo}
+                                className="twitter-link link-social-media-footer"
+                                alt="..."
+                            />
+                        </a>
+                    </div>
                 </div>
                 <div className="imageDivCSS" data-aos="fade-left">
                     <p className="imageCSSCenter">

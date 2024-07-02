@@ -29,20 +29,14 @@ export default function CarouselHome() {
     return (
         <>
             <Carousel
-                swipeable={false}
+                swipeable={true}
                 draggable={false}
                 showDots={true}
                 responsive={responsive}
-                // ssr={true} // means to render carousel on server-side.
                 infinite={true}
                 autoPlay={true}
-                // autoPlay={this.prop.deviceType !== "mobile" ? true : false}
                 autoPlaySpeed={5 * 1000}
-                // customTransition="all .5"
-                // transitionDuration={5000}
                 containerClass="carousel-container"
-                // removeArrowOnDeviceType={["tablet", "mobile"]}
-                // deviceType={this.prop.deviceType}
                 dotListClass="custom-dot-list-style"
                 // itemClass="carousel-item-padding-40-px"
             >

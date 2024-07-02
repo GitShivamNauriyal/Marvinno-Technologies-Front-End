@@ -84,7 +84,7 @@ export default function App() {
                             maxloadsocket="1 x 2500W"
                             maxloadswitch="1 x 300W"
                             color="Base: Black and White"
-                            frame="Frame: Gold and Silver"
+                            frame="Frame: Gold and Chrome"
                         />
                     }
                 />
@@ -125,7 +125,7 @@ export default function App() {
                             maxloadsocket="No Socket"
                             maxloadswitch="(1 x 2000W) and (3 x 300W)"
                             color="Base: Black and White"
-                            frame="Frame: Gold and Silver"
+                            frame="Frame: Gold and Chrome"
                         />
                     }
                 />
@@ -146,7 +146,7 @@ export default function App() {
                             Sensor="Real Time Tank Water Level Sensor (Wired/Wireless)"
                             maxloadswitch="1000W"
                             color="Base: Black and White"
-                            frame="Frame: Gold and Silver"
+                            frame="Frame: Gold and Chrome"
                             maxloadsocket="No Socket"
                         />
                     }
@@ -168,7 +168,7 @@ export default function App() {
                             maxloadsocket="No Socket"
                             maxloadswitch="1000W"
                             color="Base: Black and White"
-                            frame="Frame: Gold and Silver"
+                            frame="Frame: Gold and Chrome"
                         />
                     }
                 />
@@ -189,7 +189,7 @@ export default function App() {
                             maxloadsocket="1 x 2500W and 1 x 500W"
                             maxloadswitch="2 x 300W"
                             color="Base: Black and White"
-                            frame="Frame: Gold and Silver"
+                            frame="Frame: Gold and Chrome"
                         />
                     }
                 />
@@ -212,7 +212,7 @@ export default function App() {
                             maxloadsocket="1 x 500W"
                             maxloadswitch="1 x 2500W and 4 x 300W"
                             color="Base: Black and White"
-                            frame="Frame: Gold and Silver"
+                            frame="Frame: Gold and Chrome"
                             // rmodule="Max Load at Power Switch: 2500W"
                         />
                     }
@@ -235,7 +235,7 @@ export default function App() {
                             maxloadsocket="1 x 500W"
                             maxloadswitch="3 x 300W"
                             color="Base: Black and White"
-                            frame="Frame: Gold and Silver"
+                            frame="Frame: Gold and Chrome"
                         />
                     }
                 />
@@ -257,7 +257,7 @@ export default function App() {
                             maxloadsocket="2 x 500W"
                             maxloadswitch="5 x 300W"
                             color="Base: Black and White"
-                            frame="Frame: Gold and Silver"
+                            frame="Frame: Gold and Chrome"
                         />
                     }
                 />
@@ -279,7 +279,7 @@ export default function App() {
                             maxloadsocket="1 x 500W"
                             maxloadswitch="1 x 2500W and 3 x 300W"
                             color="Base: Black and White"
-                            frame="Frame: Gold and Silver"
+                            frame="Frame: Gold and Chrome"
                         />
                     }
                 />
@@ -298,7 +298,7 @@ export default function App() {
                             loadcapacity="4 x 6A Switches"
                             size="2M (Modular Roma Fitting)"
                             touchbuttons="4"
-                            maxloadsocket="" /** */
+                            maxloadsocket="No Socket"
                             maxloadswitch="4 x 200W"
                             color="Gloss Black & Pearl White"
                         />
@@ -312,14 +312,14 @@ export default function App() {
                             bgcolor="#f15c5c57"
                             img1={moduleYImage1}
                             img2={moduleYImage2}
-                            price="Revealing Soon"
                             img3={moduleYImage3}
+                            price="Revealing Soon"
                             name="Module Y"
                             fullform="Power Module"
                             loadcapacity="1 x 20A Switch"
                             size="2M (Modular Roma Fitting)"
                             touchbuttons="1"
-                            maxloadsocket="" /*** */
+                            maxloadsocket="No Socket" /*** */
                             maxloadswitch="1 x 2500W"
                             color="Gloss Black & Pearl White"
                         />
@@ -340,7 +340,7 @@ export default function App() {
                             loadcapacity="1 x 4 Speed Fan Dimmer"
                             size="2M (Modular Roma Fitting)"
                             touchbuttons="3"
-                            maxloadsocket="" /*** */
+                            maxloadsocket="No Socket"
                             maxloadswitch="1 x 300W"
                             color="Gloss Black & Pearl White"
                         />

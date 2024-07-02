@@ -5,7 +5,7 @@ import "react-multi-carousel/lib/styles.css";
 import "../../css/productsCss/description.css";
 import Navbar from "../commonUtilities/nonRespNavbar";
 import Footer from "../commonUtilities/footer";
-import image from "../../images/1.jpg";
+// import image from "../../images/1.jpg";
 
 export default function ProductDescription(props) {
     const [value, setValue] = useState(1);
@@ -156,7 +156,7 @@ export default function ProductDescription(props) {
                                     <h4>-</h4>
                                 </span>
                             </div>
-                            <div>
+                            <div className="Add-more-value-contailer">
                                 <span className="Add-more-Value">{value}</span>
                             </div>
                             <div

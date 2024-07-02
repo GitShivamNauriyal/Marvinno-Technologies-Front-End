@@ -7,13 +7,13 @@ import navbarLogo from "../../images/navbarLogoBlackText.png";
 export default function nonRespNavbar() {
     return (
         <div className="navbar-master">
-            <p className="navbarLogoAlignCenterCss">
+            <div className="navbarLogoAlignCenterCss">
                 <img
                     className="navBarLogoImageHeight"
                     src={navbarLogo}
                     alt="..."
                 />
-            </p>
+            </div>
             <ul className="ulElementsNavbar">
                 <li className="liElementsNavbar productsMarginLeft li-elements-navbar">
                     <Link

@@ -13,154 +13,175 @@ export default function reviews({ users }) {
         desktop: {
             breakpoint: { max: 3000, min: 1024 },
             items: 3,
-            slidesToSlide: 1, // optional, default to 1.
         },
         tablet: {
             breakpoint: { max: 1024, min: 464 },
             items: 2,
-            slidesToSlide: 1, // optional, default to 1.
         },
         mobile: {
             breakpoint: { max: 464, min: 0 },
             items: 1,
-            slidesToSlide: 1, // optional, default to 1.
         },
     };
     return (
-        <div className="reviews-carousel-container" data-aos="fade-left">
-            <Carousel
-                swipeable={false}
-                draggable={false}
-                showDots={true}
-                responsive={responsive}
-                // ssr={true} // means to render carousel on server-side.
-                infinite={true}
-                autoPlay={true}
-                // autoPlay={this.prop.deviceType !== "mobile" ? true : false}
-                autoPlaySpeed={2 * 1000}
-                // customTransition="all .5"
-                // transitionDuration={5000}
-                containerClass="carousel-container"
-                // removeArrowOnDeviceType={["tablet", "mobile"]}
-                // deviceType={this.prop.deviceType}
-                dotListClass="custom-dot-list-style"
-                itemClass="carousel-item-padding-40-px"
-            >
-                <div className="complete-reviews-div">
-                    <img
-                        className="image-reviews"
-                        src={users.user1.image}
-                        alt="Client Image Loading..."
-                    />
-                    <div className="data-review">
-                        <p className="review-para">{users.user1.message}</p>
-                        <p className="review-person-name">{users.user1.name}</p>
-                        <p className="review-person-city">{users.user1.city}</p>
-                        <div className="center-review-image">
-                            <img
-                                className="reviews-star-rating"
-                                alt="Review Loading..."
-                                src={fiveStarReview}
-                            />
+        <div>
+            <div className="reviews-heading-container">
+                <h1>Our Clients and Installations</h1>
+            </div>
+            <div className="reviews-carousel-container" data-aos="fade-left">
+                <Carousel
+                    swipeable={true}
+                    draggable={false}
+                    showDots={true}
+                    responsive={responsive}
+                    // ssr={true} // means to render carousel on server-side.
+                    infinite={true}
+                    autoPlay={true}
+                    autoPlaySpeed={2 * 1000}
+                    containerClass="carousel-container"
+                    dotListClass="custom-dot-list-style"
+                    itemClass="carousel-item-padding-40-px"
+                >
+                    <div className="complete-reviews-div">
+                        <img
+                            className="image-reviews"
+                            src={users.user1.image}
+                            alt="Client Image Loading..."
+                        />
+                        <div className="data-review">
+                            <p className="review-para">{users.user1.message}</p>
+                            <p className="review-person-name">
+                                {users.user1.name}
+                            </p>
+                            <p className="review-person-city">
+                                {users.user1.city}
+                            </p>
+                            <div className="center-review-image">
+                                <img
+                                    className="reviews-star-rating"
+                                    alt="Review Loading..."
+                                    src={fiveStarReview}
+                                />
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div className="complete-reviews-div">
-                    <img
-                        className="image-reviews"
-                        src={users.user2.image}
-                        alt="Client Image Loading..."
-                    />
-                    <div className="data-review">
-                        <p className="review-para">{users.user2.message}</p>
-                        <p className="review-person-name">{users.user2.name}</p>
-                        <p className="review-person-city">{users.user2.city}</p>
-                        <div className="center-review-image">
-                            <img
-                                className="reviews-star-rating"
-                                alt="Review Loading..."
-                                src={fiveStarReview}
-                            />
+                    <div className="complete-reviews-div">
+                        <img
+                            className="image-reviews"
+                            src={users.user2.image}
+                            alt="Client Image Loading..."
+                        />
+                        <div className="data-review">
+                            <p className="review-para">{users.user2.message}</p>
+                            <p className="review-person-name">
+                                {users.user2.name}
+                            </p>
+                            <p className="review-person-city">
+                                {users.user2.city}
+                            </p>
+                            <div className="center-review-image">
+                                <img
+                                    className="reviews-star-rating"
+                                    alt="Review Loading..."
+                                    src={fiveStarReview}
+                                />
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div className="complete-reviews-div">
-                    <img
-                        className="image-reviews"
-                        src={users.user3.image}
-                        alt="Client Image Loading..."
-                    />
-                    <div className="data-review">
-                        <p className="review-para">{users.user3.message}</p>
-                        <p className="review-person-name">{users.user3.name}</p>
-                        <p className="review-person-city">{users.user3.city}</p>
-                        <div className="center-review-image">
-                            <img
-                                className="reviews-star-rating"
-                                alt="Review Loading..."
-                                src={fiveStarReview}
-                            />
+                    <div className="complete-reviews-div">
+                        <img
+                            className="image-reviews"
+                            src={users.user3.image}
+                            alt="Client Image Loading..."
+                        />
+                        <div className="data-review">
+                            <p className="review-para">{users.user3.message}</p>
+                            <p className="review-person-name">
+                                {users.user3.name}
+                            </p>
+                            <p className="review-person-city">
+                                {users.user3.city}
+                            </p>
+                            <div className="center-review-image">
+                                <img
+                                    className="reviews-star-rating"
+                                    alt="Review Loading..."
+                                    src={fiveStarReview}
+                                />
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div className="complete-reviews-div">
-                    <img
-                        className="image-reviews"
-                        src={users.user4.image}
-                        alt="Client Image Loading..."
-                    />
-                    <div className="data-review">
-                        <p className="review-para">{users.user4.message}</p>
-                        <p className="review-person-name">{users.user4.name}</p>
-                        <p className="review-person-city">{users.user4.city}</p>
-                        <div className="center-review-image">
-                            <img
-                                className="reviews-star-rating"
-                                alt="Review Loading..."
-                                src={fiveStarReview}
-                            />
+                    <div className="complete-reviews-div">
+                        <img
+                            className="image-reviews"
+                            src={users.user4.image}
+                            alt="Client Image Loading..."
+                        />
+                        <div className="data-review">
+                            <p className="review-para">{users.user4.message}</p>
+                            <p className="review-person-name">
+                                {users.user4.name}
+                            </p>
+                            <p className="review-person-city">
+                                {users.user4.city}
+                            </p>
+                            <div className="center-review-image">
+                                <img
+                                    className="reviews-star-rating"
+                                    alt="Review Loading..."
+                                    src={fiveStarReview}
+                                />
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div className="complete-reviews-div">
-                    <img
-                        className="image-reviews"
-                        src={users.user5.image}
-                        alt="Client Image Loading..."
-                    />
-                    <div className="data-review">
-                        <p className="review-para">{users.user5.message}</p>
-                        <p className="review-person-name">{users.user5.name}</p>
-                        <p className="review-person-city">{users.user5.city}</p>
-                        <div className="center-review-image">
-                            <img
-                                className="reviews-star-rating"
-                                alt="Review Loading..."
-                                src={fiveStarReview}
-                            />
+                    <div className="complete-reviews-div">
+                        <img
+                            className="image-reviews"
+                            src={users.user5.image}
+                            alt="Client Image Loading..."
+                        />
+                        <div className="data-review">
+                            <p className="review-para">{users.user5.message}</p>
+                            <p className="review-person-name">
+                                {users.user5.name}
+                            </p>
+                            <p className="review-person-city">
+                                {users.user5.city}
+                            </p>
+                            <div className="center-review-image">
+                                <img
+                                    className="reviews-star-rating"
+                                    alt="Review Loading..."
+                                    src={fiveStarReview}
+                                />
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div className="complete-reviews-div">
-                    <img
-                        className="image-reviews"
-                        src={users.user6.image}
-                        alt="Client Image Loading..."
-                    />
-                    <div className="data-review">
-                        <p className="review-para">{users.user6.message}</p>
-                        <p className="review-person-name">{users.user6.name}</p>
-                        <p className="review-person-city">{users.user6.city}</p>
-                        <div className="center-review-image">
-                            <img
-                                className="reviews-star-rating"
-                                alt="Review Loading..."
-                                src={fiveStarReview}
-                            />
+                    <div className="complete-reviews-div">
+                        <img
+                            className="image-reviews"
+                            src={users.user6.image}
+                            alt="Client Image Loading..."
+                        />
+                        <div className="data-review">
+                            <p className="review-para">{users.user6.message}</p>
+                            <p className="review-person-name">
+                                {users.user6.name}
+                            </p>
+                            <p className="review-person-city">
+                                {users.user6.city}
+                            </p>
+                            <div className="center-review-image">
+                                <img
+                                    className="reviews-star-rating"
+                                    alt="Review Loading..."
+                                    src={fiveStarReview}
+                                />
+                            </div>
                         </div>
                     </div>
-                </div>
-            </Carousel>
+                </Carousel>
+            </div>
         </div>
     );
 }

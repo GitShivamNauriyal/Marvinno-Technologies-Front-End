@@ -36,19 +36,18 @@ export default function AllFeaturesComponent() {
             icon: ratingsImage,
             heading: "Ratings & Size",
             description:
-                "Available in 4M, 6M, 8M and 12M sizes with USB Charging",
+                "Available in 2M, 4M, 6M, 8M and 12M sizes with USB Charging",
         },
         {
             icon: ledFeaturesImage,
             heading: "LED Features",
-            description:
-                "LED Feature to see in dark, red for OFF & blue for ON",
+            description: "LED Feature to see in dark Red for OFF & blue for ON",
         },
         {
             icon: testedAndSecuredImage,
             heading: "Tested & Secure",
             description:
-                "Made with certified Components Passed Various Safety & load tests",
+                "Made with certified Components, Passed Various Safety & load tests",
         },
         {
             icon: applicationSupportImage,

@@ -1,6 +1,6 @@
 const cardData = [
     {
-        id: "1",
+        id: 1,
         img: "../card_image/S black.png",
         price: "₹ Revealing Soon...",
         name: "S-Module",
@@ -11,7 +11,7 @@ const cardData = [
     },
 
     {
-        id: "2",
+        id: 2,
         img: "../card_image/0P5A4415.png",
         price: "₹ Revealing Soon...",
         name: "P-Module",
@@ -22,7 +22,7 @@ const cardData = [
         url: "/products/p-module",
     },
     {
-        id: "3",
+        id: 3,
         img: "../card_image/Module E LED black.png",
         price: "₹₹ Revealing Soon...",
         name: "E-Module",
@@ -32,7 +32,7 @@ const cardData = [
         url: "/products/e-module",
     },
     {
-        id: "4",
+        id: 4,
         img: "../card_image/CModuleImage.png",
         price: "₹ Revealing Soon...",
         name: "C-Module",
@@ -43,7 +43,7 @@ const cardData = [
         url: "/products/c-module",
     },
     {
-        id: "5",
+        id: 5,
         img: "../card_image/0P5A4400.png",
         price: "₹ Revealing Soon...",
         name: "T-Module",
@@ -53,7 +53,7 @@ const cardData = [
         url: "/products/t-module",
     },
     {
-        id: "6",
+        id: 6,
         img: "../card_image/R white silver.png",
         price: "₹ Revealing Soon...",
         name: "R-Module",
@@ -63,7 +63,7 @@ const cardData = [
         url: "/products/r-module",
     },
     {
-        id: "7",
+        id: 7,
         img: "../card_image/0P5A4392.png",
         price: "₹ Revealing Soon...",
         name: "U-Module",
@@ -73,7 +73,7 @@ const cardData = [
         url: "/products/u-module",
     },
     {
-        id: "8",
+        id: 8,
         img: "../card_image/0P5A4387.png",
         price: "₹ Revealing Soon...",
         name: "M1-Module",
@@ -83,7 +83,7 @@ const cardData = [
         url: "/products/m1-module",
     },
     {
-        id: "9",
+        id: 9,
         img: "../card_image/Module Square 8M.jpg",
         price: "₹ Revealing Soon...",
         name: "M3-Module",
@@ -91,36 +91,6 @@ const cardData = [
         btnTitle: "Add to cart",
         rating: "5",
         url: "/products/m3-module",
-    },
-    {
-        id: "10",
-        img: "../card_image/X Pic.png",
-        price: "₹ Revealing Soon...",
-        name: "X-Module",
-        totalSales: "247",
-        btnTitle: "Add to cart",
-        rating: "5",
-        url: "/products/x-module",
-    },
-    {
-        id: "11",
-        img: "../card_image/Y Pic.png",
-        price: "₹ Revealing Soon...",
-        name: "Y-Module",
-        totalSales: "247",
-        btnTitle: "Add to cart",
-        rating: "5",
-        url: "/products/y-module",
-    },
-    {
-        id: "12",
-        img: "../card_image/Z Pic.png",
-        price: "₹ Revealing Soon...",
-        name: "Z-Module",
-        totalSales: "247",
-        btnTitle: "Add to cart",
-        rating: "5",
-        url: "/products/z-module",
     },
 ];
 

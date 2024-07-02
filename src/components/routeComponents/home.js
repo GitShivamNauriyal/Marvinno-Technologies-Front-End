@@ -41,7 +41,7 @@ export default function home() {
             name: "Disha Chadha",
             city: "Dehradun, India",
             message:
-                "Voice control feature helps me control my room’s lights hands- free, switching works very fast.",
+                "Voice control feature helps me control my room's lights hands- free, switching works very fast.",
         },
         user4: {
             image: teamImg4,
