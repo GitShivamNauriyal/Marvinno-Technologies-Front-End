@@ -2,10 +2,31 @@
     margin: 0%;
     padding: 0%;
 }
+/*
+.navbar {
+    position: fixed;
+    z-index: 999;
+    top: 0;
+    width: 100%;
+    transition: top 0.4s ease;
+}
+
+.navbar.show { 
+    top: 0; 
+}
+
+.navbar.hide {
+    top: -136px; 
+}
+*/
+
 .navbar-master {
+    background-color: white;
+    z-index: 999;
     display: flex;
     flex-direction: column;
     border-bottom: 1px solid rgb(0, 0, 0, 0.1);
+    width: 100%;
 }
 /* navbar marvinno image */
 .navBarLogoImageHeight {
@@ -29,9 +50,13 @@
 
 /* ul elements make decoration */
 .ulElementsNavbar {
-    /* margin: auto; */
+    width: 100%;
+    margin: auto;
+    margin-bottom: 1rem;
     /* max-width: 1500px; */
+    display: flex;
     text-align: center;
+    place-content: center;
     text-decoration: none;
 }
 
@@ -76,7 +101,7 @@
     position: absolute;
     width: 100%;
     transform: scaleX(0);
-    height: 2px;
+    height: 2.5px;
     bottom: 0;
     left: 0;
     background-color: #3e8a2dce;
@@ -98,7 +123,7 @@
 @media only screen and (max-width: 768px) {
     /* navbar marvinno image */
     .navBarLogoImageHeight {
-        height: 32px;
+        height: 48px;
         width: auto;
     }
 
@@ -121,7 +146,7 @@
 
     /* home icon navbar */
     .homeLogoNavbar {
-        height: 3vh;
+        height: 24px;
         width: auto;
     }
 
@@ -147,6 +172,13 @@
 }
 
 @media (max-width: 460px) {
+    .navBarLogoImageHeight {
+        height: 36px;
+        margin-bottom: 0.2rem;
+    }
+    .ulElementsNavbar {
+        margin-bottom: 0.4rem;
+    }
     .liElementsLink {
         font-weight: 350;
         font-size: 0.75em;

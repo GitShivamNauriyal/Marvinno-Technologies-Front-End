@@ -20,6 +20,7 @@ import teamImg3 from "../images/team-img-3.jpg";
 import teamImg4 from "../images/team-img-4.jpg";
 import teamImg5 from "../images/team-img-5.jpg";
 import teamImg6 from "../images/team-img-6.jpg";
+import HomeProductDisplay from "../utilityComponents/homeUtilities/HomeProductDisplay";
 
 export default function home() {
     const usersObj = {
@@ -67,6 +68,7 @@ export default function home() {
         <div>
             <Navbar />
             <Carousel />
+            <HomeProductDisplay />
             <Description />
             <Reviews users={usersObj} />
             <Footer />

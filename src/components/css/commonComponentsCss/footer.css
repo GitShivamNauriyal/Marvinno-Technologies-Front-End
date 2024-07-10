@@ -24,10 +24,7 @@
 }
 
 .link-social-media-footer {
-    height: 2rem;
-    width: auto;
-    margin-left: 15px;
-    border-radius: 1rem;
+    border-radius: 2rem;
 }
 
 .twitter-link {

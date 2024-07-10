@@ -54,7 +54,7 @@ const cardData = [
     },
     {
         id: 6,
-        img: "../card_image/R white silver.png",
+        img: "../card_image/R_black.png",
         price: "₹ Revealing Soon...",
         name: "R-Module",
         totalSales: "247",
@@ -84,7 +84,7 @@ const cardData = [
     },
     {
         id: 9,
-        img: "../card_image/Module Square 8M.jpg",
+        img: "../card_image/Module Square 8M.png",
         price: "₹ Revealing Soon...",
         name: "M3-Module",
         totalSales: "247",

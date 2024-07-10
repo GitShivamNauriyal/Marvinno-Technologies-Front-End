@@ -143,9 +143,21 @@ export default function AllFeaturesComponent() {
                             ></path>
                         </svg>
                     </div>
-                    <h1 className="headingFeatures" data-aos="fade-left">
-                        FEATURES
-                    </h1>
+                    <h1 className="headingFeatures">FEATURES</h1>
+                </div>
+                <div className="features-question">
+                    <h2>What are you looking for?</h2>
+                    <p>
+                        Looking for ways to jazz up your indoor space with a
+                        touch of modern flair? Dive into our lineup of
+                        futuristic products that promise to revolutionize your
+                        home or office atmosphere!
+                    </p>
+                    {/* <p>
+                        Experience unparalleled convenience, enhanced
+                        productivity, and the latest in smart technology with
+                        our comprehensive range of solutions.
+                    </p> */}
                 </div>
                 <div className="featuresGrid">
                     {features.map((feature, index) => (

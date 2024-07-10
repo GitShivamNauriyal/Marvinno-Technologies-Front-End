@@ -4,6 +4,10 @@ body {
     font-family: "Kanit", sans-serif;
 }
 
+.product-master {
+    padding-bottom: 4rem;
+}
+
 .a-products {
     text-decoration: underline;
     text-decoration-color: #3e8a2dce;
@@ -25,43 +29,48 @@ body {
 }
 
 .products-top-bg-black {
-    background-color: rgb(10, 10, 37);
     text-align: center;
     margin: 0% auto;
-    padding: 10px 20px;
+    padding: 10px;
     display: flex;
 }
 
 .anchor-tag-items-products-download-top {
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    letter-spacing: -1px;
     text-decoration: none;
-    background-color: white;
+    background: white;
     color: black;
-    font-weight: 600;
+    font-weight: 500;
     border-radius: 24px;
-    border: none;
-    transition: all 0.6s ease;
+    transition: all 0.4s ease;
     padding: 16px;
     margin: auto;
+    transition: all 0.4s ease;
 }
 
 .anchor-tag-items-products-download-top:hover {
-    background-color: #2fd667;
+    translate: 0 -4px;
+    background: linear-gradient(#27ad54dd, #27ad5466);
     color: #ffffff;
     font-size: large;
-    transition: all 0.6s ease;
+    border-color: #ffffff;
 }
 
 .descriptionProductsCss {
+    font-family: "Montserrat", sans-serif;
+    z-index: 99;
     margin: auto;
     max-width: 1300px;
-    background: linear-gradient(45deg, #266a7653, #5bc7434c);
+    background-color: white;
+    background: linear-gradient(#266a7633, #ffffff);
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
     border-radius: 20px;
     border: 1px solid rgba(255, 255, 255, 0.18);
-    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.1);
     padding: 28px;
     text-align: justify;
     letter-spacing: 0.05em;
@@ -71,8 +80,12 @@ body {
 }
 
 .descriptionProductsCss p {
+    color: black;
     grid-column: 1/4;
     padding: 2rem 4rem;
+    margin: 0;
+    font-size: 1rem;
+    letter-spacing: 0em;
 }
 
 .download-products {
@@ -220,15 +233,14 @@ body {
 .productHeadingContainer {
     margin-top: 5rem;
     display: flex;
-    border-top: 1px solid rgb(0, 0, 0, 0.1);
-    border-bottom: 1px solid rgb(0, 0, 0, 0.1);
 }
 .p-spectrum-products-heading {
+    font-family: "Montserrat", sans-serif;
     cursor: default;
     margin: auto;
     font-size: 3.5rem;
     font-weight: 600;
-    letter-spacing: 0.02em;
+    letter-spacing: -1px;
     text-align: center;
     background: linear-gradient(90deg, #266a76, #5bc743ce);
     color: transparent;
@@ -237,7 +249,7 @@ body {
     transition: all 0.2s ease;
 }
 .p-spectrum-products-heading:hover {
-    letter-spacing: 0.03em;
+    letter-spacing: 0px;
 }
 
 .moduleElementsCss {
@@ -307,12 +319,12 @@ body {
     margin: 10% 0% 0% 40%;
 }
 
-.descriptionCss {
+.product-description-detail {
     font-size: larger;
     word-spacing: 0%;
     height: 30px;
     letter-spacing: 0%;
-    color: rgb(119, 115, 115);
+    color: #266a76;
     margin-top: 2%;
     width: fit-content;
     padding-right: 32px;
@@ -520,30 +532,6 @@ body {
     text-align: center;
 }
 
-.buy-now {
-    text-decoration: none;
-    width: fit-content;
-    background-color: #f9f7f7;
-    font-weight: bold;
-    padding: 3px 10px;
-    text-transform: uppercase;
-    border: none;
-    font-size: small;
-    height: 100%;
-    width: 100%;
-    transition: all 0.2s ease;
-}
-
-.buy-now:hover {
-    font-size: 0.7rem;
-    transition: all 0.2s ease;
-}
-/* .buy-now:hover{
-  box-shadow: 1px 1px 1px 1px #3e8a2dce;
-  transition: 0.2s ease;
-  color: white;
-} */
-
 .sec-2-product-page-plus-minus {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -576,19 +564,11 @@ body {
     .middleSectionProduct {
         margin-top: 0px;
     }
-
-    .descriptionCss {
-        font-size: small;
-    }
 }
 
 @media only screen and (max-width: 1000px) {
     .headingColorWhite {
         font-size: medium;
-    }
-
-    .descriptionCss {
-        font-size: small;
     }
 
     .buttonCssHighlights {
@@ -606,7 +586,10 @@ body {
         font-size: medium;
         width: 100%;
         margin: 0%;
-        padding-bottom: 8px;
+        padding: 1rem;
+    }
+    .descriptionProductsCss p {
+        padding: 2rem;
     }
 
     .productHeadingContainer {
@@ -651,17 +634,21 @@ body {
         margin-left: 0%;
     }
 
+    .pd-carousel-container {
+        width: 100vw;
+    }
+
     .middleSectionProduct {
         margin: 0% auto;
-        width: fit-content;
+        /* width: fit-content; */
         grid-column: 1/-1;
+        grid-row: 5;
     }
 
     .rightSectionProduct {
         grid-column: 1/-1;
         margin: 0% auto;
         margin-top: 20px;
-        width: 60%;
     }
 
     /* module name, image and full form */
@@ -682,16 +669,16 @@ body {
 
     /* headings of the module */
     .headingColorWhite {
-        text-align: center;
+        text-align: left;
         font-size: large;
         font-weight: 700;
         margin: 0%;
     }
 
     /* description products */
-    .descriptionCss {
+    .product-description-detail {
         font-size: medium;
-        text-align: center;
+        text-align: left;
         width: 100%;
     }
 
@@ -731,6 +718,9 @@ body {
     .descriptionProductsCss {
         grid-template-columns: 1fr;
     }
+    .descriptionProductsCss p {
+        grid-column: 1/-1;
+    }
     .p-spectrum-products-heading {
         font-size: 2.5em;
     }
@@ -738,8 +728,20 @@ body {
 @media only screen and (max-width: 500px) {
     .descriptionProductsCss {
         font-size: small;
-        letter-spacing: 0;
         word-spacing: 0em;
+    }
+    .descriptionProductsCss p {
+        margin-bottom: 1rem;
+        letter-spacing: -1px;
+        line-height: 1.1rem;
+        padding: 0;
+    }
+    .download-products {
+        padding: 0;
+        padding-bottom: 4px;
+    }
+    .anchor-tag-items-products-download-top {
+        min-width: 80vw;
     }
     .productHeadingContainer {
         margin-top: 2rem;
@@ -747,10 +749,6 @@ body {
 }
 @media only screen and (max-width: 370px) {
     .headingColorWhite {
-        font-size: medium;
-    }
-
-    .descriptionCss {
         font-size: medium;
     }
 
@@ -961,6 +959,10 @@ a {
     margin-bottom: 4rem;
 }
 
+.module-master {
+    position: relative;
+}
+
 .productList {
     margin-top: 3rem;
     display: flex;
@@ -999,7 +1001,7 @@ a {
     border-radius: 0.5rem;
 }
 .productCard:hover {
-    box-shadow: 0 2px 10px 2px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 16px 2px rgba(0, 0, 0, 0.1);
     transform: translateY(-20px);
 }
 .productCard:hover .productImageContainer img {
@@ -1071,13 +1073,17 @@ a {
     border-radius: 0.5rem;
     width: 12rem;
     height: 2.4rem;
-    background-color: black;
-    color: #fff;
+    background-color: #fff;
+    color: #000;
+    border: 1px solid rgba(0, 0, 0, 0.7);
     font-size: 1rem;
     position: relative;
     opacity: 0;
     visibility: hidden;
-    transition: opacity 0.3s ease, visibility 0.3s ease;
+    transition: all 0.3s ease;
+}
+.productBtn:hover {
+    translate: 0 -4px;
 }
 
 @media screen and (max-width: 440px) {
@@ -1094,5 +1100,8 @@ a {
         height: 100%;
         background-size: contain;
         background-position: center center;
+    }
+    .productList {
+        margin-top: 0;
     }
 }

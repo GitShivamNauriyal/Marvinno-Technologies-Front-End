@@ -15,13 +15,8 @@ body {
 
 .featuresColorContainer {
     background: linear-gradient(45deg, #5bc7438a, #266a7683);
-}
-
-.headingFeatureContainer {
-    position: relative;
     display: flex;
-    justify-content: center;
-    padding-top: 4rem;
+    flex-direction: column;
 }
 
 .custom-shape-divider-top-1717109912 {
@@ -43,6 +38,12 @@ body {
 .custom-shape-divider-top-1717109912 .shape-fill {
     fill: #ffffff;
 }
+.headingFeatureContainer {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    padding-top: 4rem;
+}
 .headingFeatures {
     /* font-family: "Nunito", sans-serif; */
     cursor: default;
@@ -56,6 +57,24 @@ body {
     /* text-decoration-thickness: 2px; */
     margin-bottom: 0;
 }
+
+.features-question {
+    display: flex;
+    flex-direction: column;
+    font-family: "Montserrat", sans-serif;
+    text-align: center;
+    color: white;
+    padding: 1rem;
+    width: clamp(300px, 70%, 1400px);
+    margin: auto;
+}
+
+.features-question h2 {
+    background: linear-gradient(90deg, #2bc496, #51c736);
+    color: transparent;
+    background-clip: text;
+}
+
 .featuresGrid {
     position: relative;
     /* background: linear-gradient(45deg, #5bc7438a, #266a7683); */
@@ -86,7 +105,7 @@ body {
 }
 
 .custom-shape-divider-bottom-1717109659 .shape-fill {
-    fill: #1f4752;
+    fill: #ffffff;
 }
 
 @media screen and (max-width: 1250px) {
@@ -113,8 +132,20 @@ body {
         padding: 1rem;
         padding-bottom: 2rem;
     }
+
+    .headingFeatureContainer {
+        padding-top: 4rem;
+        padding-bottom: 0;
+    }
     .headingFeatures {
         font-weight: 700;
         font-size: 3em;
+    }
+    .features-question {
+        padding: 1rem;
+        width: clamp(300px, 100%, 1400px);
+    }
+    .features-question p {
+        text-align: justify;
     }
 }

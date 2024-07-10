@@ -43,16 +43,19 @@ import moduleMImage2 from "./components/images/image/Marvinno (15) PNG/M/3/0P5A4
 import moduleMImage3 from "./components/images/image/Marvinno (15) PNG/M/2/0P5A4382.png";
 
 import moduleXImage1 from "./components/images/image/Marvinno (15) PNG/X/X pic.png";
-import moduleXImage2 from "./components/images/image/Marvinno (15) PNG/X/Module X.png";
-import moduleXImage3 from "./components/images/image/Marvinno (15) PNG/X/Module X white.png";
+import moduleXImage2 from "./components/images/image/Marvinno (15) PNG/X/X pic 2.png";
+import moduleXImage3 from "./components/images/image/Marvinno (15) PNG/X/Module X.png";
+import moduleXImage4 from "./components/images/image/Marvinno (15) PNG/X/Module X white.png";
 
 import moduleYImage1 from "./components/images/image/Marvinno (15) PNG/Y/Y Pic.png";
-import moduleYImage2 from "./components/images/image/Marvinno (15) PNG/Y/Module Y.png";
-import moduleYImage3 from "./components/images/image/Marvinno (15) PNG/Y/Module Y white.png";
+import moduleYImage2 from "./components/images/image/Marvinno (15) PNG/Y/Y Pic 2.png";
+import moduleYImage3 from "./components/images/image/Marvinno (15) PNG/Y/Module Y.png";
+import moduleYImage4 from "./components/images/image/Marvinno (15) PNG/Y/Module Y white.png";
 
 import moduleZImage1 from "./components/images/image/Marvinno (15) PNG/Z/Z Pic.png";
-import moduleZImage2 from "./components/images/image/Marvinno (15) PNG/Z/Module Z.png";
-import moduleZImage3 from "./components/images/image/Marvinno (15) PNG/Z/Module Z white.png";
+import moduleZImage2 from "./components/images/image/Marvinno (15) PNG/Z/Z Pic 2.png";
+import moduleZImage3 from "./components/images/image/Marvinno (15) PNG/Z/Module Z.png";
+import moduleZImage4 from "./components/images/image/Marvinno (15) PNG/Z/Module Z white.png";
 
 export default function App() {
     return (
@@ -225,8 +228,8 @@ export default function App() {
                             bgcolor="#f6872c7a"
                             img1={moduleUImage1}
                             img2={moduleUImage2}
-                            price="Revealing Soon"
                             img3={moduleUImage3}
+                            price="Revealing Soon"
                             name="Module U"
                             fullform="Unit Module"
                             loadcapacity="3 x 10A Switches, 1 x 4 Speed Fan Dimmer and 1 x 6A Socket"
@@ -247,8 +250,8 @@ export default function App() {
                             bgcolor="#f15c5c57"
                             img1={moduleMImage1}
                             img2={moduleMImage2}
-                            price="Revealing Soon"
                             img3={moduleMImage3}
+                            price="Revealing Soon"
                             name="Module M1"
                             fullform="Master Room Module"
                             loadcapacity="5 x 10A Switches, 2 x 6A Socketes and 1 x 4 Speed Fan Dimmer"
@@ -269,8 +272,8 @@ export default function App() {
                             bgcolor="#f15c5c57"
                             img1={moduleMImage1}
                             img2={moduleMImage2}
-                            price="Revealing Soon"
                             img3={moduleMImage3}
+                            price="Revealing Soon"
                             name="Module M3"
                             fullform="8M Sq. Module"
                             loadcapacity="1 x 25A Switch, 3 x 10A Switches, 1 x 10A Socket and 1 x 4 Speed Fan Dimmer"
@@ -291,8 +294,9 @@ export default function App() {
                             bgcolor="#f15c5c57"
                             img1={moduleXImage1}
                             img2={moduleXImage2}
-                            price="Revealing Soon"
                             img3={moduleXImage3}
+                            img4={moduleXImage4}
+                            price="Revealing Soon"
                             name="Module X"
                             fullform="Four Touch Module"
                             loadcapacity="4 x 6A Switches"
@@ -313,6 +317,7 @@ export default function App() {
                             img1={moduleYImage1}
                             img2={moduleYImage2}
                             img3={moduleYImage3}
+                            img4={moduleYImage4}
                             price="Revealing Soon"
                             name="Module Y"
                             fullform="Power Module"
@@ -333,8 +338,9 @@ export default function App() {
                             bgcolor="#f15c5c57"
                             img1={moduleZImage1}
                             img2={moduleZImage2}
-                            price="Revealing Soon"
                             img3={moduleZImage3}
+                            img4={moduleZImage4}
+                            price="Revealing Soon"
                             name="Module Z"
                             fullform="Fan Module"
                             loadcapacity="1 x 4 Speed Fan Dimmer"

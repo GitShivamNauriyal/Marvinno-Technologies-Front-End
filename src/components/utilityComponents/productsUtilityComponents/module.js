@@ -47,6 +47,7 @@ export default function Module(props) {
     const copper = {
         background: "linear-gradient(45deg, #ba920055, #ba920011)",
     };
+
     const [color, newColor] = useState(white);
 
     let stars = [];
@@ -54,34 +55,34 @@ export default function Module(props) {
         stars.push(<FaStar key={i} className="icon-style" />);
     }
     return (
-        <>
-            <div className="productList" data-aos="fade-up">
+        <div className="module-master">
+            <div className="productList">
                 <div
                     className="productCard"
                     onMouseOver={() => {
-                        if (props.id == 1) {
+                        if (props.id === 1) {
                             newColor(purple);
-                        } else if (props.id == 2) {
+                        } else if (props.id === 2) {
                             newColor(darkblue);
-                        } else if (props.id == 3) {
+                        } else if (props.id === 3) {
                             newColor(skyblue);
-                        } else if (props.id == 4) {
+                        } else if (props.id === 4) {
                             newColor(aquagreen);
-                        } else if (props.id == 5) {
+                        } else if (props.id === 5) {
                             newColor(green);
-                        } else if (props.id == 6) {
+                        } else if (props.id === 6) {
                             newColor(yellow);
-                        } else if (props.id == 7) {
+                        } else if (props.id === 7) {
                             newColor(orange);
-                        } else if (props.id == 8) {
+                        } else if (props.id === 8) {
                             newColor(red);
-                        } else if (props.id == 9) {
+                        } else if (props.id === 9) {
                             newColor(maroon);
-                        } else if (props.id == 10) {
+                        } else if (props.id === 10) {
                             newColor(golden);
-                        } else if (props.id == 11) {
+                        } else if (props.id === 11) {
                             newColor(silver);
-                        } else if (props.id == 12) {
+                        } else if (props.id === 12) {
                             newColor(copper);
                         }
                     }}
@@ -92,7 +93,7 @@ export default function Module(props) {
                         <Link to={props.url} className="abc">
                             <img
                                 src={props.imgsrc}
-                                alt=" not loaded"
+                                alt="Image Not Loaded"
                                 className="productImage"
                             />
                         </Link>
@@ -123,7 +124,7 @@ export default function Module(props) {
                     </div>
                 </div>
             </div>
-        </>
+        </div>
     );
 }
 // <Link to={props.url} className='buy-now'>View</Link>

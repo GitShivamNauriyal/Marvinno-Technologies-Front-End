@@ -1,6 +1,6 @@
 const Card_Data_2M = [
     {
-        id: "10",
+        id: 10,
         img: "../card_image/X Pic.png",
         price: "₹ Revealing Soon...",
         name: "X-Module",
@@ -10,7 +10,7 @@ const Card_Data_2M = [
         url: "/products/x-module",
     },
     {
-        id: "11",
+        id: 11,
         img: "../card_image/Y Pic.png",
         price: "₹ Revealing Soon...",
         name: "Y-Module",
@@ -20,7 +20,7 @@ const Card_Data_2M = [
         url: "/products/y-module",
     },
     {
-        id: "12",
+        id: 12,
         img: "../card_image/Z Pic.png",
         price: "₹ Revealing Soon...",
         name: "Z-Module",

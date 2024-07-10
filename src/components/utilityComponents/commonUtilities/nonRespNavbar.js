@@ -1,11 +1,33 @@
 import React from "react";
+// import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import "../../css/commonComponentsCss/newNavbar.css";
 import homeNavbarIcon from "../../images/homeIconNavbar.png";
 import navbarLogo from "../../images/navbarLogoBlackText.png";
 
-export default function nonRespNavbar() {
+export default function NonRespNavbar() {
+    // const [showNavbar, setShowNavbar] = useState(true);
+    // const [lastScrollY, setLastScrollY] = useState(window.scrollY);
+
+    // const handleScroll = () => {
+    //     const currentScrollY = window.scrollY;
+    //     if (currentScrollY > lastScrollY) {
+    //         setShowNavbar(false);
+    //     } else {
+    //         setShowNavbar(true);
+    //     }
+    //     setLastScrollY(currentScrollY);
+    // };
+
+    // useEffect(() => {
+    //     window.addEventListener("scroll", handleScroll);
+    //     return () => {
+    //         window.removeEventListener("scroll", handleScroll);
+    //     };
+    // }, [lastScrollY]);
+
     return (
+        // <div className={`navbar ${showNavbar ? "show" : "hide"}`}>
         <div className="navbar-master">
             <div className="navbarLogoAlignCenterCss">
                 <img
@@ -36,7 +58,7 @@ export default function nonRespNavbar() {
                         <img
                             className="homeLogoNavbar"
                             src={homeNavbarIcon}
-                            alt="..."
+                            alt="Home"
                         />
                     </Link>
                 </li>
@@ -58,5 +80,6 @@ export default function nonRespNavbar() {
                 </li>
             </ul>
         </div>
+        // </div>
     );
 }
