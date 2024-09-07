@@ -8,6 +8,7 @@
     "@testing-library/user-event": "^14.5.2",
     "aos": "^2.3.4",
     "autoprefixer": "10.4.17",
+    "axios": "^1.7.2",
     "bootstrap": "^5.3.3",
     "chroma-js": "^2.4.2",
     "emailjs-com": "^3.2.0",
@@ -19,6 +20,7 @@
     "react-router-dom": "^6.22.1",
     "react-scripts": "5.0.1",
     "react-simple-typewriter": "^5.0.1",
+    "react-spinners": "^0.14.1",
     "web-vitals": "^3.5.2"
   },
   "scripts": {

@@ -52,12 +52,13 @@
 .ulElementsNavbar {
     width: 100%;
     margin: auto;
-    margin-bottom: 1rem;
+    margin-bottom: 0.6rem;
     /* max-width: 1500px; */
     display: flex;
     text-align: center;
     place-content: center;
     text-decoration: none;
+    padding: 0;
 }
 
 /* li elements */
@@ -92,7 +93,7 @@
 .a-elements-navbar {
     position: relative;
     font-size: 1.3rem;
-    font-weight: 500;
+    /* font-weight: 500; */
     letter-spacing: 0.05em;
 }
 

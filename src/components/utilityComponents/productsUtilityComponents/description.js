@@ -5,7 +5,10 @@ import "aos/dist/aos.css";
 import cardData from "./cardDetails";
 import Card_Data_2M from "./cardDetails_2M";
 import "../../css/productsCss/description.css";
-import brochure from "../../images/Marvinno SPECTRUM Range Brochure.pdf";
+// import brochure from "../../images/Marvinno SPECTRUM Range Brochure.pdf";
+import brochure_all from "../../images/pdfs/Marvinno SPRECTRUM Range Brochure.pdf";
+import brochure_2M from "../../images/pdfs/Marvinno Smart 2M Range Brochure.pdf";
+import wiring_diagram from "../../images/pdfs/Wiring Diagrams - All Modules.pdf";
 
 export default function Description() {
     AOS.init({ duration: 1500 });
@@ -15,15 +18,10 @@ export default function Description() {
             <div className="products-top-bg-black">
                 <div className="descriptionProductsCss" data-aos="fade-left">
                     <p>
-                        We offer 12 different modules in various styles (Gloss
-                        or Matte) & colors (Base: Black or White, Frame: Gold or
-                        Silver). Choose according to your need or customise as
-                        you desire and leave the rest on us. Enjoy our products
-                        and its features, and let it take you into a world full
-                        of smartness.Dive into a set of 12 captivating modules,
-                        available in Gloss or Matte enchantments. Customize your
-                        ideal combination by mixing Base colors (Black or White)
-                        with Frame coatings (Gold or Silver). Whether you seek
+                        Dive into a set of 12 captivating modules, available in
+                        Gloss or Matte enchantments. Customize your ideal
+                        combination by mixing Base colors (Black or White) with
+                        Frame coatings (Gold or Silver). Whether you seek
                         boldness or prefer the timeless, our selection caters to
                         your preferences. Explore a journey of innovation with
                         our groundbreaking modules and their exceptional
@@ -34,7 +32,7 @@ export default function Description() {
                         <a
                             className="anchor-tag-items-products-download-top"
                             target="blank"
-                            href={brochure}
+                            href={brochure_all}
                             download
                         >
                             Dowload Spectrum Range Brochure
@@ -44,7 +42,7 @@ export default function Description() {
                         <a
                             className="anchor-tag-items-products-download-top"
                             target="blank"
-                            href={brochure}
+                            href={brochure_2M}
                             download
                         >
                             Download Smart 2M Range Brochure
@@ -54,7 +52,7 @@ export default function Description() {
                         <a
                             className="anchor-tag-items-products-download-top"
                             target="blank"
-                            href={brochure}
+                            href={wiring_diagram}
                             download
                         >
                             Wiring Diagrams and Connections

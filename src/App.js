@@ -9,6 +9,8 @@ import BlogPhotos from "./components/routeComponents/BlogPhotos";
 import Solutions from "./components/routeComponents/solutions";
 import PrivacyPolicy from "./components/routeComponents/Privacy";
 import ScrollToTop from "./components/utilityComponents/commonUtilities/ScrollToTop";
+import LogIn from "./components/utilityComponents/commonUtilities/LogIn";
+import SignUp from "./components/utilityComponents/commonUtilities/SignUp";
 
 import moduleS1Image1 from "../src/components/images/image/Marvinno (15) PNG/S/S black1.png";
 import moduleS1Image2 from "./components/images/image/Marvinno (15) PNG/S/10/0P5A4424.png";
@@ -68,6 +70,8 @@ export default function App() {
                 <Route exact path="/privacy" element={<PrivacyPolicy />} />
                 <Route exact path="/products" element={<Products />} />
                 <Route exact path="/connect" element={<ContactUs />} />
+                <Route exact path="/login" element={<LogIn />} />
+                <Route exact path="/signup" element={<SignUp />} />
                 <Route exact path="/solutions" element={<Solutions />} />
                 <Route
                     exact
