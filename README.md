@@ -1,16 +1,20 @@
 # Marvinno Technologies
 
-Official Website of Marvinno Technologies Pvt Ltd
+Official Website of Marvinno Technologies Pvt. Ltd.
 
-## Run Locally
+## 🌐 Website
 
-link of website
+Visit our official website: [Marvinno Technologies](https://marvinno.in)
+
+## 🚀 Run Locally
+
+Clone the project:
 
 ```bash
-  https://marvinno.in
+git clone https://github.com/your-repo/marvinno-technologies.git
 ```
 
-Go to the project directory
+Navigate to the project directory:
 
 ```bash
   cd marvinno
@@ -20,6 +24,9 @@ Install dependencies
 
 ```bash
   npm install
+# OR
+  yarn install
+
 ```
 
 Start the server
@@ -28,29 +35,90 @@ Start the server
   npm start
 ```
 
-## Tech Stack (Client Side)
+The application will run on http://localhost:3000.
 
--   React
--   HTML
--   CSS
--   Javascript
+## 🛠️ Tech Stack (Client-Side)
 
-## Authors
+-   **React**
+-   **HTML**
+-   **CSS**
+-   **JavaScript**
 
--   [@mindymujeeb](https://www.github.com/mindymujeeb)
+## 📁 Project Structure
 
-## 🚀 About Me
+```plaintext
+marvinno/
+├── public/                 # Static files
+├── src/                    # Source files
+│   ├── components/         # React components
+│   │   ├── css/            # CSS styles for components
+│   │   │   ├── aboutCss/
+│   │   │   ├── commonComponentsCss/
+│   │   │   ├── contactUsCss/
+│   │   │   ├── homeCss/
+│   │   │   ├── productsCss/
+│   │   │   └── solutionsCss/
+│   │   ├── images/         # Image assets
+│   │   ├── routeComponents/ # Routing-related components
+│   │   └── utilityComponents/ # Utilities for various components
+│   │       ├── aboutUtilities/
+│   │       ├── commonUtilities/
+│   │       ├── contactUsUtilities/
+│   │       ├── homeUtilities/
+│   │       ├── productsUtilityComponents/
+│   │       └── solutionsUtilities/
+│   ├── App.js              # Main React App component
+│   └── index.js            # Entry point for React
+├── .gitignore              # Git ignore file
+├── netlify.toml            # Netlify configuration
+├── package-lock.json       # Dependency lock file for npm
+├── package.json            # Project metadata and dependencies
+├── README.md               # Project documentation
+└── yarn.lock               # Dependency lock file for Yarn
 
-I'm a MERN stack developer...
+```
 
--   Designed and Developed website for a startup Marvinno Technologies
--   Built RESTful APIs using Node.JS and Express.JS
+🔄 Continuous Improvement
 
-## 🔗 Links
+-   This repository is being actively updated to adopt the latest web development practices and tools.
 
-[![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/mohd-mujeeb-93686522b/)
-[![twitter](https://img.shields.io/badge/twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white)](https://twitter.com/mindymujeeb)
+-   The entire project has been migrated from the old React setup using vanilla JavaScript imports to React with modern jsx formats.
+-   We are now using Vite as the build tool, ensuring faster builds and development speed.
+-   All new features of React, including Hooks, functional components, and concurrent rendering, are being leveraged to enhance performance and maintainability.
+-   We are committed to continuously improving this project by:
 
-## Feedback
+-   Refactoring code for better readability and modularity.
+-   Upgrading dependencies regularly to stay up-to-date with the latest ecosystem.
+-   Adding new features and optimizing existing functionality based on feedback.
 
-If you have any feedback, please reach out to us at mdmujju255@gmail.com
+## 👨‍💻 Authors
+
+-   **Shivam Nauriyal**
+
+## 📝 About Me
+
+I'm a passionate MERN stack developer with hands-on experience in web development.
+
+-   Designed and developed the website for **Marvinno Technologies Pvt. Ltd.**
+-   Built RESTful APIs using **Node.js** and **Express.js** to support application functionality.
+-   Built database using **PostgresSQL** and **Prisma**
+-   Proefficient teacher of in _DSA_ in **C** and **C++**
+
+## 🔗 Connect with Me
+
+-   [LinkedIn](https://www.linkedin.com/in/shivam-nauriyal-506329285/)
+-   [Twitter](https://x.com/shivam_nauriyal)
+
+## 📩 Feedback
+
+We value your feedback!
+Reach out to us at **shivamnauriyal1224@gmail.com** with any suggestions or queries.
+
+### Key Updates:
+
+1. **Mentioned Vite Migration**: Added details about upgrading to Vite and using `jsx`.
+2. **Continuous Improvement**: Highlighted the ongoing updates, refactoring, and use of modern React features.
+3. **Future Goals Section**: Added plans for further optimization, modularity, and testing.
+4. **File Structure**: Updated file structure to reflect `.jsx` files.
+
+This version aligns with the current trend of continuous improvement and showcases modern practices. Let me know if you need further edits!

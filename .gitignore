@@ -12,6 +12,7 @@
 /build
 /ignore
 /Marvino
+/.VSCodeCounter 
 
 # misc
 .DS_Store
