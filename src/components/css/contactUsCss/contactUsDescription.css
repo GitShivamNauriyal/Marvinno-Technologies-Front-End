@@ -7,6 +7,7 @@
     flex-direction: column;
     place-content: center;
     padding-bottom: 4rem;
+    box-sizing: border-box;
 }
 
 .get-in-touch-heading-container {
@@ -81,8 +82,8 @@
 .connect-social-media-link-container {
     display: flex;
     gap: 1rem;
-    /* justify-content: space-around; */
     padding: 1rem 0.5rem;
+    flex-wrap: wrap;
 }
 
 .connect-social-media-link-container a {
@@ -93,6 +94,7 @@
 .connect-social-media-link {
     /* width: 32px; */
     scale: 240%;
+    margin-bottom: 2rem;
     transition: all 0.2s ease;
 }
 .connect-social-media-link:hover {
@@ -253,10 +255,16 @@ textarea.inputArea {
 }
 
 @media (max-width: 420px) {
+    .contact-info-div {
+        padding: 2rem;
+    }
     .get-in-touch-heading-container h1 {
         font-size: 1.8em;
     }
     /* .contactUsDisplayGrid {
         margin: auto;
     } */
+    .connect-social-media-link-container {
+        gap: 0.5rem;
+    }
 }
