@@ -6,7 +6,8 @@ import {
     PiFacebookLogo,
     PiInstagramLogo,
     PiYoutubeLogo,
-    PiPinterestLogo,
+    // PiPinterestLogo,
+    PiLinkedinLogoLight,
 } from "react-icons/pi";
 import "../../css/contactUsCss/contactUsDescription.css";
 import emailjs from "emailjs-com";
@@ -74,8 +75,11 @@ export default function contactUsDescription() {
                         <a href="https://www.twitter.com/marvinnotech">
                             <PiXLogo className="connect-social-media-link" />
                         </a>
-                        <a href="https://pin.it/3gPNrJy">
+                        {/* <a href="https://pin.it/3gPNrJy">
                             <PiPinterestLogo className="connect-social-media-link" />
+                        </a> */}
+                        <a href="https://www.linkedin.com/company/marvinno-technologies/">
+                            <PiLinkedinLogoLight className="connect-social-media-link" />
                         </a>
                     </div>
                 </div>

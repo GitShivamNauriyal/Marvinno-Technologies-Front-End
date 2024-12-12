@@ -81,14 +81,15 @@
 
 .connect-social-media-link-container {
     display: flex;
-    gap: 1rem;
+    /* gap: 1rem; */
+    justify-content: space-between;
     padding: 1rem 0.5rem;
     flex-wrap: wrap;
 }
 
 .connect-social-media-link-container a {
     color: black;
-    margin-right: 2rem;
+    /* margin-right: 1.8rem; */
 }
 
 .connect-social-media-link {

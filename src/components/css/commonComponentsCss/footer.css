@@ -111,6 +111,21 @@
 .icons-footer :hover {
     scale: 110%;
 }
+
+/*------------------------------------------*/
+
+.footer-connect-social-media-link-container {
+    display: flex;
+    /* gap: 1rem; */
+    justify-content: space-between;
+    padding: 1rem 0.5rem 0 0.5rem;
+    flex-wrap: wrap;
+}
+
+.footer-connect-social-media-link-container a {
+    color: white;
+    /* margin-right: 1.8rem; */
+}
 /* ------------------------ */
 .footer-address {
     margin: 0%;

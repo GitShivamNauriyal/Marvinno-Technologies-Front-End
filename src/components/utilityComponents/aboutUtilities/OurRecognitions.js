@@ -3,7 +3,7 @@ import "../../css/aboutCss/OurRecognitions.css";
 
 import msme_logo from "../../images/image/msme_logo.jpg";
 import MII_logo from "../../images/image/MII_logo.jpg";
-import SI_logo from "../../images/image/SI-logo.jpg";
+import SI_logo from "../../images/image/SI_logo.jpg";
 import tbi_logo from "../../images/image/tbi_logo.jpg";
 
 const OurRecognitions = () => {
@@ -13,7 +13,7 @@ const OurRecognitions = () => {
             <div className="recognitions-grid">
                 <div className="recognitions-grid-item">
                     <div className="recognitions-grid-item-image">
-                        <img src={msme_logo}></img>
+                        <img src={msme_logo} alt="our_recognition_msme"></img>
                     </div>
                     <h4 className="recognitons-grid-item-heading">
                         We are <span> MSME </span> registered Start-up company
@@ -21,7 +21,10 @@ const OurRecognitions = () => {
                 </div>
                 <div className="recognitions-grid-item">
                     <div className="recognitions-grid-item-image">
-                        <img src={MII_logo}></img>
+                        <img
+                            src={MII_logo}
+                            alt="our_recognition_make_in_india"
+                        ></img>
                     </div>
                     <h4 className="recognitons-grid-item-heading">
                         We are completely{" "}
@@ -30,7 +33,10 @@ const OurRecognitions = () => {
                 </div>
                 <div className="recognitions-grid-item">
                     <div className="recognitions-grid-item-image">
-                        <img src={SI_logo}></img>
+                        <img
+                            src={SI_logo}
+                            alt="our_recognition_startup_india"
+                        ></img>
                     </div>
                     <h4 className="recognitons-grid-item-heading">
                         We are <span>DPIIT certified </span> Start-up
@@ -38,7 +44,7 @@ const OurRecognitions = () => {
                 </div>
                 <div className="recognitions-grid-item">
                     <div className="recognitions-grid-item-image">
-                        <img src={tbi_logo}></img>
+                        <img src={tbi_logo} alt="our_recognition_tbi"></img>
                     </div>
                     <h4 className="recognitons-grid-item-heading">
                         We are Incubated at{" "}

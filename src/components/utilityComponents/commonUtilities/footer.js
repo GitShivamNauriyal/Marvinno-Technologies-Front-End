@@ -4,11 +4,19 @@ import { Link } from "react-router-dom";
 import appStoreImage from "../../images/website icons/appstoreLink.png";
 import playStoreImage from "../../images/website icons/googlePlayLink.png";
 import footerMarvinnoLogo from "../../images/website icons/marvinnoApp.png";
-import instagramLogo from "../../images/icons/instagram.jpg";
-import facebookLogo from "../../images/icons/facebook.jpg";
-import youtubeLogo from "../../images/icons/youtube.png";
-import twitterLogo from "../../images/icons/twitter.png";
-import quoraLogo from "../../images/icons/quora.jpg";
+// import instagramLogo from "../../images/icons/instagram.jpg";
+// import facebookLogo from "../../images/icons/facebook.jpg";
+// import youtubeLogo from "../../images/icons/youtube.png";
+// import twitterLogo from "../../images/icons/twitter.png";
+// import quoraLogo from "../../images/icons/quora.jpg";
+import {
+    PiXLogo,
+    PiFacebookLogo,
+    PiInstagramLogo,
+    PiYoutubeLogo,
+    // PiPinterestLogo,
+    PiLinkedinLogoLight,
+} from "react-icons/pi";
 import termsAndConditions from "../../images/Terms_and_Conditions.pdf";
 
 export default function footer() {
@@ -181,7 +189,30 @@ export default function footer() {
                     </div>
                     <div className="footer-div-grid div3">
                         <p className="heading-footer">Connect With Us</p>
-                        <div className="icons-footer">
+                        <div className="footer-connect-social-media-link-container">
+                            <a href="https://www.youtube.com/channel/UCO9cJ8f5HztqR2HcM9XFY0w">
+                                <PiYoutubeLogo className="connect-social-media-link" />
+                            </a>
+
+                            <a href="https://www.instagram.com/marvinnotechnologies/">
+                                <PiInstagramLogo className="connect-social-media-link" />
+                            </a>
+
+                            <a href="https://www.facebook.com/marvinnotechnologies/">
+                                <PiFacebookLogo className="connect-social-media-link" />
+                            </a>
+
+                            <a href="https://www.twitter.com/marvinnotech">
+                                <PiXLogo className="connect-social-media-link" />
+                            </a>
+                            {/* <a href="https://pin.it/3gPNrJy">
+                                                    <PiPinterestLogo className="connect-social-media-link" />
+                                                </a> */}
+                            <a href="https://www.linkedin.com/company/marvinno-technologies/">
+                                <PiLinkedinLogoLight className="connect-social-media-link" />
+                            </a>
+                        </div>
+                        {/* <div className="icons-footer">
                             <a
                                 className="socialMediaFooterYoutube"
                                 target="blank"
@@ -237,7 +268,7 @@ export default function footer() {
                                     alt="..."
                                 />
                             </a>
-                        </div>
+                        </div> */}
                         <p className="footer-address exp-center">
                             Experience Center: Dilshad Garden, New Delhi
                         </p>
