@@ -12,8 +12,9 @@
 /build
 /ignore
 /Marvino
-/.VSCodeCounter 
-# src/components/images/image/Marvinno(15)PNG
+.VSCodeCounter
+.vscode
+# src/components/images/image/Marvinno (15) PNG
 
 # misc
 .DS_Store

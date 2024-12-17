@@ -1,6 +1,6 @@
 # Marvinno Technologies
 
-Official Website of Marvinno Technologies Pvt. Ltd.
+Front-End for Official Website of Marvinno Technologies Pvt. Ltd.
 
 ## 🌐 Website
 
@@ -17,7 +17,7 @@ git clone https://github.com/your-repo/marvinno-technologies.git
 Navigate to the project directory:
 
 ```bash
-  cd marvinno
+  cd public
 ```
 
 Install dependencies
@@ -93,7 +93,7 @@ marvinno/
 
 ## 👨‍💻 Authors
 
--   **Shivam Nauriyal**
+-   **Shivam Nauriyal**🗿
 
 ## 📝 About Me
 
@@ -103,6 +103,7 @@ I'm a passionate MERN stack developer with hands-on experience in web developmen
 -   Built RESTful APIs using **Node.js** and **Express.js** to support application functionality.
 -   Built database using **PostgresSQL** and **Prisma**
 -   Proefficient teacher of in _DSA_ in **C** and **C++**
+-   **This is ONLY the coding side😏, contact to know more about me🚀👽😉**
 
 ## 🔗 Connect with Me
 
