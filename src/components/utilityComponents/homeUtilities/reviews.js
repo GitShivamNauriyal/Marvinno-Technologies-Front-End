@@ -28,7 +28,7 @@ export default function reviews({ users }) {
             <div className="reviews-heading-container">
                 <h1>Our Clients and Installations</h1>
             </div>
-            <div className="reviews-carousel-container" data-aos="fade-left">
+            <div className="reviews-carousel-container" data-aos="fade-up">
                 <Carousel
                     swipeable={true}
                     draggable={false}
