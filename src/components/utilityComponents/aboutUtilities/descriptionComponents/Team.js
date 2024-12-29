@@ -1,5 +1,4 @@
 import React from "react";
-import "../../css/aboutCss/aboutDescription.css";
 
 export default function Team({ name, role }) {
     return (

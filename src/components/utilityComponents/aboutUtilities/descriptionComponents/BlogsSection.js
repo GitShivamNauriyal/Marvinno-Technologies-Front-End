@@ -1,9 +1,9 @@
 import React from "react";
-import blogsImage1 from "../../images/blogImage-1.jpeg";
-import blogsImage2 from "../../images/blogImage-2.jfif";
-import blogsImage3 from "../../images/blogImage-3.jpg";
+import blogsImage1 from "../../../images/blogImage-1.jpeg";
+import blogsImage2 from "../../../images/blogImage-2.jfif";
+import blogsImage3 from "../../../images/blogImage-3.jpg";
 
-import "../../css/aboutCss/blogs.css";
+import "../../../css/aboutCss/blogs.css";
 
 const BlogsSection = () => {
     return (

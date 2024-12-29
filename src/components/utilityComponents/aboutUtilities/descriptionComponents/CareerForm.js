@@ -3,7 +3,7 @@ import React, { useState } from "react";
 // import { useNavigate } from "react-router-dom";
 import { PulseLoader } from "react-spinners";
 
-import "../../css/aboutCss/careerSection.css";
+import "../../../css/aboutCss/careerSection.css";
 
 const CareerForm = () => {
     // const navigate = useNavigate();

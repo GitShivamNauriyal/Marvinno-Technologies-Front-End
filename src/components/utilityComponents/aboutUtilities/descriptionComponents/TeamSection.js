@@ -3,7 +3,8 @@ import Carousel from "react-multi-carousel";
 import Team from "./Team";
 import AOS from "aos";
 
-import "../../css/aboutCss/teamSection.css";
+import "../../../css/aboutCss/teamSection.css";
+import "react-multi-carousel/lib/styles.css";
 
 const TeamSection = () => {
     AOS.init();
