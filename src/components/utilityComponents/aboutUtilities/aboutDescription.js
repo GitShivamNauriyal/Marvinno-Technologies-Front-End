@@ -7,11 +7,9 @@ import "aos/dist/aos.css";
 
 // import BackgroundParticles from "./AboutHero";
 
-import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 
 import "../../css/aboutCss/aboutDescription.css";
-import "../../css/aboutCss/careerSection.css";
 
 import navbarLogo from "../../images/navbarLogoBlackText.png";
 // import backgroundVideo from "../../images/backgroundVideo.mp4";
@@ -19,9 +17,6 @@ import customerExperienceImage from "../../images/customerExperienceAbout.png";
 import qualityImage from "../../images/qualityIconAbout.png";
 import innovationImage from "../../images/innovationAbout.png";
 import trustImage from "../../images/trustAbout.png";
-import blogsImage1 from "../../images/blogImage-1.jpeg";
-import blogsImage2 from "../../images/blogImage-2.jfif";
-import blogsImage3 from "../../images/blogImage-3.jpg";
 
 // team images
 // import teamImg1 from "../../images/team-img-1.jpg";
@@ -32,9 +27,12 @@ import blogsImage3 from "../../images/blogImage-3.jpg";
 import HowToVideo1 from "../../images/How-to-video-2.mp4";
 import HowToVideo2 from "../../images/How-to-video-1.mp4";
 import HowToVideo3 from "../../images/How-to-video-3.mp4";
-import Team from "./Team";
 import OurRecognitions from "./OurRecognitions";
 
+//team
+import TeamSection from "./TeamSection";
+//blogs
+import BlogsSection from "./BlogsSection";
 //career form
 import CareerForm from "./CareerForm";
 
@@ -49,20 +47,6 @@ export default function AboutDescription() {
         deleteSpeed: 70,
     });
 
-    const responsive = {
-        desktop: {
-            breakpoint: { max: 3000, min: 1024 },
-            items: 3,
-        },
-        tablet: {
-            breakpoint: { max: 1024, min: 464 },
-            items: 2,
-        },
-        mobile: {
-            breakpoint: { max: 464, min: 0 },
-            items: 1,
-        },
-    };
     const sections = [
         {
             image: customerExperienceImage,
@@ -162,6 +146,7 @@ export default function AboutDescription() {
                     </svg>
                 </div>
             </div>
+            {/* PROMICES SECTION */}
             <div className="about-section-2">
                 <p className="about-section-headings">Our Promises</p>
                 <hr />
@@ -186,80 +171,8 @@ export default function AboutDescription() {
 
             <OurRecognitions />
 
-            <div className="products-team" data-aos="fade-up">
-                {/* <hr /> */}
-                <p className="about-section-headings">Team MARVINNO </p>
-                <hr />
-                <Carousel
-                    swipeable={true}
-                    draggable={true}
-                    responsive={responsive}
-                    showDots={true}
-                    infinite={true}
-                    removeArrowOnDeviceType={["tablet", "mobile"]}
-                    autoPlay={true}
-                    autoPlaySpeed={3 * 1000}
-                >
-                    <div className="carousel-content">
-                        <Team
-                            name="Dr. Gaurav Verma"
-                            role="Founder & Director"
-                        />
-                    </div>
-                    <div className="carousel-content">
-                        <Team
-                            name="Mr. Sarthak Vig"
-                            role="Founder & Director"
-                        />
-                    </div>
-                    <div className="carousel-content">
-                        <Team name="Mr. Rishabh Sati" role="Technical Lead" />
-                    </div>
-                    <div className="carousel-content">
-                        <Team
-                            name="Mr. Rahul Mittal"
-                            role="Partner and promoter"
-                        />
-                    </div>
-                    <div className="carousel-content">
-                        <Team
-                            name="Mr. Satish Chandra"
-                            role="DGM - Sales Operations"
-                        />
-                    </div>
-                    <div className="carousel-content">
-                        <Team
-                            name="Mr. Mohd Mujeeb"
-                            role="Full Stack Web Developer"
-                        />
-                    </div>
-                    <div className="carousel-content">
-                        <Team name="Mr. Ayush Dobriyal" role="Web Developer" />
-                    </div>
-                    <div className="carousel-content">
-                        <Team name="Mr. Shivam Nauriyal" role="Web Developer" />
-                    </div>
-                    <div className="carousel-content">
-                        <Team
-                            name="Mr. Praveen Kumar"
-                            role="On-Site Electrician"
-                        />
-                    </div>
-                    <div className="carousel-content">
-                        <Team
-                            name="Mr. Rakesh Kumar"
-                            role="On-Site Electrician"
-                        />
-                    </div>
+            <TeamSection />
 
-                    <div className="carousel-content">
-                        <Team
-                            name="Shaded Feather Productions"
-                            role="Studio and Multimedia Partner"
-                        />
-                    </div>
-                </Carousel>
-            </div>
             <div className="section-3-about" data-aos="fade-up">
                 <p className="about-section-headings">How to Videos</p>
                 <hr />
@@ -322,122 +235,7 @@ export default function AboutDescription() {
                     </div>
                 </div>
             </div>
-
-            <div className="section-4-about">
-                <h1 className="about-section-headings">BLOGS</h1>
-                <hr />
-                <div className="blogSectionCompleteDiv">
-                    <div className="blogsThreeColomn main-blog">
-                        <div className="blog">
-                            <div className="centerBlogImage">
-                                <img
-                                    className="blogImageCss"
-                                    src={blogsImage1}
-                                    alt="blog img"
-                                />
-                            </div>
-                            <div className="blog-text-content">
-                                <p className="heading-blogs-name">
-                                    <a
-                                        className="blogName"
-                                        href="/blogs/indore"
-                                    >
-                                        Marvinno Has Recently Exhibited its
-                                        products line
-                                    </a>
-                                </p>
-                                <p className="blogDescription">
-                                    At the 2nd Electric Expo held in Indore, MP
-                                    from 8th October to 10th October. There were
-                                    multiple stalls offering many Electrical
-                                    devices but Marvinno stood out...
-                                </p>
-                                <p className="center-button-continue-reading">
-                                    <a
-                                        className="continue-reading-button"
-                                        href="/blogs/indore"
-                                    >
-                                        CONTINUE
-                                    </a>
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="blogsThreeColomn">
-                        <div className="blog secondary-blog">
-                            <div className="centerBlogImage">
-                                <img
-                                    className="blogImageCss"
-                                    src={blogsImage2}
-                                    alt="blog img"
-                                />
-                            </div>
-                            <div className="blog-text-content">
-                                <p className="heading-blogs-name">
-                                    <a
-                                        className="blogName"
-                                        href="https://www.digilantern.com/blogs/healthcare-industry-from-transactions-to-strong-brand-identity/"
-                                    >
-                                        FROM TRANSACTIONS TO STRONG BRAND
-                                        IDENTITY
-                                    </a>
-                                </p>
-                                <p className="blogDescription">
-                                    Most of the traditional businesses are built
-                                    and run on references, particularly in
-                                    Healthcare. I notice every day during my
-                                    interactions with Healthcare....
-                                </p>
-                                <p className="center-button-continue-reading">
-                                    <a
-                                        className="continue-reading-button"
-                                        href="https://www.digilantern.com/blogs/healthcare-industry-from-transactions-to-strong-brand-identity/"
-                                    >
-                                        CONTINUE
-                                    </a>
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="blogsThreeColomn ">
-                        <div className="blog secondary-blog">
-                            <div className="centerBlogImage">
-                                <img
-                                    className="blogImageCss"
-                                    src={blogsImage3}
-                                    alt="blog img"
-                                />
-                            </div>
-                            <div className="blog-text-content">
-                                <p className="heading-blogs-name">
-                                    <a
-                                        className="blogName"
-                                        href="https://www.digilantern.com/blogs/medical-web-solutions-or-word-of-mouth/"
-                                    >
-                                        MEDICAL WEB SOLUTIONS OR A WORD OF
-                                        MOUTH?
-                                    </a>
-                                </p>
-                                <p className="blogDescription">
-                                    So, in the times of technology and
-                                    digitization, it is mostly the inherent
-                                    businesses that are still relying on the
-                                    traditional marketing method -'Word of
-                                    Mouth'....
-                                </p>
-                                <p className="center-button-continue-reading">
-                                    <a
-                                        className="continue-reading-button"
-                                        href="https://www.digilantern.com/blogs/medical-web-solutions-or-word-of-mouth/"
-                                    >
-                                        CONTINUE
-                                    </a>
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            <BlogsSection />
             <CareerForm />
         </div>
     );

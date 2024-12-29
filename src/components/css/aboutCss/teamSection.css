@@ -1,0 +1,114 @@
+/*
+will add rest of the code later from aboutDescription.css*/
+
+.products-team {
+    display: flex;
+    flex-direction: column;
+    place-content: center;
+    width: clamp(300px, 1200px, 100vw);
+    margin: auto;
+    padding: 2rem 2rem 7.5rem 2rem;
+}
+
+/***************************************/
+.carousel-content {
+    margin: 20px;
+    position: relative;
+    /* width: 200px; */
+    aspect-ratio: 1.5;
+    box-shadow: 0 0 16px 4px rgba(0, 0, 0, 0.1);
+    background-color: rgb(40, 40, 40);
+    /* background-color: #266a76; */
+    color: aliceblue;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+    transition: all 0.3s ease;
+    cursor: default;
+}
+
+.carousel-content:hover {
+    scale: 101%;
+}
+
+.react-multi-carousel-dot button {
+    /* display:inline-block; */
+    /* background: #fff; */
+    width: 2rem;
+    height: 2px;
+    border-radius: 2px;
+    opacity: 1;
+    padding: 5px 5px 5px 5px;
+    box-shadow: 0 0 1px 1px rgb(0, 0, 0, 0.05);
+    transition: background 0.5s;
+    border-style: none;
+    border-width: 0;
+    padding: 0;
+    margin: 5px;
+    outline: 0;
+    cursor: pointer;
+}
+
+.react-multi-carousel-dot-list {
+    bottom: 0;
+}
+
+.react-multi-carousel-dot button:hover {
+    background: #6c6b6b;
+}
+.react-multi-carousel-dot button:active {
+    background: #333;
+}
+
+.react-multiple-carousel__arrow {
+    z-index: 2;
+}
+
+/***************************************/
+
+.team-grid {
+    margin-top: 5rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    place-items: center center;
+    gap: 1rem;
+}
+
+.team-img {
+    height: 15rem;
+    width: auto;
+    margin-bottom: 1rem;
+    border-radius: 8px;
+}
+
+.team-name,
+.team-role,
+.team-exp {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.team-role {
+    margin-top: 0.8rem;
+    font-weight: 400;
+    color: #5bc743ce;
+}
+
+.team-name {
+    font-size: x-large;
+    font-weight: bold;
+    margin: 0.3rem 0;
+}
+
+.team-exp-bold {
+    font-weight: bold;
+}
+
+@media (max-width: 500px) {
+    .products-team {
+        padding: 1rem 1rem 4rem 1rem;
+    }
+}

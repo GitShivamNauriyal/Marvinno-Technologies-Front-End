@@ -1,0 +1,238 @@
+/*will soon add code in here
+it need to be sorted out of the aboutDescription.css file*/
+.section-4-about {
+    padding: 6rem 0;
+    max-width: 1200px;
+    display: flex;
+    margin: auto;
+    flex-direction: column;
+    place-content: center;
+}
+
+.blogSectionCompleteDiv {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    place-items: center center;
+    gap: 1rem;
+    padding: 1rem;
+}
+
+.headingBlogs {
+    font-size: xx-large;
+    font-weight: 500;
+    margin: 1rem auto;
+    text-decoration: underline;
+    font-family: "Borel", cursive;
+    text-align: center;
+}
+
+.blogsThreeColomn {
+    transition: all 0.2s ease;
+}
+.blogsThreeColomn:hover {
+    scale: 101%;
+}
+
+.main-blog {
+    height: 100%;
+    grid-row: 1/3;
+}
+
+.secondary-blog {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    position: relative;
+}
+
+.secondary-blog .blogImageCss {
+    height: 100%;
+    object-fit: cover;
+}
+
+.blog {
+    border: solid 1px rgb(0, 0, 0, 0.05);
+    transition: all 0.2s ease;
+    cursor: pointer;
+    height: 100%;
+    box-shadow: 0 4px 16px 2px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.blog:hover {
+    border-radius: 16px;
+    border: solid 1px #57bb40;
+}
+
+.blogImageCss {
+    border-radius: 8px;
+    width: 100%;
+    height: auto;
+}
+
+.blog-text-content {
+    padding: 1rem;
+}
+
+.blogName {
+    font-size: large;
+    color: rgb(33, 33, 33);
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.heading-blogs-name {
+    height: 50px;
+}
+
+.blogDescription {
+    font-size: small;
+    /* text-align: justify; */
+    font-weight: 300;
+    color: #999;
+}
+
+.continue-reading-button {
+    text-decoration: none;
+    width: fit-content;
+    color: black;
+    padding: 0.5em 2em;
+    border-radius: 20px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+}
+.continue-reading-button:hover {
+    color: white;
+    background-color: #3e8a2dce;
+}
+
+.center-button-continue-reading {
+    margin-top: 2rem;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.center-button-continue-reading:hover {
+    scale: 102%;
+}
+.blog-indore-heading {
+    text-transform: uppercase;
+    font-size: large;
+    font-weight: bold;
+    text-align: center;
+    margin: 30px 0px 10px 0px;
+}
+
+.blog-indore-description {
+    text-transform: capitalize;
+    font-size: medium;
+    padding: 10px 20px;
+    text-align: justify;
+}
+
+.indore-blog-grid-div {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    place-items: center center;
+    gap: 20px;
+    padding: 10px 20px;
+}
+
+.blog-indore-image {
+    width: 100%;
+    height: auto;
+    box-shadow: 5px 4px 15px 0px gray;
+}
+
+.blog-video {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+@media only screen and (max-width: 1000px) {
+    .blogSectionCompleteDiv {
+        grid-template-columns: 1fr;
+    }
+
+    .blogName {
+        font-size: medium;
+        color: black;
+        text-align: justify;
+    }
+
+    .blogDescription {
+        font-size: small;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .headingBlogs {
+        font-size: x-large;
+        font-weight: 500;
+        text-align: center;
+    }
+
+    .blogsThreeColomn {
+        text-align: center;
+    }
+
+    .blogName {
+        font-size: medium;
+        text-align: center;
+    }
+
+    .blogDescription {
+        font-size: small;
+        padding: 0% 2%;
+    }
+
+    .blog-indore-heading {
+        font-size: medium;
+        margin: 15px 0px 8px 0px;
+    }
+
+    .blog-indore-description {
+        font-size: small;
+        margin-left: 10px;
+    }
+
+    .indore-blog-grid-div {
+        grid-template-columns: repeat(2, 1fr);
+        place-items: center center;
+        gap: 20px;
+        padding: 10px 20px;
+    }
+
+    /* .blog-indore-image{
+    height: 250px;
+    width: auto;
+    box-shadow: 5px 4px 15px 0px gray;
+  } */
+
+    .blog-video {
+        text-align: center;
+        margin-bottom: 10px;
+    }
+}
+
+@media (max-width: 500px) {
+    .secondary-blog {
+        grid-template-columns: 1fr;
+    }
+    .indore-blog-grid-div {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 350px) {
+    .blogName {
+        font-size: small;
+    }
+
+    .blogDescription {
+        font-size: x-small;
+    }
+    .indore-blog-grid-div {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
