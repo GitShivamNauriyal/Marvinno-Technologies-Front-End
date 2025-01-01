@@ -1,7 +1,7 @@
 import React from "react";
 // import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
-import "../../css/commonComponentsCss/newNavbar.css";
+import "../../css/commonComponentsCss/Navbar.css";
 import homeNavbarIcon from "../../images/homeIconNavbar.png";
 import navbarLogo from "../../images/navbarLogoBlackText.png";
 
@@ -29,12 +29,30 @@ export default function NonRespNavbar() {
     return (
         // <div className={`navbar ${showNavbar ? "show" : "hide"}`}>
         <div className="navbar-master">
-            <div className="navbarLogoAlignCenterCss">
-                <img
-                    className="navBarLogoImageHeight"
-                    src={navbarLogo}
-                    alt="..."
-                />
+            <div className="navbar-name-login-signup">
+                <div className="navbarLogoAlignCenterCss">
+                    <img
+                        className="navBarLogoImageHeight"
+                        src={navbarLogo}
+                        alt="Marvinno LOGO"
+                    />
+                </div>
+                <div className="navbar-Login-Signup">
+                    <Link
+                        className="registration-link signup-link"
+                        to="/signup"
+                        alt="Sign Up"
+                    >
+                        Sign-Up
+                    </Link>
+                    <Link
+                        className="registration-link login-link"
+                        to="/login"
+                        alt="Login"
+                    >
+                        Login
+                    </Link>
+                </div>
             </div>
             <ul className="ulElementsNavbar">
                 <li className="liElementsNavbar productsMarginLeft li-elements-navbar">
