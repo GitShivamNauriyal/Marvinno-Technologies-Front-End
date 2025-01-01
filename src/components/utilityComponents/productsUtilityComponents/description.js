@@ -16,7 +16,7 @@ export default function Description() {
     return (
         <div className="product-master">
             <div className="products-top-bg-black">
-                <div className="descriptionProductsCss" data-aos="fade-left">
+                <div className="descriptionProductsCss">
                     <p>
                         Dive into a set of 12 captivating modules, available in
                         Gloss or Matte enchantments. Customize your ideal
@@ -61,7 +61,7 @@ export default function Description() {
                 </div>
             </div>
             <div className="productHeadingContainer">
-                <p className="p-spectrum-products-heading">
+                <p className="p-spectrum-products-heading" data-aos="fade-up">
                     Marvinno's Spectrum Range
                 </p>
             </div>
@@ -82,7 +82,11 @@ export default function Description() {
                 ))}
             </div>
             <div className="productHeadingContainer">
-                <p className="p-spectrum-products-heading">
+                <p
+                    className="p-spectrum-products-heading"
+                    data-aos="fade-up"
+                    data-aos-duration="1500"
+                >
                     Marvinno's Smart 2M Range
                 </p>
             </div>

@@ -93,7 +93,7 @@ export default function Module(props) {
                         <Link to={props.url} className="abc">
                             <img
                                 src={props.imgsrc}
-                                alt="Image Not Loaded"
+                                alt="Not loaded yet.."
                                 className="productImage"
                             />
                         </Link>
