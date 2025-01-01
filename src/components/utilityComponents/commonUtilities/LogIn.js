@@ -61,11 +61,11 @@ const LoginPage = () => {
                 <div className="login-options">
                     {/* ✌️ Additional links for navigation */}
                     <p>
-                        Don't have an account? <a href="/signup">SignUp here</a>{" "}
+                        Don't have an account? <a href="/signup">SignUp here</a>
                         {/* 😊 Link to signup page */}
                     </p>
                     <p>
-                        <a href="/forgot-password">Forgot your password?</a>{" "}
+                        <a href="/forgot-password">Forgot your password?</a>
                         {/* 😊 Link to password recovery */}
                     </p>
                 </div>

@@ -4,11 +4,7 @@ import { Link } from "react-router-dom";
 import appStoreImage from "../../images/website icons/appstoreLink.png";
 import playStoreImage from "../../images/website icons/googlePlayLink.png";
 import footerMarvinnoLogo from "../../images/website icons/marvinnoApp.png";
-// import instagramLogo from "../../images/icons/instagram.jpg";
-// import facebookLogo from "../../images/icons/facebook.jpg";
-// import youtubeLogo from "../../images/icons/youtube.png";
-// import twitterLogo from "../../images/icons/twitter.png";
-// import quoraLogo from "../../images/icons/quora.jpg";
+
 import {
     PiXLogo,
     PiFacebookLogo,
@@ -19,7 +15,7 @@ import {
 } from "react-icons/pi";
 import termsAndConditions from "../../images/Terms_and_Conditions.pdf";
 
-export default function footer() {
+export default function Footer() {
     return (
         <div>
             <div className="footer-container">
@@ -28,107 +24,36 @@ export default function footer() {
                         <Link
                             className="heading-center-more products-heading-footer"
                             to="/products"
+                            alt="products"
                         >
                             Products
                         </Link>
                         <br />
-                        <li className="li-items-footer">
-                            <Link
-                                className="anchor-tag-items-footer"
-                                to="/products/s1-module"
-                            >
-                                S - Module
-                            </Link>
-                        </li>
-                        <li className="li-items-footer">
-                            <Link
-                                className="anchor-tag-items-footer"
-                                to="/products/p-module"
-                            >
-                                P - Module
-                            </Link>
-                        </li>
-                        <li className="li-items-footer">
-                            <Link
-                                className="anchor-tag-items-footer"
-                                to="/products/e-module"
-                            >
-                                E - Module
-                            </Link>
-                        </li>
-                        <li className="li-items-footer">
-                            <Link
-                                className="anchor-tag-items-footer"
-                                to="/products/c-module"
-                            >
-                                C - Module
-                            </Link>
-                        </li>
-                        <li className="li-items-footer">
-                            <Link
-                                className="anchor-tag-items-footer"
-                                to="/products/t-module"
-                            >
-                                T - Module
-                            </Link>
-                        </li>
-                        <li className="li-items-footer">
-                            <Link
-                                className="anchor-tag-items-footer"
-                                to="/products/r-module"
-                            >
-                                R - Module
-                            </Link>
-                        </li>
-                        <li className="li-items-footer">
-                            <Link
-                                className="anchor-tag-items-footer"
-                                to="/products/u-module"
-                            >
-                                U - Module
-                            </Link>
-                        </li>
-                        <li className="li-items-footer">
-                            <Link
-                                className="anchor-tag-items-footer"
-                                to="/products/m1-module"
-                            >
-                                M1 - Module
-                            </Link>
-                        </li>
-                        <li className="li-items-footer">
-                            <Link
-                                className="anchor-tag-items-footer"
-                                to="/products/m3-module"
-                            >
-                                M3 - Module
-                            </Link>
-                        </li>
-                        <li className="li-items-footer">
-                            <Link
-                                className="anchor-tag-items-footer"
-                                to="/products/x-module"
-                            >
-                                X - Module
-                            </Link>
-                        </li>
-                        <li className="li-items-footer">
-                            <Link
-                                className="anchor-tag-items-footer"
-                                to="/products/y-module"
-                            >
-                                Y - Module
-                            </Link>
-                        </li>
-                        <li className="li-items-footer">
-                            <Link
-                                className="anchor-tag-items-footer"
-                                to="/products/z-module"
-                            >
-                                Z - Module
-                            </Link>
-                        </li>
+                        {[
+                            "s",
+                            "p",
+                            "e",
+                            "c",
+                            "t",
+                            "r",
+                            "u",
+                            "m1",
+                            "m3",
+                            "x",
+                            "y",
+                            "z",
+                        ].map((module) => (
+                            <li className="li-items-footer" key={module}>
+                                <Link
+                                    className="anchor-tag-items-footer"
+                                    to={`/products/${module}-module`}
+                                >
+                                    {module.toUpperCase()} - Module
+                                </Link>
+                            </li>
+                        ))}
                     </div>
+
                     <div className="footer-div-grid div2">
                         <a
                             className="heading-center-more heading-footer"
@@ -137,15 +62,16 @@ export default function footer() {
                             More
                         </a>
                         <br />
-                        <li className=" li-items-footer">
+                        <li className="li-items-footer">
                             <Link
                                 className="anchor-tag-items-footer"
                                 to="/about"
+                                alt="about"
                             >
                                 About Us
                             </Link>
                         </li>
-                        <li className=" li-items-footer">
+                        <li className="li-items-footer">
                             <Link
                                 className="anchor-tag-items-footer"
                                 to="/products"
@@ -153,7 +79,7 @@ export default function footer() {
                                 Products
                             </Link>
                         </li>
-                        <li className=" li-items-footer">
+                        <li className="li-items-footer">
                             <Link
                                 className="anchor-tag-items-footer"
                                 to="/solutions"
@@ -161,15 +87,16 @@ export default function footer() {
                                 Solutions
                             </Link>
                         </li>
-                        <li className=" li-items-footer">
+                        <li className="li-items-footer">
                             <Link
                                 className="anchor-tag-items-footer"
                                 to="/connect"
+                                alt="connect"
                             >
                                 Connect
                             </Link>
                         </li>
-                        <li className=" li-items-footer">
+                        <li className="li-items-footer">
                             <a
                                 className="anchor-tag-items-footer"
                                 target="blank"
@@ -178,97 +105,48 @@ export default function footer() {
                                 Terms & Conditions
                             </a>
                         </li>
-                        <li className=" li-items-footer">
+                        <li className="li-items-footer">
                             <Link
                                 className="anchor-tag-items-footer"
+                                target="blank"
                                 to="/Privacy"
                             >
-                                Privacy Policy{" "}
+                                Privacy Policy
                             </Link>
                         </li>
                     </div>
+
                     <div className="footer-div-grid div3">
                         <p className="heading-footer">Connect With Us</p>
                         <div className="footer-connect-social-media-link-container">
-                            <a href="https://www.youtube.com/channel/UCO9cJ8f5HztqR2HcM9XFY0w">
-                                <PiYoutubeLogo className="connect-social-media-link" />
-                            </a>
-
-                            <a href="https://www.instagram.com/marvinnotechnologies/">
-                                <PiInstagramLogo className="connect-social-media-link" />
-                            </a>
-
-                            <a href="https://www.facebook.com/marvinnotechnologies/">
-                                <PiFacebookLogo className="connect-social-media-link" />
-                            </a>
-
-                            <a href="https://www.twitter.com/marvinnotech">
-                                <PiXLogo className="connect-social-media-link" />
-                            </a>
-                            {/* <a href="https://pin.it/3gPNrJy">
-                                                    <PiPinterestLogo className="connect-social-media-link" />
-                                                </a> */}
-                            <a href="https://www.linkedin.com/company/marvinno-technologies/">
-                                <PiLinkedinLogoLight className="connect-social-media-link" />
-                            </a>
+                            {[
+                                {
+                                    href: "https://www.youtube.com/channel/UCO9cJ8f5HztqR2HcM9XFY0w",
+                                    icon: PiYoutubeLogo,
+                                },
+                                {
+                                    href: "https://www.instagram.com/marvinnotechnologies/",
+                                    icon: PiInstagramLogo,
+                                },
+                                {
+                                    href: "https://www.facebook.com/marvinnotechnologies/",
+                                    icon: PiFacebookLogo,
+                                },
+                                {
+                                    href: "https://www.twitter.com/marvinnotech",
+                                    icon: PiXLogo,
+                                },
+                                {
+                                    href: "https://www.linkedin.com/company/marvinno-technologies/",
+                                    icon: PiLinkedinLogoLight,
+                                },
+                            ].map(({ href, icon: Icon }, index) => (
+                                <Link key={index} to={href}>
+                                    <Icon className="connect-social-media-link" />
+                                </Link>
+                            ))}
                         </div>
-                        {/* <div className="icons-footer">
-                            <a
-                                className="socialMediaFooterYoutube"
-                                target="blank"
-                                href="https://www.youtube.com/channel/UCO9cJ8f5HztqR2HcM9XFY0w"
-                            >
-                                <img
-                                    src={youtubeLogo}
-                                    className="youtube-link link-social-media-footer"
-                                    alt="..."
-                                />
-                            </a>
-                            <a
-                                className="socialMediaFooterQuora"
-                                target="blank"
-                                href="https://pin.it/3gPNrJy"
-                            >
-                                <img
-                                    src={quoraLogo}
-                                    className="link-social-media-footer"
-                                    alt="..."
-                                />
-                            </a>
-                            <a
-                                className="socialMediaFooterInstagram"
-                                target="blank"
-                                href="https://www.instagram.com/marvinnotechnologies/"
-                            >
-                                <img
-                                    src={instagramLogo}
-                                    className="instagram-link link-social-media-footer"
-                                    alt="..."
-                                />
-                            </a>
-                            <a
-                                className="socialMediaFooterFacebook"
-                                target="blank"
-                                href="https://www.facebook.com/marvinnotechnologies/"
-                            >
-                                <img
-                                    src={facebookLogo}
-                                    className="facebook-link link-social-media-footer"
-                                    alt="..."
-                                />
-                            </a>
-                            <a
-                                className="socialMediaFooterTwitter"
-                                target="blank"
-                                href="https://www.twitter.com/marvinnotech"
-                            >
-                                <img
-                                    src={twitterLogo}
-                                    className="twitter-link link-social-media-footer"
-                                    alt="..."
-                                />
-                            </a>
-                        </div> */}
+
                         <p className="footer-address exp-center">
                             Experience Center: Dilshad Garden, New Delhi
                         </p>
@@ -279,7 +157,6 @@ export default function footer() {
                             Email: info@marvinno.in,
                         </p>
                         <p className="footer-address">
-                            {" "}
                             info.marvinno@gmail.com,
                         </p>
                         <p className="footer-address">
@@ -291,6 +168,7 @@ export default function footer() {
                         <p className="footer-address">
                             Service Hours: 9AM to 9PM, 365 days
                         </p>
+
                         <div className="footer-download-links">
                             <a
                                 className="footer-download-images"
@@ -318,7 +196,9 @@ export default function footer() {
                             <br />
                         </div>
                     </div>
+
                     <hr className="line-break-footer" />
+
                     <div className="footer-div-grid div4 footer-div4">
                         <img
                             className="footer-marvinno-image"

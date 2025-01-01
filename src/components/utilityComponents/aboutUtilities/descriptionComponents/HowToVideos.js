@@ -1,12 +1,15 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import HowToVideo1 from "../../../images/How-to-video-2.mp4";
 import HowToVideo2 from "../../../images/How-to-video-1.mp4";
 import HowToVideo3 from "../../../images/How-to-video-3.mp4";
 
+import "../../../css/aboutCss/howToVideos.css";
+
 const HowToVideos = () => {
     return (
         <div>
-            <div className="section-3-about" data-aos="fade-up">
+            <div className="about-how-to-videos-section" data-aos="fade-up">
                 <p className="about-section-headings">How to Videos</p>
                 <hr />
                 <div className="how-to-videos-grid">
@@ -18,10 +21,14 @@ const HowToVideos = () => {
                         </div>
                         <div className="how-to-video-grid-item-text">
                             <h2>Products</h2>
-                            <p>Checkout videos about our products</p>
+                            <Link to="/about/products" alt="products">
+                                <p>Checkout videos about our products</p>
+                            </Link>
                         </div>
                         <div className="how-to-videos-view-more">
-                            <h3>View more</h3>
+                            <Link to="/about/products" alt="products">
+                                <h3>View more</h3>
+                            </Link>
                         </div>
                     </div>
                     <div className="how-to-videos-grid-item how-to-videos-project">
@@ -32,10 +39,14 @@ const HowToVideos = () => {
                         </div>
                         <div className="how-to-video-grid-item-text">
                             <h2>Projects</h2>
-                            <p>Checkout videos about our projects</p>
+                            <Link to="/about/projects" alt="projects">
+                                <p>Checkout videos about our projects</p>
+                            </Link>
                         </div>
                         <div className="how-to-videos-view-more">
-                            <h3>View more</h3>
+                            <Link to="/about/projects" alt="projects">
+                                <h3>View more</h3>
+                            </Link>
                         </div>
                     </div>
                     <div className="how-to-videos-grid-item how-to-videos-installations">
@@ -46,10 +57,14 @@ const HowToVideos = () => {
                         </div>
                         <div className="how-to-video-grid-item-text">
                             <h2>Installations</h2>
-                            <p>See how to install our modules</p>
+                            <Link to="/about/installations" alt="installations">
+                                <p>See how to install our modules</p>
+                            </Link>
                         </div>
                         <div className="how-to-videos-view-more">
-                            <h3>View more</h3>
+                            <Link to="/about/installations" alt="installations">
+                                <h3>View more</h3>
+                            </Link>
                         </div>
                     </div>
                     <div className="how-to-videos-grid-item how-to-videos-configurations">
@@ -60,10 +75,20 @@ const HowToVideos = () => {
                         </div>
                         <div className="how-to-video-grid-item-text">
                             <h2>Device Configuration</h2>
-                            <p>See how to configure our devices</p>
+                            <Link
+                                to="/about/configurations"
+                                alt="device-config"
+                            >
+                                <p>See how to configure our devices</p>
+                            </Link>
                         </div>
-                        <div className="how-to-videos-view-more">
-                            <h3>View more</h3>
+                        <div
+                            className="how-to-videos-view-more"
+                            alt="device-config"
+                        >
+                            <Link to="/about/configurations">
+                                <h3>View more</h3>
+                            </Link>
                         </div>
                     </div>
                 </div>

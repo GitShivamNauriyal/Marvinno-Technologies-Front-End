@@ -8,9 +8,16 @@ import ProductDescription from "./components/utilityComponents/productsUtilityCo
 import BlogPhotos from "./components/routeComponents/BlogPhotos";
 import Solutions from "./components/routeComponents/solutions";
 import PrivacyPolicy from "./components/routeComponents/Privacy";
+
 import ScrollToTop from "./components/utilityComponents/commonUtilities/ScrollToTop";
+
 import LogIn from "./components/utilityComponents/commonUtilities/LogIn";
 import SignUp from "./components/utilityComponents/commonUtilities/SignUp";
+
+import ProductsVids from "./components/utilityComponents/aboutUtilities/descriptionComponents/videoComponents/ProductsVids";
+import ProjectsVids from "./components/utilityComponents/aboutUtilities/descriptionComponents/videoComponents/ProjectsVids";
+import InstallationsVids from "./components/utilityComponents/aboutUtilities/descriptionComponents/videoComponents/InstallationsVids";
+import DeviceConfigVids from "./components/utilityComponents/aboutUtilities/descriptionComponents/videoComponents/DeviceConfigVids";
 
 import moduleS1Image1 from "../src/components/images/image/Marvinno (15) PNG/S/S black1.png";
 import moduleS1Image2 from "./components/images/image/Marvinno (15) PNG/S/10/0P5A4424.png";
@@ -67,6 +74,26 @@ export default function App() {
                 <Route exact path="/" element={<Home />} />
                 <Route exact path="/blogs/indore" element={<BlogPhotos />} />
                 <Route exact path="/about" element={<About />} />
+                <Route
+                    exact
+                    path="/about/products"
+                    element={<ProductsVids />}
+                />
+                <Route
+                    exact
+                    path="/about/projects"
+                    element={<ProjectsVids />}
+                />
+                <Route
+                    exact
+                    path="/about/installations"
+                    element={<InstallationsVids />}
+                />
+                <Route
+                    exact
+                    path="/about/configurations"
+                    element={<DeviceConfigVids />}
+                />
                 <Route exact path="/privacy" element={<PrivacyPolicy />} />
                 <Route exact path="/products" element={<Products />} />
                 <Route exact path="/connect" element={<ContactUs />} />
