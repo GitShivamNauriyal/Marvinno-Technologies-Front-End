@@ -15,7 +15,52 @@ export default function Description() {
 
     return (
         <div className="product-master">
-            <div className="products-top-bg-black">
+            <div className="productHeadingContainer" data-aos="fade-up">
+                <p className="p-spectrum-products-heading">
+                    Marvinno's Spectrum Range
+                </p>
+            </div>
+            {/* <div className="sepratorLine" /> */}
+            <div
+                className="product row1"
+                data-aos="fade-up"
+                data-aos-delay="200"
+            >
+                {cardData.map((item) => (
+                    <Module
+                        key={item.id} // Don't forget to add a unique key prop when mapping over arrays in React
+                        id={item.id}
+                        imgsrc={item.img}
+                        price={item.price}
+                        name={item.name}
+                        totalSales={item.totalSales}
+                        title={item.btnTitle}
+                        rating={item.rating}
+                        url={item.url}
+                    />
+                ))}
+            </div>
+            <div className="productHeadingContainer" data-aos="fade-up">
+                <p className="p-spectrum-products-heading">
+                    Marvinno's Smart 2M Range
+                </p>
+            </div>
+            <div className="product row1" data-aos="fade-up">
+                {Card_Data_2M.map((item) => (
+                    <Module
+                        key={item.id} // Don't forget to add a unique key prop when mapping over arrays in React
+                        id={item.id}
+                        imgsrc={item.img}
+                        price={item.price}
+                        name={item.name}
+                        totalSales={item.totalSales}
+                        title={item.btnTitle}
+                        rating={item.rating}
+                        url={item.url}
+                    />
+                ))}
+            </div>
+            <div className="products-top-bg-black" data-aos="fade-up">
                 <div className="descriptionProductsCss">
                     <p>
                         Dive into a set of 12 captivating modules, available in
@@ -59,51 +104,6 @@ export default function Description() {
                         </a>
                     </div>
                 </div>
-            </div>
-            <div className="productHeadingContainer">
-                <p className="p-spectrum-products-heading" data-aos="fade-up">
-                    Marvinno's Spectrum Range
-                </p>
-            </div>
-            {/* <div className="sepratorLine" /> */}
-            <div className="product row1">
-                {cardData.map((item) => (
-                    <Module
-                        key={item.id} // Don't forget to add a unique key prop when mapping over arrays in React
-                        id={item.id}
-                        imgsrc={item.img}
-                        price={item.price}
-                        name={item.name}
-                        totalSales={item.totalSales}
-                        title={item.btnTitle}
-                        rating={item.rating}
-                        url={item.url}
-                    />
-                ))}
-            </div>
-            <div className="productHeadingContainer">
-                <p
-                    className="p-spectrum-products-heading"
-                    data-aos="fade-up"
-                    data-aos-duration="1500"
-                >
-                    Marvinno's Smart 2M Range
-                </p>
-            </div>
-            <div className="product row1">
-                {Card_Data_2M.map((item) => (
-                    <Module
-                        key={item.id} // Don't forget to add a unique key prop when mapping over arrays in React
-                        id={item.id}
-                        imgsrc={item.img}
-                        price={item.price}
-                        name={item.name}
-                        totalSales={item.totalSales}
-                        title={item.btnTitle}
-                        rating={item.rating}
-                        url={item.url}
-                    />
-                ))}
             </div>
         </div>
     );

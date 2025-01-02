@@ -5,7 +5,7 @@ import { useTypewriter } from "react-simple-typewriter";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
-// import BackgroundParticles from "./AboutHero";
+import BackgroundParticles from "./AboutHero";
 
 import "../../css/aboutCss/aboutDescription.css";
 
@@ -69,26 +69,29 @@ export default function AboutDescription() {
         <div className="whole-about">
             {/* <BackgroundParticles /> */}
 
-            {/* <div className="video-background">
-                <video autoPlay loop muted>
-                    <source src={backgroundVideo} type="video/mp4" />
-                </video>
-                <div className="overlay"></div>
-            </div> */}
-            {/* <div class="bg"></div>
-            <div class="bg bg2"></div>
-            <div class="bg bg3"></div> */}
             <div className="products-who-we-are-div">
+                <BackgroundParticles
+                    className="particles-background"
+                    quantity={200}
+                    staticity={100}
+                    ease={30}
+                    size={0.3}
+                    refresh={false}
+                    color="#000000"
+                    vx={0.1}
+                    vy={-0.1}
+                />
                 <div className="about-logo-padding">
-                    <img
+                    {/* <img
                         className="navBarLogoImageHeight"
                         src={navbarLogo}
                         alt="..."
-                    />
+                    /> */}
+                    <div className="about-company-name">
+                        <h1>Marvinno Technologies</h1>
+                    </div>
                 </div>
-                {/* <h1 className="heading-about">
-                    What does <span className="highlight">MARVINNO</span> do?
-                </h1> */}
+
                 <div
                     className="products-who-we-are-div-dynamic-quote"
                     data-aos="fade-up"
@@ -102,17 +105,7 @@ export default function AboutDescription() {
                         </span>
                     </h1>
                 </div>
-                <p className="aboutTopSectionDescriptionCss" data-aos="fade-up">
-                    Marvinno, the tech wizards behind the curtain, are here to
-                    sprinkle some IoT magic into your homes! From scribbles on a
-                    napkin to high-tech solutions for clients across the globe,
-                    we've got your back. Dive into the world of smart services
-                    tailored just for you, crafted with passion and precision by
-                    our team at Marvinno Technologies India Pvt. Ltd. in New
-                    Delhi. We're not just about technology - we're about
-                    creating tailored experiences that make your dreams come
-                    true!
-                </p>
+
                 <div className="custom-shape-divider-bottom-1720199442">
                     <svg
                         data-name="Layer 1"
@@ -135,6 +128,33 @@ export default function AboutDescription() {
                             className="shape-fill"
                         ></path>
                     </svg>
+                </div>
+            </div>
+
+            {/* WHO WE ARE SECTION */}
+            <div className="about-paragraph-description-section">
+                <img
+                    className="about-paragraph-description-image"
+                    src={navbarLogo}
+                    alt="..."
+                />
+                <hr />
+                <div className="aboutSection1" data-aos="fade-up">
+                    <p
+                        className="aboutTopSectionDescriptionCss"
+                        data-aos="fade-up"
+                        data-aos-duration="1000"
+                    >
+                        Marvinno, the tech wizards behind the curtain, are here
+                        to sprinkle some IoT magic into your homes! From
+                        scribbles on a napkin to high-tech solutions for clients
+                        across the globe, we've got your back. Dive into the
+                        world of smart services tailored just for you, crafted
+                        with passion and precision by our team at Marvinno
+                        Technologies India Pvt. Ltd. in New Delhi. We're not
+                        just about technology - we're about creating tailored
+                        experiences that make your dreams come true!
+                    </p>
                 </div>
             </div>
 

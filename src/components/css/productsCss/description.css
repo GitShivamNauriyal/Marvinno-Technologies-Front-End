@@ -31,7 +31,7 @@ body {
 .products-top-bg-black {
     text-align: center;
     margin: 0% auto;
-    padding: 10px;
+    padding: 1rem;
     display: flex;
 }
 
@@ -51,7 +51,7 @@ body {
 
 .anchor-tag-items-products-download-top:hover {
     translate: 0 -4px;
-    background: linear-gradient(#27ad54dd, #27ad5466);
+    background: linear-gradient(#27ad5499, #27ad54dd);
     color: #ffffff;
     font-size: large;
     border-color: #ffffff;

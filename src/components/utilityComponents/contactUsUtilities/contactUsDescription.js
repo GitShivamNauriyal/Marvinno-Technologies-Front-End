@@ -11,11 +11,6 @@ import {
 } from "react-icons/pi";
 import "../../css/contactUsCss/contactUsDescription.css";
 import emailjs from "emailjs-com";
-// import instagramLogo from "../../images/icons/instagram.jpg";
-// import facebookLogo from "../../images/icons/facebook.jpg";
-// import youtubeLogo from "../../images/icons/youtube.png";
-// import twitterLogo from "../../images/icons/twitter.png";
-// import quoraLogo from "../../images/icons/quora.png";
 
 export default function contactUsDescription() {
     // function is created in the component itself

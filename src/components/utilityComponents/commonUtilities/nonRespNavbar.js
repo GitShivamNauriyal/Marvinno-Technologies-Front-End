@@ -43,7 +43,7 @@ export default function NonRespNavbar() {
                         to="/signup"
                         alt="Sign Up"
                     >
-                        Sign-Up
+                        SignUp
                     </Link>
                     <Link
                         className="registration-link login-link"
