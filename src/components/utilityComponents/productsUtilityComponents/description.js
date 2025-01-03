@@ -4,7 +4,7 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import cardData from "./cardDetails";
 import Card_Data_2M from "./cardDetails_2M";
-import "../../css/productsCss/description.css";
+import "../../css/productsCss/products.css";
 // import brochure from "../../images/Marvinno SPECTRUM Range Brochure.pdf";
 import brochure_all from "../../images/pdfs/Marvinno SPRECTRUM Range Brochure.pdf";
 import brochure_2M from "../../images/pdfs/Marvinno Smart 2M Range Brochure.pdf";

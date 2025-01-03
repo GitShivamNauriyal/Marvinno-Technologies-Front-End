@@ -186,6 +186,7 @@ html {
     max-width: 1200px;
     font-family: "Montserrat", sans-serif;
     margin: auto;
+    margin-bottom: 2rem;
     color: #333;
     padding: 0.5rem;
     width: 100%;
@@ -196,7 +197,9 @@ html {
     line-height: 1.3;
     font-weight: 400;
 }
-
+.about-paragraph-description-section .product-display-discover-div-button {
+    background: linear-gradient(45deg, #266a76dd, #5bc743);
+}
 /*----------------------------------------------------*/
 .about-section-headings {
     font-family: "Montserrat", sans-serif;

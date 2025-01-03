@@ -4,8 +4,9 @@ import { useState } from "react";
 // import Module from "./module";
 import AOS from "aos";
 import { Link } from "react-router-dom";
-import "../../css/productsCss/description.css";
 import { FaStar } from "react-icons/fa";
+
+import "../../css/productsCss/products.css";
 
 export default function Module(props) {
     AOS.init({ duration: 1500 });

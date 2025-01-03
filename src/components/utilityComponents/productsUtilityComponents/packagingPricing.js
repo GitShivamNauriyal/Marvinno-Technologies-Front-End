@@ -1,5 +1,5 @@
 import React from "react";
-import "../../css/productsCss/description.css";
+import "../../css/productsCss/products.css";
 
 export default function packagingPricing() {
     return (

@@ -1,6 +1,8 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 import { useTypewriter } from "react-simple-typewriter";
+import { PiArrowCircleUpRightThin } from "react-icons/pi";
 
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -139,12 +141,12 @@ export default function AboutDescription() {
                     alt="..."
                 />
                 <hr />
-                <div className="aboutSection1" data-aos="fade-up">
-                    <p
-                        className="aboutTopSectionDescriptionCss"
-                        data-aos="fade-up"
-                        data-aos-duration="1000"
-                    >
+                <div
+                    className="about-paragraph-description"
+                    data-aos="fade-right"
+                    data-aos-duration="1000"
+                >
+                    <p className="aboutTopSectionDescriptionCss">
                         Marvinno, the tech wizards behind the curtain, are here
                         to sprinkle some IoT magic into your homes! From
                         scribbles on a napkin to high-tech solutions for clients
@@ -156,6 +158,12 @@ export default function AboutDescription() {
                         experiences that make your dreams come true!
                     </p>
                 </div>
+                <Link to="/products">
+                    <div className="product-display-discover-div-button">
+                        <p>Checkout Products</p>
+                        <PiArrowCircleUpRightThin className="product-display-discover-div-button-link-arrow" />
+                    </div>
+                </Link>
             </div>
 
             {/* PROMICES SECTION */}

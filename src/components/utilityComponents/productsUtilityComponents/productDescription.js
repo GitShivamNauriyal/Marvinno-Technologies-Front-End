@@ -1,9 +1,9 @@
 import React, { useState } from "react";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
-import "../../css/productsCss/description.css";
 import Navbar from "../commonUtilities/nonRespNavbar";
 import Footer from "../commonUtilities/footer";
+import "../../css/productsCss/products.css";
 
 export default function ProductDescription(props) {
     const [value, setValue] = useState(1);
