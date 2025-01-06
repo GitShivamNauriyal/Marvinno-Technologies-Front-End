@@ -50,27 +50,6 @@ const BackgroundParticles = ({
     const canvasSize = useRef({ w: 0, h: 0 });
     const dpr = typeof window !== "undefined" ? window.devicePixelRatio : 1;
 
-    useEffect(() => {
-        if (canvasRef.current) {
-            context.current = canvasRef.current.getContext("2d");
-        }
-        initCanvas();
-        animate();
-        window.addEventListener("resize", initCanvas);
-
-        return () => {
-            window.removeEventListener("resize", initCanvas);
-        };
-    }, [color]);
-
-    useEffect(() => {
-        onMouseMove();
-    }, [mousePosition.x, mousePosition.y]);
-
-    useEffect(() => {
-        initCanvas();
-    }, [refresh]);
-
     const initCanvas = () => {
         resizeCanvas();
         drawParticles();
@@ -229,6 +208,27 @@ const BackgroundParticles = ({
         });
         window.requestAnimationFrame(animate);
     };
+
+    useEffect(() => {
+        onMouseMove();
+    }, [mousePosition.x, mousePosition.y]);
+
+    useEffect(() => {
+        initCanvas();
+    }, [refresh]);
+
+    useEffect(() => {
+        if (canvasRef.current) {
+            context.current = canvasRef.current.getContext("2d");
+        }
+        initCanvas();
+        animate();
+        window.addEventListener("resize", initCanvas);
+
+        return () => {
+            window.removeEventListener("resize", initCanvas);
+        };
+    }, [color]);
 
     return (
         <div className={className} ref={canvasContainerRef} aria-hidden="true">

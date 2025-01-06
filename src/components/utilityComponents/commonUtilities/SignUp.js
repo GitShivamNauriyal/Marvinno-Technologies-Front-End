@@ -35,6 +35,9 @@ const SignUpPage = () => {
                     alt="Marvinno LOGO" // 😲 Accessibility for the logo image
                 />
                 <h2>Create Your Account</h2>{" "}
+                <div className="error">
+                    Signup functionality is temporarily disabled
+                </div>
                 {/* ✌️ Heading for the sign-up page */}
                 <form onSubmit={handleSignUp} className="signup-form">
                     {/* 🤔 Form submission triggers handleSignUp */}

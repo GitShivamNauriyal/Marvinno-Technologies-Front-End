@@ -37,12 +37,13 @@ html {
     width: 100vw;
     background: transparent;
     /* background: linear-gradient(45deg, #5bc743dd, #266a76dd); */
-    background: linear-gradient(
-        45deg,
-        #266a7622,
+    background: radial-gradient(
+        circle,
+        #266a76,
         #ececec /* #266a7633 */ /* #266a7622  */ /* #5bc743dd, */
             /* #5bc74388 */
     );
+    background-position-y: bottom;
     padding-top: 4rem;
     padding-bottom: 12rem;
     margin: auto;
@@ -59,13 +60,14 @@ html {
 }
 
 .about-company-name {
-    font-family: "Montserrat", sans-serif;
+    overflow: visible;
+    font-family: "Montserrat", sans-serif; /*curvy font*/
     padding: 7rem 0 0 0;
     text-align: center;
     margin: 0;
 }
 .about-company-name h1 {
-    font-size: 4.5rem;
+    font-size: 5rem;
     display: inline-block;
     font-weight: 500;
     background: linear-gradient(90deg, #51c736, #266a76);

@@ -24,6 +24,9 @@ const LoginPage = () => {
                     alt="Marvinno LOGO" // 😲 Important for accessibility and SEO
                 />
                 <h2>Login to Your Account</h2>{" "}
+                <div className="error">
+                    Login functionality is temporarily disabled
+                </div>
                 {/* ✌️ Heading for the login page */}
                 <form onSubmit={handleLogin} className="login-form">
                     {/* 🤔 Form submission triggers handleLogin */}

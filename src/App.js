@@ -65,6 +65,7 @@ import moduleZImage1 from "./components/images/image/Marvinno (15) PNG/Z/Z Pic.p
 import moduleZImage2 from "./components/images/image/Marvinno (15) PNG/Z/Z Pic 2.png";
 import moduleZImage3 from "./components/images/image/Marvinno (15) PNG/Z/Module Z.png";
 import moduleZImage4 from "./components/images/image/Marvinno (15) PNG/Z/Module Z white.png";
+import Cart from "./components/utilityComponents/productsUtilityComponents/Cart";
 
 export default function App() {
     return (
@@ -96,6 +97,7 @@ export default function App() {
                 />
                 <Route exact path="/privacy" element={<PrivacyPolicy />} />
                 <Route exact path="/products" element={<Products />} />
+                <Route exact path="/cart" element={<Cart />} />
                 <Route exact path="/connect" element={<ContactUs />} />
                 <Route exact path="/login" element={<LogIn />} />
                 <Route exact path="/signup" element={<SignUp />} />
