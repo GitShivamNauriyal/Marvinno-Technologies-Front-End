@@ -56,6 +56,7 @@ The application will run on http://localhost:3000.
 ## 📁 Project Structure
 
 ```plaintext
+--new file structure will be updated soon
 marvinno/
 ├── public/                 # Static files
 ├── src/                    # Source files
@@ -91,7 +92,7 @@ marvinno/
 
 -   This repository is being actively updated to adopt the latest web development practices and tools.
 
--   The entire project has been migrated from the old React setup using vanilla JavaScript imports to React with modern jsx formats.
+-   The entire project has been migrated from the old React setup using vanilla JavaScript imports to React with modern jsx formats. -- (COMPLETED ON 8 JAN 2025)
 -   We are now using Vite as the build tool, ensuring faster builds and development speed.
 -   All new features of React, including Hooks, functional components, and concurrent rendering, are being leveraged to enhance performance and maintainability.
 -   We are committed to continuously improving this project by:
@@ -126,9 +127,7 @@ Reach out to us at **shivamnauriyal1224@gmail.com** with any suggestions or quer
 
 ### Key Updates:
 
-1. **Mentioned Vite Migration**: Added details about upgrading to Vite and using `jsx`.
+1. MIGRATION COMPLETED ON 8 JAN 2025 => **Mentioned Vite Migration**: Added details about upgrading to Vite and using `jsx`.
 2. **Continuous Improvement**: Highlighted the ongoing updates, refactoring, and use of modern React features.
 3. **Future Goals Section**: Added plans for further optimization, modularity, and testing.
-4. **File Structure**: Updated file structure to reflect `.jsx` files.
-
-This version aligns with the current trend of continuous improvement and showcases modern practices. Let me know if you need further edits!
+4. **File Structure**: Updated file structure to reflect `.jsx` files.  This version aligns with the current trend of continuous improvement and showcases modern practices. Let me know if you need further edits!
