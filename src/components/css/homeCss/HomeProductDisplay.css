@@ -97,7 +97,10 @@
 }
 
 .product-display-discover-div-heading h4 {
+    font-size: 1.3rem;
+    font-weight: 600;
     padding-bottom: 0.5rem;
+    color: #444;
     margin: 0;
 }
 

@@ -32,9 +32,13 @@
     background-clip: text;
 }
 
+.connect-page-description {
+    display: block;
+}
+
 .contactUsDisplayGrid {
     margin: auto;
-    width: clamp(300px, 1300px, 100vw);
+    width: clamp(300px, 1200px, 100vw);
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 1rem;
@@ -43,6 +47,7 @@
 }
 
 .contact-info-div {
+    min-width: none;
     display: flex;
     flex-direction: column;
     padding: 3rem;
@@ -112,23 +117,20 @@
 }
 
 .contact-us-form {
-    grid-row: 2/4;
-    grid-column: 1/3;
-    width: clamp(300px, 70vw, 100vw);
-    background: linear-gradient(#5bc743b2, #ffffff);
-    padding: 2rem;
+    background: linear-gradient(#5bc743b2, #fff);
     border-radius: 12px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-    width: clamp(200px, 70%, 60vw);
+    box-shadow: 0 4px 12px #0000001a;
+    grid-column: 1 / 3;
+    grid-row: 2 / 4;
     margin: 2rem auto;
+    padding: 2rem;
+    width: clamp(200px, 70%, 60vw);
 }
-/* 
-.contact-us-form:hover {
-    background-position-y: 100px;
-} */
 
 .connect-form-heading {
     text-align: center;
+    font-size: 2rem;
+    font-weight: 500;
     font-family: "Montserrat", sans-serif;
     color: #1a4a52;
 }
@@ -137,6 +139,8 @@
     display: flex;
     flex-direction: column;
     gap: 10px;
+    flex-grow: 1;
+    box-sizing: border-box;
 }
 
 .connect-label {
@@ -146,8 +150,12 @@
     margin-top: 4px;
 }
 
+.contact-up-form-input-box {
+    display: flex; /* This is only to make the input area take as much space as available */
+}
+
 .inputArea {
-    width: 100%;
+    flex: 1;
     padding: 12px;
     border: 1px solid #d1d1d1;
     border-radius: 8px;

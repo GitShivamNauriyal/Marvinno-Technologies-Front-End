@@ -138,6 +138,7 @@ body {
         padding-bottom: 0;
     }
     .headingFeatures {
+        z-index: 1;
         font-weight: 700;
         font-size: 3em;
     }

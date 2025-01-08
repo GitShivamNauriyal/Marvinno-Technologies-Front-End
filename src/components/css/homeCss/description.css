@@ -165,36 +165,7 @@ body {
     color: white;
 }
 
-/* readMoreButton styling */
-.ReadMoreButton {
-    text-decoration: none;
-    margin: 5% 0% 0% 0%;
-    width: fit-content;
-    border-radius: 5%;
-    background-color: #3e8a2dce;
-    color: white;
-    padding: 2% 7%;
-    border-radius: 20px;
-    border: none;
-    transition: all 0.2s ease;
-}
-
-.ReadMoreButton:hover {
-    scale: 104%;
-    color: white;
-}
-
-.centerReadMoreButton {
-    text-align: center;
-    margin: 0;
-}
-
-.hoverReview {
-    padding: 0% 5%;
-    background-color: white;
-    border-radius: 0%;
-    border: none;
-}
+/*-----------------------home description (three boxes)------------------------*/
 
 .home-flex-row {
     display: flex;
@@ -204,7 +175,9 @@ body {
 }
 
 .toCenterTemplateCss {
+    position: relative;
     flex: 1;
+    max-width: 40%;
 }
 .cardBodyWidth {
     position: relative;
@@ -223,6 +196,54 @@ body {
 }
 .cardBodyWidth:hover .paraHeadingCss {
     color: white;
+}
+.cardBodyWidth img {
+    object-fit: contain;
+    width: 100%;
+}
+
+.card-img-top {
+    object-fit: contain;
+}
+
+.home-description .toCenterTemplateCss {
+    position: relative;
+}
+/* 
+.home-description .toCenterTemplateCss .read-more-content {
+    z-index: 999;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: #f9f9f9;
+    padding: 1rem;
+    border: 1px solid #ccc;
+    width: 100%;
+    border-radius: 1rem;
+} */
+
+/* readMoreButton styling */
+.ReadMoreButton {
+    background-color: #3e8a2dce;
+    width: fit-content;
+    color: white;
+    padding: 0.7rem 2rem;
+    border-radius: 2rem;
+    border: none;
+    transition: all 0.2s ease;
+    margin: auto;
+    margin-top: 1rem;
+}
+
+.ReadMoreButton:hover {
+    scale: 104%;
+    color: white;
+}
+
+.centerReadMoreButton {
+    text-align: left;
+    /* position: absolute; */
+    margin: 0;
 }
 
 /* 
@@ -260,7 +281,6 @@ body {
 }
 
 .imageRight {
-    height: 2vh;
     width: auto;
 }
 
@@ -274,113 +294,6 @@ body {
 .home-social-media-link-container a {
     color: black;
 }
-/* features div */
-/* .featuresImageCss {
-    height: 3rem;
-    width: auto;
-}
-
-.imageBGPadding {
-    text-align: center;
-    width: 150%;
-    padding: 0%;
-    margin: 0%;
-}
-
-.headingFeatureContainer {
-    display: flex;
-    margin: auto;
-}
-
-.headingFeatures {
-    font-size: 3.5em;
-    letter-spacing: 0.2rem;
-    text-align: center;
-    padding: 30px 0;
-    background: linear-gradient(90deg, #3e8a2dce, #5bc743ce, #3e8a2dce);
-    color: transparent;
-    background-clip: text;
-    display: inline-block;
-    margin: auto;
-}
-
-.rowPaddingFeatures {
-    padding: 1.5% 5% 2% 5%;
-}
-
-.rowFeaturesCss {
-    background-color: rgb(206, 206, 206);
-    padding: 0% 5rem 1rem 0rem;
-    margin: 0%;
-}
-
-.featuresHeadingCss {
-    width: 100%;
-    font-style: italic;
-    font-size: larger;
-    text-align: center;
-    margin-top: 5%;
-} */
-/* 
-.featuresDiv {
-    border: none;
-}
-.featuresDiv:hover {
-    border: 1px solid rgba(0, 0, 0, 0.2);
-} */
-
-/* .descriptionFeaturesCss {
-    width: 150%;
-    height: 80px;
-    margin: 0%;
-    text-align: center;
-    color: #303030;
-}
-
-.centerFeaturesText {
-    margin-left: 5%;
-    text-align: center;
-}
-
-.descriptionIconsLineSeperator {
-    width: 150%;
-    margin-bottom: 1.5%;
-    margin-top: 0%;
-    color: black;
-}
-
-.firstRowMarginLeft {
-    margin-left: 17%;
-}
-
-.headingFeaturesCss {
-    text-align: center;
-    width: 150%;
-    font-size: 1.3em;
-    margin-top: 1rem;
-    margin-bottom: 0.2em;
-    font-family: "Kanit", sans-serif;
-} */
-
-/* marvinno app, voice control using alexa flaunt your smart home css */
-/* .completeDivFlexbox {
-    padding: 0%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.completeDivFlexbox-1 {
-    background-color: #0a3642e9;
-}
-
-.completeDivFlexbox-2 {
-    background-color: #39606d;
-}
-
-.completeDivFlexbox-3 {
-    background-color: #5d8d9d;
-} */
 
 .headingCSS {
     font-size: 2.5rem;
