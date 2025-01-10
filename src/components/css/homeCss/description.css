@@ -26,6 +26,10 @@ body {
     text-underline-offset: 3px;
 }
 
+.carousel-container-master {
+    margin-top: 7.8rem;
+}
+
 .fs-carousel-image {
     position: relative;
 }

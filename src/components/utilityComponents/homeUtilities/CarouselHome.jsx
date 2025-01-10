@@ -24,7 +24,7 @@ export default function CarouselHome() {
         },
     };
     return (
-        <>
+        <div className="carousel-container-master">
             <Carousel
                 swipeable={true}
                 draggable={false}
@@ -90,6 +90,6 @@ export default function CarouselHome() {
                     />
                 </Carousel.Item>
             </Carousel> */}
-        </>
+        </div>
     );
 }

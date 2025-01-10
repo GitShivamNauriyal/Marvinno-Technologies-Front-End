@@ -45,8 +45,13 @@
     transition: all 0.7s;
 }
 
+.how-to-videos-grid-item h2 {
+    color: #444;
+}
+
 .how-to-videos-grid-item:hover {
     background-position-y: 0rem;
+    transform: translate(0, -4px);
 }
 
 .how-to-videos-grid-item:hover p {

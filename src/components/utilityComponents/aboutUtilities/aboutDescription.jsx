@@ -74,7 +74,7 @@ export default function AboutDescription() {
             <div className="products-who-we-are-div">
                 <BackgroundParticles
                     className="particles-background"
-                    quantity={200}
+                    quantity={250}
                     staticity={100}
                     ease={30}
                     size={0.3}

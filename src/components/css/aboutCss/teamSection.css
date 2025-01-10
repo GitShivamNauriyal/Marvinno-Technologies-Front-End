@@ -6,7 +6,7 @@ will add rest of the code later from aboutDescription.css*/
     flex-direction: column;
     place-content: center;
     width: clamp(300px, 1200px, 100vw);
-    margin: auto;
+    margin: 6rem auto 0 auto;
     padding: 2rem 2rem 7.5rem 2rem;
 }
 
@@ -30,7 +30,8 @@ will add rest of the code later from aboutDescription.css*/
 }
 
 .carousel-content:hover {
-    scale: 101%;
+    scale: 102%;
+    transform: translate(0, -4px);
 }
 
 .react-multi-carousel-dot button {

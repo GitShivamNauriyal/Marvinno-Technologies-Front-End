@@ -17,3 +17,16 @@
 body {
     overflow-x: hidden;
 }
+
+img {
+    user-select: none;
+}
+
+::selection {
+    background-color: #5bc743;
+}
+
+/* For Firefox compatibility */
+::-moz-selection {
+    background-color: #5bc743; 
+}

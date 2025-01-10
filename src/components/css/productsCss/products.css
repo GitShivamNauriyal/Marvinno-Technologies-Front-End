@@ -5,6 +5,7 @@ body {
 }
 
 .product-master {
+    margin-top: 11rem;
     padding-bottom: 4rem;
 }
 
@@ -232,6 +233,7 @@ body {
 }
 .productHeadingContainer {
     margin-top: 5rem;
+    margin-bottom: 2rem;
     display: flex;
 }
 .p-spectrum-products-heading {
@@ -694,7 +696,7 @@ body {
         min-width: 80vw;
     }
     .productHeadingContainer {
-        margin-top: 2rem;
+        margin-top: 1rem;
     }
 }
 @media only screen and (max-width: 370px) {
@@ -744,9 +746,9 @@ a {
 .product {
     display: grid;
     grid-gap: 1rem;
-    grid-template-columns: repeat(auto-fit, minmax(400px, 0.25fr));
+    /* grid-template-columns: repeat(auto-fit, minmax(400px, 0.25fr)); */
     justify-content: center;
-    /* grid-template-columns:repeat(3,0.27fr); */
+    grid-template-columns: repeat(3, 0.27fr);
     margin-bottom: 4rem;
 }
 
@@ -879,6 +881,16 @@ a {
     translate: 0 -4px;
 }
 
+@media screen and (max-width: 1120px) {
+    .product {
+        grid-template-columns: repeat(2, 0.4fr);
+    }
+}
+@media screen and (max-width: 740px) {
+    .product {
+        grid-template-columns: repeat(1, 0.27fr);
+    }
+}
 @media screen and (max-width: 440px) {
     .banner-container {
         width: 100%;

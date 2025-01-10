@@ -48,8 +48,10 @@ body {
     /* font-family: "Nunito", sans-serif; */
     cursor: default;
     font-weight: 800;
+    user-select: none;
+    margin-top: 1rem;
     font-size: 4em;
-    letter-spacing: 0.1rem;
+    letter-spacing: 0.15rem;
     text-align: center;
     color: aliceblue;
     /* text-decoration: underline; */

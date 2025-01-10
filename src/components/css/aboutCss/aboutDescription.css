@@ -19,6 +19,7 @@ html {
     font-family: "Kanit", sans-serif;
     background-color: #ffffff;
     /* background-color: #000; */
+    margin-top: 7.8rem;
 }
 
 /************************************************************/
@@ -38,12 +39,12 @@ html {
     background: transparent;
     /* background: linear-gradient(45deg, #5bc743dd, #266a76dd); */
     background: radial-gradient(
-        circle,
-        #266a76,
-        #ececec /* #266a7633 */ /* #266a7622  */ /* #5bc743dd, */
+        #266a7677,
+        #266a7611,
+        #ffffff /* #266a7633 */ /* #266a7622  */ /* #5bc743dd, */
             /* #5bc74388 */
     );
-    background-position-y: bottom;
+    background-position-y: 16rem;
     padding-top: 4rem;
     padding-bottom: 12rem;
     margin: auto;
@@ -68,14 +69,16 @@ html {
 }
 .about-company-name h1 {
     font-size: 5rem;
+    user-select: none;
     display: inline-block;
     font-weight: 500;
-    background: linear-gradient(90deg, #51c736, #266a76);
+    background: linear-gradient(90deg, #555555, #2d7e8c);
     color: transparent;
     background-clip: text;
 }
 
 .products-who-we-are-div-dynamic-quote {
+    user-select: none;
     padding: 0.5rem 0;
     width: clamp(300px, 1200px, 80vw);
     margin: auto;
@@ -189,6 +192,7 @@ html {
     font-family: "Montserrat", sans-serif;
     margin: auto;
     margin-bottom: 2rem;
+    margin-top: 1rem;
     color: #333;
     padding: 0.5rem;
     width: 100%;
@@ -210,7 +214,7 @@ html {
     color: transparent;
     background-clip: text;
     font-size: 3em;
-    font-weight: 500;
+    font-weight: 600;
     letter-spacing: -0.1rem;
     margin: 1rem auto;
     cursor: default;
@@ -219,7 +223,7 @@ html {
 }
 .about-section-headings:hover {
     letter-spacing: 0rem;
-    scale: 102%;
+    scale: 101%;
 }
 
 @media screen and (max-width: 500px) {

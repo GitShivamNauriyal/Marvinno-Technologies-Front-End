@@ -1,129 +1,129 @@
-*{
-  margin: 0%;
-  padding: 0%;
+* {
+    margin: 0%;
+    padding: 0%;
 }
 
-.a-solutions{
-  text-decoration: underline;
-  text-decoration-color: #3e8a2dce;
-  text-decoration-thickness: 2px;
-  text-underline-offset: 3px;
+.soultions-master {
+    margin-top: 7.8rem;
+}
+
+.a-solutions {
+    text-decoration: underline;
+    text-decoration-color: #3e8a2dce;
+    text-decoration-thickness: 2px;
+    text-underline-offset: 3px;
 }
 
 /* readmore button */
 
-.ReadMoreButton-solutions{
-  text-decoration: none;
-  margin: 5% 0% 0% 0%;
-  width: fit-content;
-  border-radius: 5%;
-  background-color: #3e8a2dce;
-  color: white;
-  padding: 1% 5%;
-  font-size: medium;
-  border-radius: 20px;
-  border: none;
-}
-
-.ReadMoreButton-solutions:hover{
-  box-shadow: 1px 1px 1px 1px #3e8a2dce;
-  font-size: large;
-  transition: 0.2s ease;
-  color: white;
-}
-
-.centerReadMoreButton-solutions{
-  text-align: center;
-}
-
-.img-solutions{
-  width: 100%;
-  height: auto;
-}
-
-.div-solutions{
-  background-color: white;
-  width: 100%;
-  border-radius: 20px;
-  padding: 5%;
-  margin: 0% auto;
-  padding-bottom: 3%;
-}
-
-.solutions-div-grid{
-  background-color: #101c23;
-  padding: 3%;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 20px;
-}
-
-.heading-solutions{
-  font-size: x-large;
-  margin-bottom: 20px;
-  font-weight: 700;
-  text-transform: uppercase;
-  text-align: center;
-}
-
-.description-solutions{
-  font-size: large;
-  margin: 20px 0px;
-  font-weight: 300;
-  text-align: justify;
-}
-
-@media(max-width:800px){
-  .div-solutions{
+.ReadMoreButton-solutions {
+    text-decoration: none;
+    margin: 5% 0% 0% 0%;
     width: fit-content;
-    padding: 5%;
-    padding-bottom: 3%;
-  }
-
-  /* readmore solutions */
-  .ReadMoreButton-solutions:hover{
-    box-shadow: none;
-    font-size: medium;
+    border-radius: 5%;
+    background-color: #3e8a2dce;
     color: white;
-  }
+    padding: 1% 5%;
+    font-size: 1.2rem;
+    border-radius: 20px;
+    border: none;
+    transition: all 0.2s ease;
+}
 
-  .centerReadMoreButton-solutions{
+.ReadMoreButton-solutions:hover {
+    scale: 105%;
+}
+
+.centerReadMoreButton-solutions {
     text-align: center;
-  }
-  
-  .solutions-div-grid{
-    grid-template-columns: 1fr;
+}
+
+.img-solutions {
+    width: 100%;
+    height: auto;
+}
+
+.div-solutions {
+    background-color: white;
+    width: 100%;
+    border-radius: 20px;
+    padding: 5%;
+    margin: 0% auto;
+    padding-bottom: 3%;
+}
+
+.solutions-div-grid {
+    background-color: #101c23;
+    padding: 3%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     gap: 20px;
-    padding: 3.999%;
-  }
-  
-  .heading-solutions{
+}
+
+.heading-solutions {
     font-size: x-large;
-  }
-  
-  .description-solutions{
-    font-size: large;
-  }
-  
+    margin-bottom: 20px;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
 }
 
-@media(max-width:500px){
-  .heading-solutions{
+.description-solutions {
     font-size: large;
-  }
-
-  .description-solutions{
-    font-size: medium;
-  }
+    margin: 20px 0px;
+    font-weight: 300;
+    text-align: justify;
 }
 
+@media (max-width: 800px) {
+    .div-solutions {
+        width: fit-content;
+        padding: 5%;
+        padding-bottom: 3%;
+    }
 
-@media(max-width:360px){
-  .heading-solutions{
-    font-size: small;
-  }
+    /* readmore solutions */
+    .ReadMoreButton-solutions:hover {
+        box-shadow: none;
+        font-size: medium;
+        color: white;
+    }
 
-  .description-solutions{
-    font-size: x-small;
-  }
+    .centerReadMoreButton-solutions {
+        text-align: center;
+    }
+
+    .solutions-div-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+        padding: 3.999%;
+    }
+
+    .heading-solutions {
+        font-size: x-large;
+    }
+
+    .description-solutions {
+        font-size: large;
+    }
+}
+
+@media (max-width: 500px) {
+    .heading-solutions {
+        font-size: large;
+    }
+
+    .description-solutions {
+        font-size: medium;
+    }
+}
+
+@media (max-width: 360px) {
+    .heading-solutions {
+        font-size: small;
+    }
+
+    .description-solutions {
+        font-size: x-small;
+    }
 }

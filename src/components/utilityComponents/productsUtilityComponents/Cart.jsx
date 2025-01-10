@@ -1,11 +1,10 @@
 import React, { useState } from "react";
 import "../../css/productsCss/cart.css";
+import NonRespNavbar from "../commonUtilities/nonRespNavbar";
 
 const Cart = () => {
     // Example cart items
     const [cartItems, setCartItems] = useState([
-        { id: 1, name: "Product A", price: 20, quantity: 2 },
-        { id: 2, name: "Product B", price: 15, quantity: 1 },
     ]);
 
     // Function to remove an item
@@ -15,6 +14,7 @@ const Cart = () => {
 
     return (
         <div>
+            <NonRespNavbar/>
             <h1>Your Cart</h1>
             <div className="cart-container">
                 {cartItems.length > 0 ? (

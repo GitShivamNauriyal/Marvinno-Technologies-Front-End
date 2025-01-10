@@ -10,7 +10,7 @@ const HowToVideos = () => {
     return (
         <div>
             <div className="about-how-to-videos-section" data-aos="fade-up">
-                <p className="about-section-headings">How to Videos</p>
+                <p className="about-section-headings">'How to' Videos</p>
                 <hr />
                 <div className="how-to-videos-grid">
                     <div className="how-to-videos-grid-item how-to-videos-product">
