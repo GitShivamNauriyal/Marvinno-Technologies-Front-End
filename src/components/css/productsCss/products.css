@@ -383,7 +383,7 @@ body {
 
 .rowMarginLeftWholeContent {
     max-width: 1400px;
-    margin: auto;
+    margin: 8rem auto 0 auto;
     display: grid;
     grid-template-columns: 1fr 0.5fr 0.5fr;
     padding-bottom: 35px;

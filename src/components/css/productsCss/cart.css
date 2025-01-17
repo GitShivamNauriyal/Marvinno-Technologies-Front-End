@@ -1,3 +1,8 @@
+.cart-master {
+    margin-top: 8rem;
+    padding: 2rem;
+}
+
 .cart-container {
     display: flex;
     flex-direction: column;
@@ -14,7 +19,8 @@
     background-color: red;
     color: white;
     border: none;
-    padding: 5px 10px;
+    border-radius: 0.5rem;
+    padding: 0.5rem 1rem;
     cursor: pointer;
 }
 
