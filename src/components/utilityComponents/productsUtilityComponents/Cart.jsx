@@ -6,18 +6,15 @@ import NonRespNavbar from "../commonUtilities/nonRespNavbar";
 const Cart = () => {
     const [cartItems, setCartItems] = useState([]);
 
-    // Fetch cart items on component mount
     useEffect(() => {
-        const cart = JSON.parse(Cookies.get("cart") || JSON.stringify(new Array(12).fill(null)));
-        setCartItems(cart.filter((item) => item !== null)); // Filter out null entries
+        const cart = JSON.parse(Cookies.get("cart") || "[]");
+        setCartItems(cart);
     }, []);
 
-    // Function to remove an item
-    const removeItem = (index) => {
-        const cart = JSON.parse(Cookies.get("cart") || JSON.stringify(new Array(12).fill(null)));
-        cart[index] = null; // Set the specific index to null
-        Cookies.set("cart", JSON.stringify(cart)); // Update cookies
-        setCartItems(cart.filter((item) => item !== null)); // Update state
+    const removeItem = (productId) => {
+        const updatedCart = cartItems.filter((item) => item.id !== productId);
+        Cookies.set("cart", JSON.stringify(updatedCart));
+        setCartItems(updatedCart);
     };
 
     return (
@@ -27,10 +24,10 @@ const Cart = () => {
                 <h1>Your Cart</h1>
                 <div className="cart-container">
                     {cartItems.length > 0 ? (
-                        cartItems.map((item, index) => (
-                            <div key={index} className="cart-item">
+                        cartItems.map((item) => (
+                            <div key={item.id} className="cart-item">
                                 <h2>{item.name}</h2>
-                                <p>Price: ${item.price}</p>
+                                <p>Price: ₹{item.price}</p>
                                 <p>Quantity: {item.quantity}</p>
                                 <button
                                     className="delete-cart-item-button"

@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Cookies from "js-cookie";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
@@ -10,55 +10,53 @@ export default function ProductDescription(props) {
     const [value, setValue] = useState(1);
     const [cartArray, setCartArray] = useState([]);
 
-    // Increase or decrease product quantity
     const increaseVal = () => setValue(value + 1);
-    const decreaseVal = () => setValue(value > 1 ? value - 1 : 1);
+    const decreaseVal = () => value > 1 && setValue(value - 1);
 
-    // Load cart on component mount
     useEffect(() => {
-        const cart = JSON.parse(Cookies.get("cart") || JSON.stringify(new Array(12).fill(null)));
-        setCartArray(cart);
+        const oldCart = JSON.parse(Cookies.get("cart") || "[]");
+
+        // Migrate from old array-with-nulls format
+        if (Array.isArray(oldCart) && oldCart.length === 12) {
+            const newCart = oldCart.filter((item) => item !== null);
+            Cookies.set("cart", JSON.stringify(newCart));
+            setCartArray(newCart);
+        } else {
+            setCartArray(oldCart);
+        }
     }, []);
 
     // Handle Add to Cart
     const addToCart = () => {
-        // Ensure cartArray is always an array
-        const cart = JSON.parse(Cookies.get("cart") || JSON.stringify(new Array(12).fill(null)));
+        // Get current cart or empty array
+        const cart = JSON.parse(Cookies.get("cart") || "[]");
 
-        // Validate product index
-        if (props.index < 0 || props.index >= cart.length) {
-            alert("Invalid product index!");
-            return;
+        // Find if product already exists in cart
+        const existingProductIndex = cart.findIndex(
+            (item) => item.id === props.id
+        );
+
+        if (existingProductIndex > -1) {
+            // Update existing product quantity
+            cart[existingProductIndex].quantity += value;
+        } else {
+            // Add new product to cart
+            cart.push({
+                id: props.id, // <<< MUST use unique ID
+                name: props.name,
+                price: props.price,
+                quantity: value,
+            });
         }
 
-        // Initialize or update the product at the correct index
-        const currentProduct = cart[props.index] || {
-            id: props.id,
-            name: props.name,
-            price: props.price,
-            quantity: 0,
-        };
-
-        // Update the quantity
-        currentProduct.quantity += value;
-
-        // Save the updated product back to the cart array
-        cart[props.index] = currentProduct;
-
-        // Save the updated cart to cookies and state
         Cookies.set("cart", JSON.stringify(cart));
         setCartArray(cart);
-
-        // Notify the user
-        alert(`${value} units of ${props.name} added to the cart!`);
+        alert(`${value} units of ${props.name} added to cart!`);
     };
-
-
-
-    // Carousel and product details
+    // Carousel setup remains unchanged
     const { img1, img2, img3, img4, img5, img6, img7, img8 } = props;
     const images = [img1, img2, img3, img4, img5, img6, img7, img8].filter(
-        (img) => img
+        Boolean
     );
 
     const responsive = {
@@ -104,7 +102,6 @@ export default function ProductDescription(props) {
                             ))}
                         </Carousel>
                     </div>
-
 
                     <div className="middleSectionProduct">
                         <h5 className="card-title headingColorWhite">Size</h5>
@@ -183,12 +180,12 @@ export default function ProductDescription(props) {
             <hr className="module-hr" />
 
             <Footer />
-        </div >
+        </div>
     );
 }
 
-
-{/*
+{
+    /*
 import React, { useState } from "react";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
@@ -340,4 +337,5 @@ export default function ProductDescription(props) {
     );
 }
 
-    */}
+    */
+}

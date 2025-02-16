@@ -107,6 +107,7 @@ export default function App() {
                     path="/products/s1-module"
                     element={
                         <ProductDescription
+                            id="module-s"
                             img1={moduleS1Image2}
                             img2={moduleS1Image1}
                             img3={moduleS1Image3}
@@ -149,6 +150,7 @@ export default function App() {
                     path="/products/p-module"
                     element={
                         <ProductDescription
+                            id="module-p"
                             bgcolor="#004bae49"
                             img1={modulePImage1}
                             img2={modulePImage3}
@@ -170,6 +172,7 @@ export default function App() {
                     path="/products/e-module"
                     element={
                         <ProductDescription
+                            id="module-e"
                             bgcolor="#5adce17d"
                             img1={moduleEImage1}
                             img2={moduleEImage3}
@@ -192,6 +195,7 @@ export default function App() {
                     path="/products/c-module"
                     element={
                         <ProductDescription
+                            id="module-c"
                             bgcolor="#61e6c378"
                             img1={moduleKImage1}
                             img2={moduleKImage3}
@@ -213,6 +217,7 @@ export default function App() {
                     path="/products/t-module"
                     element={
                         <ProductDescription
+                            id="module-t"
                             bgcolor="#13994d78"
                             img1={moduleTImage1}
                             img2={moduleTImage3}
@@ -234,6 +239,7 @@ export default function App() {
                     path="/products/r-module"
                     element={
                         <ProductDescription
+                            id="module-r"
                             bgcolor="#f6cc2668"
                             img1={moduleRImage1}
                             img2={moduleRImage2}
@@ -258,6 +264,7 @@ export default function App() {
                     path="/products/u-module"
                     element={
                         <ProductDescription
+                            id="module-u"
                             bgcolor="#f6872c7a"
                             img1={moduleUImage1}
                             img2={moduleUImage2}
@@ -280,6 +287,7 @@ export default function App() {
                     path="/products/m1-module"
                     element={
                         <ProductDescription
+                            id="module-m1"
                             bgcolor="#f15c5c57"
                             img1={moduleMImage1}
                             img2={moduleMImage2}
@@ -302,6 +310,7 @@ export default function App() {
                     path="/products/m3-module"
                     element={
                         <ProductDescription
+                            id="module-m3"
                             bgcolor="#f15c5c57"
                             img1={moduleMImage1}
                             img2={moduleMImage2}
@@ -324,6 +333,7 @@ export default function App() {
                     path="/products/x-module"
                     element={
                         <ProductDescription
+                            id="module-x"
                             bgcolor="#f15c5c57"
                             img1={moduleXImage1}
                             img2={moduleXImage2}
@@ -346,6 +356,7 @@ export default function App() {
                     path="/products/y-module"
                     element={
                         <ProductDescription
+                            id="module-y"
                             bgcolor="#f15c5c57"
                             img1={moduleYImage1}
                             img2={moduleYImage2}
@@ -368,6 +379,7 @@ export default function App() {
                     path="/products/z-module"
                     element={
                         <ProductDescription
+                            id="module-z"
                             bgcolor="#f15c5c57"
                             img1={moduleZImage1}
                             img2={moduleZImage2}
