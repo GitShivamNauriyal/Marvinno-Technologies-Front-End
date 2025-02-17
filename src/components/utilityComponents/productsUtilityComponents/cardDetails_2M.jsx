@@ -2,7 +2,7 @@ const Card_Data_2M = [
     {
         id: 10,
         img: "../card_image/X Pic.png",
-        price: "₹ Revealing Soon...",
+        price: "₹ 3,990",
         name: "X-Module",
         totalSales: "247",
         btnTitle: "Add to cart",
@@ -12,7 +12,7 @@ const Card_Data_2M = [
     {
         id: 11,
         img: "../card_image/Y Pic.png",
-        price: "₹ Revealing Soon...",
+        price: "₹ 3,990",
         name: "Y-Module",
         totalSales: "247",
         btnTitle: "Add to cart",
@@ -22,7 +22,7 @@ const Card_Data_2M = [
     {
         id: 12,
         img: "../card_image/Z Pic.png",
-        price: "₹ Revealing Soon...",
+        price: "₹ 3,990",
         name: "Z-Module",
         totalSales: "247",
         btnTitle: "Add to cart",

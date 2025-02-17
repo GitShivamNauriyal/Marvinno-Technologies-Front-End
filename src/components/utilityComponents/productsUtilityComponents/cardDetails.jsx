@@ -2,18 +2,18 @@ const cardData = [
     {
         id: 1,
         img: "../card_image/S black.png",
-        price: "₹ Revealing Soon...",
+        price: "₹ 5,990",
         name: "S-Module",
         totalSales: "247",
         btnTitle: "Add to cart",
         rating: 5,
-        url: "/products/s1-module",
+        url: "/products/s-module",
     },
 
     {
         id: 2,
         img: "../card_image/0P5A4415.png",
-        price: "₹ Revealing Soon...",
+        price: "₹ 5,990",
         name: "P-Module",
         totalSales: "247",
         title: "Add to cart",
@@ -24,7 +24,7 @@ const cardData = [
     {
         id: 3,
         img: "../card_image/Module E LED black.png",
-        price: "₹₹ Revealing Soon...",
+        price: "₹ 5,990",
         name: "E-Module",
         totalSales: "247",
         btnTitle: "Add to cart",
@@ -34,7 +34,7 @@ const cardData = [
     {
         id: 4,
         img: "../card_image/CModuleImage.png",
-        price: "₹ Revealing Soon...",
+        price: "₹ 5,990",
         name: "C-Module",
         totalSales: "247",
         btnTitle: "Add to cart",
@@ -45,7 +45,7 @@ const cardData = [
     {
         id: 5,
         img: "../card_image/0P5A4400.png",
-        price: "₹ Revealing Soon...",
+        price: "₹ 12,990",
         name: "T-Module",
         totalSales: "247",
         btnTitle: "Add to cart",
@@ -55,7 +55,7 @@ const cardData = [
     {
         id: 6,
         img: "../card_image/R_black.png",
-        price: "₹ Revealing Soon...",
+        price: "₹ 12,990",
         name: "R-Module",
         totalSales: "247",
         btnTitle: "Add to cart",
@@ -65,7 +65,7 @@ const cardData = [
     {
         id: 7,
         img: "../card_image/0P5A4392.png",
-        price: "₹ Revealing Soon...",
+        price: "₹ 12,990",
         name: "U-Module",
         totalSales: "247",
         btnTitle: "Add to cart",
@@ -75,7 +75,7 @@ const cardData = [
     {
         id: 8,
         img: "../card_image/0P5A4387.png",
-        price: "₹ Revealing Soon...",
+        price: "₹ 16,990",
         name: "M1-Module",
         totalSales: "247",
         btnTitle: "Add to cart",
@@ -85,7 +85,7 @@ const cardData = [
     {
         id: 9,
         img: "../card_image/Module Square 8M.png",
-        price: "₹ Revealing Soon...",
+        price: "₹ 16,990",
         name: "M3-Module",
         totalSales: "247",
         btnTitle: "Add to cart",

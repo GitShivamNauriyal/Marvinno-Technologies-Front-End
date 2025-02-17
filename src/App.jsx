@@ -104,14 +104,14 @@ export default function App() {
                 <Route exact path="/solutions" element={<Solutions />} />
                 <Route
                     exact
-                    path="/products/s1-module"
+                    path="/products/s-module"
                     element={
                         <ProductDescription
                             id="module-s"
                             img1={moduleS1Image2}
                             img2={moduleS1Image1}
                             img3={moduleS1Image3}
-                            price="Revealing Soon"
+                            price="₹ 5,990"
                             bgcolor="#bfa7f469"
                             name="Module S"
                             fullform="Single Socket"
@@ -154,7 +154,7 @@ export default function App() {
                             bgcolor="#004bae49"
                             img1={modulePImage1}
                             img2={modulePImage3}
-                            price="Revealing Soon"
+                            price="₹ 5,990"
                             name="Module P"
                             fullform="Power Module"
                             loadcapacity="(1 x 25A) and (3 x 10A)"
@@ -176,7 +176,7 @@ export default function App() {
                             bgcolor="#5adce17d"
                             img1={moduleEImage1}
                             img2={moduleEImage3}
-                            price="Revealing Soon"
+                            price="5990"
                             name="Module E"
                             fullform="Electric Motor Module"
                             loadcapacity=" 2 x 16A Switch"
@@ -199,7 +199,7 @@ export default function App() {
                             bgcolor="#61e6c378"
                             img1={moduleKImage1}
                             img2={moduleKImage3}
-                            price="Revealing Soon"
+                            price="5990"
                             name="Module C"
                             fullform="Curtain Module"
                             loadcapacity="2 x 16A Switch"
@@ -221,7 +221,7 @@ export default function App() {
                             bgcolor="#13994d78"
                             img1={moduleTImage1}
                             img2={moduleTImage3}
-                            price="Revealing Soon"
+                            price="12990"
                             name="Module T"
                             fullform="TV-STB Module"
                             loadcapacity="1 x 25A Socket, 1 x 6A Socket and 2 x 10A Switches"
@@ -245,7 +245,7 @@ export default function App() {
                             img2={moduleRImage2}
                             img3={moduleRImage3}
                             img4={moduleRImage4}
-                            price="Revealing Soon"
+                            price="12990"
                             name="Module R"
                             fullform="Room Module"
                             loadcapacity="1 x 20A Switch, 4 x 10A Switches, 1 x 6A Socket "
@@ -269,7 +269,7 @@ export default function App() {
                             img1={moduleUImage1}
                             img2={moduleUImage2}
                             img3={moduleUImage3}
-                            price="Revealing Soon"
+                            price="12990"
                             name="Module U"
                             fullform="Unit Module"
                             loadcapacity="3 x 10A Switches, 1 x 4 Speed Fan Dimmer and 1 x 6A Socket"
@@ -292,7 +292,7 @@ export default function App() {
                             img1={moduleMImage1}
                             img2={moduleMImage2}
                             img3={moduleMImage3}
-                            price="Revealing Soon"
+                            price="16990"
                             name="Module M1"
                             fullform="Master Room Module"
                             loadcapacity="5 x 10A Switches, 2 x 6A Socketes and 1 x 4 Speed Fan Dimmer"
@@ -315,7 +315,7 @@ export default function App() {
                             img1={moduleMImage1}
                             img2={moduleMImage2}
                             img3={moduleMImage3}
-                            price="Revealing Soon"
+                            price="16990"
                             name="Module M3"
                             fullform="8M Sq. Module"
                             loadcapacity="1 x 25A Switch, 3 x 10A Switches, 1 x 10A Socket and 1 x 4 Speed Fan Dimmer"
@@ -339,7 +339,7 @@ export default function App() {
                             img2={moduleXImage2}
                             img3={moduleXImage3}
                             img4={moduleXImage4}
-                            price="Revealing Soon"
+                            price="3990"
                             name="Module X"
                             fullform="Four Touch Module"
                             loadcapacity="4 x 6A Switches"
@@ -362,7 +362,7 @@ export default function App() {
                             img2={moduleYImage2}
                             img3={moduleYImage3}
                             img4={moduleYImage4}
-                            price="Revealing Soon"
+                            price="3990"
                             name="Module Y"
                             fullform="Power Module"
                             loadcapacity="1 x 20A Switch"
@@ -385,7 +385,7 @@ export default function App() {
                             img2={moduleZImage2}
                             img3={moduleZImage3}
                             img4={moduleZImage4}
-                            price="Revealing Soon"
+                            price="3990"
                             name="Module Z"
                             fullform="Fan Module"
                             loadcapacity="1 x 4 Speed Fan Dimmer"
