@@ -10,17 +10,30 @@ import brochure_all from "../../images/pdfs/Marvinno SPRECTRUM Range Brochure.pd
 import brochure_2M from "../../images/pdfs/Marvinno Smart 2M Range Brochure.pdf";
 import wiring_diagram from "../../images/pdfs/Wiring Diagrams - All Modules.pdf";
 
+const MakeAPayment = () => {
+    return (
+        <div className="make-a-payment-section">
+            <div className="make-a-payment-heading">
+                <h2>Want to make a Payment?👀</h2>
+            </div>
+            <div className="make-a-payment-button-container">
+                <button className="make-a-payment-button">Click Here!</button>
+            </div>
+        </div>
+    );
+};
+
 export default function Description() {
     AOS.init({ duration: 1500 });
 
     return (
         <div className="product-master">
+            <MakeAPayment />
             <div className="productHeadingContainer" data-aos="fade-up">
                 <p className="p-spectrum-products-heading">
-                    Marvinno's Spectrum Range
+                    Marvinno's SPECTRUM Range
                 </p>
             </div>
-            {/* <div className="sepratorLine" /> */}
             <div
                 className="product row1"
                 data-aos="fade-up"

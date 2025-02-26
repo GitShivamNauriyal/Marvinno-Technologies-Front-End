@@ -85,6 +85,7 @@
     background-clip: text;
     font-size: 3em;
     letter-spacing: -0.1rem;
+    user-select: none;
 }
 
 .product-display-description-para p {
@@ -111,6 +112,7 @@
     color: transparent;
     -webkit-background-clip: text;
     background-clip: text;
+    user-select: none;
 }
 
 .product-display-discover-div-button {

@@ -7,7 +7,66 @@ body {
 .product-master {
     margin-top: 11rem;
     padding-bottom: 4rem;
+    display: flex;
+    flex-direction: column;
 }
+
+/*make a payment section start*/
+.make-a-payment-section {
+    display: flex;
+    margin: auto;
+    padding: 4rem 2rem;
+    min-width: 90%;
+    justify-content: space-evenly;
+    border: 1px solid rgb(0, 0, 0, 0.2);
+    border-radius: 2rem;
+    background: linear-gradient(45deg, #266a7622, #fff);
+    cursor: help;
+}
+
+.make-a-payment-heading {
+    font-size: 2rem;
+    translate: 0 -4px;
+    color: #555;
+    display: flex;
+    align-items: center;
+    user-select: none;
+}
+
+.make-a-payment-button {
+    color: white;
+    background: linear-gradient(45deg, #266a76cc, #27ad5499);
+    padding: 1rem;
+    border-radius: 1.2rem;
+    border: 1px solid rgb(0, 0, 0, 0.1);
+    border: none;
+    font-size: 1.5rem;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    user-select: none;
+    letter-spacing: 0.05rem;
+}
+
+.make-a-payment-button:hover {
+    scale: 1.01;
+    transform: translateY(-0.5rem);
+    box-shadow: 4px 4px 8px rgb(0, 0, 0, 0.3);
+}
+
+@media only screen and (max-width: 800px) {
+    .make-a-payment-section {
+        padding: 1rem;
+    }
+    .make-a-payment-heading {
+        font-size: 0.7rem;
+    }
+    .make-a-payment-button {
+        padding: 0.5rem;
+        font-size: 1rem;
+        translate: 0 0;
+    }
+}
+/*make a payment section end*/
 
 .a-products {
     text-decoration: underline;
@@ -240,6 +299,7 @@ body {
     font-family: "Montserrat", sans-serif;
     cursor: default;
     margin: auto;
+    margin-top: 1rem;
     font-size: 3.5rem;
     font-weight: 600;
     letter-spacing: -1px;
@@ -678,6 +738,9 @@ body {
     }
 }
 @media only screen and (max-width: 500px) {
+    .product-master {
+        margin-top: 7rem;
+    }
     .descriptionProductsCss {
         font-size: small;
         word-spacing: 0em;
