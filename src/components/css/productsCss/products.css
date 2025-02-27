@@ -66,6 +66,89 @@ body {
         translate: 0 0;
     }
 }
+
+/* Modal Overlay */
+.modal-overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 999;
+}
+
+/* Modal Box */
+.modal {
+    background: white;
+    padding: 20px;
+    width: 90%;
+    max-width: 500px;
+    min-width: 300px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    position: relative;
+}
+
+/* Modal Title */
+.modal-title {
+    font-size: 1.4rem;
+    font-weight: 500;
+    margin-bottom: 0.75rem;
+}
+
+/* Form */
+.payment-form div {
+    margin-bottom: 10px;
+}
+
+.payment-form label {
+    display: block;
+    font-weight: 500;
+    margin-bottom: 4px;
+    color: #333;
+}
+
+.payment-form input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/* Submit Button */
+.submit-button {
+    width: 100%;
+    padding: 10px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background 0.3s ease;
+}
+
+.submit-button:hover {
+    background-color: #218838;
+}
+
+/* Close Button */
+.close-button {
+    position: absolute;
+    top: 8px;
+    right: 12px;
+    background: none;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+    color: #555;
+}
+
+.close-button:hover {
+    color: #000;
+}
+
 /*make a payment section end*/
 
 .a-products {
