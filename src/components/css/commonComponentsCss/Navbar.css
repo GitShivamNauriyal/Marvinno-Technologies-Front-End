@@ -202,8 +202,9 @@
 
     /* home icon navbar */
     .homeLogoNavbar {
-        height: 24px;
+        height: 18px;
         width: auto;
+        translate: 0 4px;
     }
 
     .liElementsNavbar {

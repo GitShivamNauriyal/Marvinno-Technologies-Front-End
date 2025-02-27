@@ -255,6 +255,9 @@ textarea.inputArea {
 }
 
 @media (max-width: 550px) {
+    .connect-page-master {
+        margin-top: 5rem;
+    }
     .contactUsDisplayGrid {
         width: 100vw;
         margin: auto;

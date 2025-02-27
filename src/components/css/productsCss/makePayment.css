@@ -8,6 +8,7 @@
     border-radius: 2rem;
     background: linear-gradient(45deg, #266a7622, #fff);
     cursor: help;
+    align-items: stretch;
 }
 
 .make-a-payment-heading {
@@ -17,6 +18,7 @@
     display: flex;
     align-items: center;
     user-select: none;
+    margin: auto 0;
 }
 
 .make-a-payment-button {
@@ -50,6 +52,15 @@
         padding: 0.5rem;
         font-size: 1rem;
         translate: 0 0;
+    }
+}
+@media only screen and (max-width: 500px) {
+    .make-a-payment-heading {
+        font-size: 0.6rem;
+        translate: 0 2px;
+    }
+    .make-a-payment-heading h2 {
+        font-weight: 400;
     }
 }
 

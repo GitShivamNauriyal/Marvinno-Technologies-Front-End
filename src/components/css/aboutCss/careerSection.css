@@ -190,3 +190,13 @@
     align-items: center;
     height: 100%;
 }
+
+@media screen and (max-width: 500px) {
+    .about-career-section h1 {
+        font-size: 2rem;
+    }
+    .about-career-section-paragraph {
+        font-size: 1rem;
+        text-align: center;
+    }
+}

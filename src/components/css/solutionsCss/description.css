@@ -3,7 +3,7 @@
     padding: 0%;
 }
 
-.soultions-master {
+.solutions-master {
     margin-top: 7.8rem;
 }
 
@@ -109,6 +109,9 @@
 }
 
 @media (max-width: 500px) {
+    .solutions-master {
+        margin-top: 5rem;
+    }
     .heading-solutions {
         font-size: large;
     }

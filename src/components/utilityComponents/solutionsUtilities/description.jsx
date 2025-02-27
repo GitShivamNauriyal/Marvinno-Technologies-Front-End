@@ -7,7 +7,7 @@ import industryAutomation from "../../images/industryAutomation-1.webp";
 import smartCityAutomation from "../../images/smartCity-1.jpg";
 export default function description() {
     return (
-        <div className="soultions-master">
+        <div className="solutions-master">
             <div className="solutions-div-grid">
                 <CardImage
                     automation="Home/Office Automation"

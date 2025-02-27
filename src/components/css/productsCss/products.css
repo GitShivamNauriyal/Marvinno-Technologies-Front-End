@@ -719,6 +719,10 @@ body {
         line-height: 1.1rem;
         padding: 0;
     }
+    .p-spectrum-products-heading {
+        font-size: 2.2rem;
+        padding: 0 2rem;
+    }
     .download-products {
         padding: 0;
         padding-bottom: 4px;
@@ -861,6 +865,7 @@ a {
     display: flex;
     justify-content: space-between;
     margin-bottom: 1rem;
+    font-size: 1.1rem;
 }
 
 .displayStack__2 {
@@ -920,6 +925,7 @@ a {
 @media screen and (max-width: 740px) {
     .product {
         grid-template-columns: repeat(1, 0.27fr);
+        gap: 3rem;
     }
 }
 @media screen and (max-width: 440px) {
@@ -939,5 +945,8 @@ a {
     }
     .productList {
         margin-top: 0;
+    }
+    .displayStack_1 {
+        font-size: 1.4rem;
     }
 }

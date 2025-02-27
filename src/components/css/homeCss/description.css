@@ -559,6 +559,10 @@ body {
 }
 
 @media (max-width: 460px) {
+    .carousel-container-master {
+        margin-top: 5rem;
+    }
+
     .reviews-heading-container h1 {
         font-size: 2em;
     }
