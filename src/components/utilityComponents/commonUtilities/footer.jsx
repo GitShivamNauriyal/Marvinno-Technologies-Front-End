@@ -117,8 +117,8 @@ export default function Footer() {
                     <li className="li-items-footer">
                         <Link
                             className="anchor-tag-items-footer"
-                            target="_blank"
-                            to="/Privacy"
+                            // target="_blank"
+                            to="/privacy_policy"
                         >
                             Privacy Policy
                         </Link>

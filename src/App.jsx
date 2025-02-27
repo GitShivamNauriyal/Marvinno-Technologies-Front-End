@@ -8,7 +8,7 @@ import ContactUs from "./components/routeComponents/contact";
 import ProductDescription from "./components/utilityComponents/productsUtilityComponents/productDescription";
 import BlogPhotos from "./components/routeComponents/BlogPhotos";
 import Solutions from "./components/routeComponents/solutions";
-import PrivacyPolicy from "./components/routeComponents/Privacy";
+import PrivacyPolicy from "./components/utilityComponents/commonUtilities/UserPPolicy";
 
 import ScrollToTop from "./components/utilityComponents/commonUtilities/ScrollToTop";
 
@@ -95,7 +95,11 @@ export default function App() {
                     path="/about/configurations"
                     element={<DeviceConfigVids />}
                 />
-                <Route exact path="/privacy" element={<PrivacyPolicy />} />
+                <Route
+                    exact
+                    path="/privacy_policy"
+                    element={<PrivacyPolicy />}
+                />
                 <Route exact path="/products" element={<Products />} />
                 <Route exact path="/cart" element={<Cart />} />
                 <Route exact path="/connect" element={<ContactUs />} />
