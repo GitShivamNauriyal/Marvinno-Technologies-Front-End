@@ -181,7 +181,7 @@ body {
 .toCenterTemplateCss {
     position: relative;
     flex: 1;
-    max-width: 40%;
+    /* max-width: 40%; */
 }
 .cardBodyWidth {
     position: relative;
@@ -461,6 +461,7 @@ body {
     /* discover infinite possibilities & etc..... cards */
     .toCenterTemplateCss {
         width: fit-content;
+        /* max-width: 90%; */
         margin: 0% auto;
     }
 
