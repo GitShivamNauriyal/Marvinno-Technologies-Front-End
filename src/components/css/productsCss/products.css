@@ -11,146 +11,6 @@ body {
     flex-direction: column;
 }
 
-/*make a payment section start*/
-.make-a-payment-section {
-    display: flex;
-    margin: auto;
-    padding: 4rem 2rem;
-    min-width: 90%;
-    justify-content: space-evenly;
-    border: 1px solid rgb(0, 0, 0, 0.2);
-    border-radius: 2rem;
-    background: linear-gradient(45deg, #266a7622, #fff);
-    cursor: help;
-}
-
-.make-a-payment-heading {
-    font-size: 2rem;
-    translate: 0 -4px;
-    color: #555;
-    display: flex;
-    align-items: center;
-    user-select: none;
-}
-
-.make-a-payment-button {
-    color: white;
-    background: linear-gradient(45deg, #266a76cc, #27ad5499);
-    padding: 1rem;
-    border-radius: 1.2rem;
-    border: 1px solid rgb(0, 0, 0, 0.1);
-    border: none;
-    font-size: 1.5rem;
-    transition: all 0.3s ease;
-    cursor: pointer;
-    user-select: none;
-    letter-spacing: 0.05rem;
-}
-
-.make-a-payment-button:hover {
-    scale: 1.01;
-    transform: translateY(-0.5rem);
-    box-shadow: 4px 4px 8px rgb(0, 0, 0, 0.3);
-}
-
-@media only screen and (max-width: 800px) {
-    .make-a-payment-section {
-        padding: 1rem;
-    }
-    .make-a-payment-heading {
-        font-size: 0.7rem;
-    }
-    .make-a-payment-button {
-        padding: 0.5rem;
-        font-size: 1rem;
-        translate: 0 0;
-    }
-}
-
-/* Modal Overlay */
-.modal-overlay {
-    position: fixed;
-    inset: 0;
-    background: rgba(0, 0, 0, 0.5);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    z-index: 999;
-}
-
-/* Modal Box */
-.modal {
-    background: white;
-    padding: 20px;
-    width: 90%;
-    max-width: 500px;
-    min-width: 300px;
-    border-radius: 8px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-    position: relative;
-}
-
-/* Modal Title */
-.modal-title {
-    font-size: 1.4rem;
-    font-weight: 500;
-    margin-bottom: 0.75rem;
-}
-
-/* Form */
-.payment-form div {
-    margin-bottom: 10px;
-}
-
-.payment-form label {
-    display: block;
-    font-weight: 500;
-    margin-bottom: 4px;
-    color: #333;
-}
-
-.payment-form input {
-    width: 100%;
-    padding: 8px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-}
-
-/* Submit Button */
-.submit-button {
-    width: 100%;
-    padding: 10px;
-    background-color: #28a745;
-    color: white;
-    border: none;
-    font-size: 16px;
-    cursor: pointer;
-    border-radius: 4px;
-    transition: background 0.3s ease;
-}
-
-.submit-button:hover {
-    background-color: #218838;
-}
-
-/* Close Button */
-.close-button {
-    position: absolute;
-    top: 8px;
-    right: 12px;
-    background: none;
-    border: none;
-    font-size: 20px;
-    cursor: pointer;
-    color: #555;
-}
-
-.close-button:hover {
-    color: #000;
-}
-
-/*make a payment section end*/
-
 .a-products {
     text-decoration: underline;
     text-decoration-color: #3e8a2dce;
@@ -283,6 +143,7 @@ body {
     justify-content: space-between;
     width: 9rem;
     height: 3rem;
+    margin-top: 1rem;
     border-radius: 3rem;
     overflow: hidden;
     border: 2px solid #bbbbbb;
@@ -335,6 +196,7 @@ body {
 }
 .Add-more-value-contailer {
     width: 3rem;
+    user-select: none;
     display: flex;
     place-content: center;
     overflow: hidden;
@@ -350,6 +212,29 @@ body {
     letter-spacing: 0.1em;
     padding: 2em;
 }
+
+.module-price {
+    margin: 0.5rem 0;
+    font-size: 1.5rem;
+}
+/*-------------------------*/
+.add-to-cart-button {
+    user-select: none;
+    padding: 1rem;
+    font-size: 1rem;
+    margin: 1rem 0;
+    border-radius: 1rem;
+    border: 1px solid #00000033;
+    transition: all 0.2s ease;
+    background-color: #fff;
+    box-shadow: inset 2px 2px 4px rgb(0, 0, 0, 0.1);
+}
+.add-to-cart-button:hover {
+    box-shadow: inset -2px -2px 4px rgb(0, 0, 0, 0.1);
+    scale: 1.02;
+    cursor: pointer;
+}
+/*-------------------------*/
 
 .headingPrice {
     font-size: large;

@@ -145,7 +145,12 @@ export default function ProductDescription(props) {
                                 </span>
                             </div>
                         </div>
-                        <button onClick={addToCart}>Add to Cart</button>
+                        <button
+                            className="add-to-cart-button"
+                            onClick={addToCart}
+                        >
+                            Add to Cart
+                        </button>
                     </div>
                     <div className="rightSectionProduct">
                         <h5 className="card-title headingColorWhite">
