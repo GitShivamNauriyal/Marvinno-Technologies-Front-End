@@ -138,6 +138,7 @@
 /* ReadMore component styles */
 .solutions-readmore-wrapper {
     margin-top: auto;
+}
 
 .solutions-expanded-content {
     background: rgba(15, 23, 42, 0.5);

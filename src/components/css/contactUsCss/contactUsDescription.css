@@ -15,6 +15,7 @@
     padding: 2rem;
     margin: 2rem auto;
 }
+
 .get-in-touch-heading-container h1 {
     font-family: "Montserrat", sans-serif;
     font-size: 3em;
@@ -99,15 +100,16 @@
 }
 
 .connect-social-media-link {
-    /* width: 32px; */
-    scale: 240%;
-    margin-bottom: 2rem;
-    transition: all 0.2s ease;
+    font-size: 2rem;
+    color: #1e293b;
+    margin-bottom: 1rem;
+    transition: all 0.25s ease;
+    display: inline-block;
 }
+
 .connect-social-media-link:hover {
-    color: #266a76;
-    scale: 270%;
-    translate: 0 -4px;
+    color: #10b981;
+    transform: scale(1.1);
 }
 
 .contact-form-right-side-bar {
@@ -152,7 +154,8 @@
 }
 
 .contact-up-form-input-box {
-    display: flex; /* This is only to make the input area take as much space as available */
+    display: flex;
+    /* This is only to make the input area take as much space as available */
 }
 
 .inputArea {
@@ -223,13 +226,16 @@ textarea.inputArea {
     .contactUsDisplayGrid {
         grid-template-columns: repeat(2, 1fr);
     }
+
     .contact-us-form {
         grid-row: 3/5;
         grid-column: 1/3;
     }
+
     .contact-info-div {
         aspect-ratio: auto;
     }
+
     .contact-form-right-side-bar {
         grid-row: auto;
     }
@@ -239,10 +245,12 @@ textarea.inputArea {
     .get-in-touch-heading-container h1 {
         font-size: 2.5em;
     }
+
     .contactUsDisplayGrid {
         grid-template-columns: 1fr;
         width: 100vw;
     }
+
     /* .contact-info-div {
         aspect-ratio: 3/2;
     } */
@@ -258,10 +266,12 @@ textarea.inputArea {
     .connect-page-master {
         margin-top: 5rem;
     }
+
     .contactUsDisplayGrid {
         width: 100vw;
         margin: auto;
     }
+
     .get-in-touch-heading-container h1 {
         font-size: 2em;
     }
@@ -271,9 +281,11 @@ textarea.inputArea {
     .contact-info-div {
         padding: 2rem;
     }
+
     .get-in-touch-heading-container h1 {
         font-size: 1.8em;
     }
+
     /* .contactUsDisplayGrid {
         margin: auto;
     } */

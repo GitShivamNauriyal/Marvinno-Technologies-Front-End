@@ -1,16 +1,26 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import "../../css/commonComponentsCss/LogInPage.css";
 import navbarLogo from "../../images/navbarLogoBlackText.png";
 import homeNavbarIcon from "../../images/homeIconNavbar.png";
 
 const LoginPage = () => {
+    const navigate = useNavigate();
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
 
     const handleLogin = (e) => {
         e.preventDefault();
-        console.log("Logging in with", email, password);
+        const userName = email.split("@")[0];
+        const formattedName = userName.charAt(0).toUpperCase() + userName.slice(1);
+        const userData = {
+            id: Date.now().toString(),
+            name: formattedName,
+            email: email,
+        };
+        localStorage.setItem("marvinno_user", JSON.stringify(userData));
+        window.dispatchEvent(new Event("userStateUpdated"));
+        navigate("/products");
     };
 
     return (
@@ -22,9 +32,6 @@ const LoginPage = () => {
                     alt="Marvinno LOGO"
                 />
                 <h2>Login to Your Account</h2>
-                <div className="error">
-                    Login functionality is temporarily disabled
-                </div>
                 <form onSubmit={handleLogin} className="login-form">
                     <div className="form-group">
                         <label htmlFor="email">Email Address</label>

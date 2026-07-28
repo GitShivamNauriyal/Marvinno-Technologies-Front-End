@@ -54,9 +54,9 @@ export default function ProductDescription(props) {
             >
                 <div className="product-detail-container">
                     {/* Breadcrumbs */}
-                    <div className="product-breadcrumb">
+                    {/* <div className="product-breadcrumb">
                         <span>Home</span> &rsaquo; <span>Products</span> &rsaquo; <span>SPECTRUM Series</span> &rsaquo; <span className="active-breadcrumb">{props.name}</span>
-                    </div>
+                    </div> */}
 
                     <div className="ecommerce-product-layout">
                         {/* LEFT COLUMN: Gallery Viewport */}

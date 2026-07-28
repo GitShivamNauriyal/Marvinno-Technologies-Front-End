@@ -1,10 +1,11 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import "../../css/commonComponentsCss/SignUpPage.css";
 import navbarLogo from "../../images/navbarLogoBlackText.png";
 import homeNavbarIcon from "../../images/homeIconNavbar.png";
 
 const SignUpPage = () => {
+    const navigate = useNavigate();
     const [name, setName] = useState("");
     const [email, setEmail] = useState("");
     const [phone, setPhone] = useState("");
@@ -14,14 +15,21 @@ const SignUpPage = () => {
 
     const handleSignUp = (e) => {
         e.preventDefault();
-        console.log("Signing up with", {
-            name,
-            email,
-            phone,
-            password,
-            confirmPassword,
-            address,
-        });
+        if (password !== confirmPassword) {
+            alert("Passwords do not match!");
+            return;
+        }
+
+        const userData = {
+            id: Date.now().toString(),
+            name: name,
+            email: email,
+            phone: phone,
+            address: address,
+        };
+        localStorage.setItem("marvinno_user", JSON.stringify(userData));
+        window.dispatchEvent(new Event("userStateUpdated"));
+        navigate("/products");
     };
 
     return (
@@ -33,9 +41,6 @@ const SignUpPage = () => {
                     alt="Marvinno LOGO"
                 />
                 <h2>Create Your Account</h2>
-                <div className="error">
-                    Signup functionality is temporarily disabled
-                </div>
                 <form onSubmit={handleSignUp} className="signup-form">
                     <div className="form-group">
                         <label htmlFor="name">Full Name</label>
