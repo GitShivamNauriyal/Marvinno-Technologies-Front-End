@@ -1,13 +1,9 @@
 import React, { useState } from "react";
-// import axios from "axios";
-// import { useNavigate } from "react-router-dom";
 import { PulseLoader } from "react-spinners";
-
+import ApiService from "../../../../services/apiService";
 import "../../../css/aboutCss/careerSection.css";
 
 const CareerForm = () => {
-    // const navigate = useNavigate();
-
     const [loading, setLoading] = useState(false);
     const [submissionSuccessful, setSubmissionSuccess] = useState(false);
     const [formData, setFormData] = useState({
@@ -16,12 +12,7 @@ const CareerForm = () => {
         email: "",
         phoneNumber: "",
         dateOfBirth: "",
-        schoolName: "",
-        state: "Andhra Pradesh",
-        institutionCategory: "School",
-        gender: "Male",
-        language: "English",
-        stream: "Science",
+        state: "Delhi",
         interest: "Content Writing",
         termsAgreed: false,
         receiveUpdates: false,
@@ -40,17 +31,14 @@ const CareerForm = () => {
     const validateForm = () => {
         const newErrors = {};
 
-        // Validate phone number
         if (!/^\d{10}$/.test(formData.phoneNumber)) {
             newErrors.phoneNumber = "Phone number must be exactly 10 digits.";
         }
 
-        // Validate email
         if (!/^[\w-.]+@([\w-]+\.)+[\w-]{2,4}$/.test(formData.email)) {
             newErrors.email = "Please enter a valid email address.";
         }
 
-        // Validate date of birth
         if (!formData.dateOfBirth) {
             newErrors.dateOfBirth = "Date of birth is required.";
         } else {
@@ -78,47 +66,18 @@ const CareerForm = () => {
         setLoading(true);
 
         if (!validateForm()) {
-            setLoading(false); // Stop the loader if validation fails
+            setLoading(false);
             return;
         }
 
-        // Backend integration is commented for now
-        // Uncomment the following code when integrating with backend APIs
-        /*
         try {
-            const response = await axios.post(
-                "/your-endpoint", // Replace with your actual API endpoint
-                {
-                    ...formData,
-                },
-                {
-                    headers: {
-                        "Content-Type": "application/json",
-                    },
-                }
-            );
+            await ApiService.submitContactInquiry(formData);
             setLoading(false);
             setSubmissionSuccess(true);
-            setTimeout(() => {
-                setSubmissionSuccess(false);
-                navigate("/"); // Navigate to home page after 3 seconds
-            }, 5000);
         } catch (error) {
-            console.error(
-                "Error:",
-                error.response ? error.response.data : error.message
-            );
-            // Handle error (e.g., show an error message)
+            console.error("Submission error:", error);
+            setLoading(false);
         }
-        */
-
-        // Temporary behavior
-        alert(
-            "The form is not currently accepting responses. Please try again later."
-        );
-        setSubmissionSuccess(false); //this is temporary, remove this line when integrating with backend
-
-        setLoading(false);
     };
 
     return (
@@ -126,19 +85,14 @@ const CareerForm = () => {
             <div className="about-career-section">
                 <h1 className="about-section-headings">Career at MARVINNO</h1>
                 <p className="about-career-section-paragraph">
-                    Join Our Innovation Journey: Embark on a career with us and
-                    be part of a pioneering team driving technological
-                    advancements.
+                    Join Our Innovation Journey: Embark on a career with us and be part of a pioneering team driving technological advancements.
                 </p>
                 <div className="about-career-section-form-container">
-                    {!submissionSuccessful && (
+                    {!submissionSuccessful ? (
                         <form
                             className="internship-form"
                             onSubmit={handleSubmit}
                         >
-                            <p className="error">
-                                This form is temporaryly not taking response
-                            </p>
                             <div>
                                 <label className="internship-label">
                                     First name
@@ -186,7 +140,7 @@ const CareerForm = () => {
                                     <input
                                         type="text"
                                         name="phoneNumber"
-                                        placeholder="+91"
+                                        placeholder="10-digit phone number"
                                         value={formData.phoneNumber}
                                         onChange={handleChange}
                                         required
@@ -215,18 +169,6 @@ const CareerForm = () => {
                                     )}
                                 </label>
                             </div>
-                            {/* <div>
-                            <label className="internship-label">
-                                School/College/Institution Name संस्थान का नाम:
-                                <input
-                                    type="text"
-                                    name="schoolName"
-                                    value={formData.schoolName}
-                                    onChange={handleChange}
-                                    required
-                                />
-                            </label>
-                        </div> */}
                             <div>
                                 <label className="internship-label">
                                     State
@@ -236,85 +178,18 @@ const CareerForm = () => {
                                         onChange={handleChange}
                                         required
                                     >
-                                        <option value="Andra Pradesh">
-                                            Andhra Pradesh
-                                        </option>
-                                        <option value="Arunachal Pradesh">
-                                            Arunachal Pradesh
-                                        </option>
-                                        <option value="Assam">Assam</option>
-                                        <option value="Bihar">Bihar</option>
-                                        <option value="Chandigarh">
-                                            Chandigarh
-                                        </option>
-                                        <option value="Chhattisgarh">
-                                            Chhattisgarh
-                                        </option>
-                                        <option value="Dadar and Nagar Haveli">
-                                            Dadar and Nagar Haveli
-                                        </option>
-                                        <option value="Daman and Diu">
-                                            Daman and Diu
-                                        </option>
                                         <option value="Delhi">Delhi</option>
-                                        <option value="Goa">Goa</option>
+                                        <option value="Andhra Pradesh">Andhra Pradesh</option>
                                         <option value="Gujarat">Gujarat</option>
                                         <option value="Haryana">Haryana</option>
-                                        <option value="Himachal Pradesh">
-                                            Himachal Pradesh
-                                        </option>
-                                        <option value="Jammu and Kashmir">
-                                            Jammu and Kashmir
-                                        </option>
-                                        <option value="Jharkhand">
-                                            Jharkhand
-                                        </option>
-                                        <option value="Karnataka">
-                                            Karnataka
-                                        </option>
-                                        <option value="Kerala">Kerala</option>
-                                        <option value="Lakshadeep">
-                                            Lakshadeep
-                                        </option>
-                                        <option value="Madya Pradesh">
-                                            Madya Pradesh
-                                        </option>
-                                        <option value="Maharashtra">
-                                            Maharashtra
-                                        </option>
-                                        <option value="Manipur">Manipur</option>
-                                        <option value="Meghalaya">
-                                            Meghalaya
-                                        </option>
-                                        <option value="Mizoram">Mizoram</option>
-                                        <option value="Nagaland">
-                                            Nagaland
-                                        </option>
-                                        <option value="Orissa">Orissa</option>
-                                        <option value="Pondicherry">
-                                            Pondicherry
-                                        </option>
+                                        <option value="Karnataka">Karnataka</option>
+                                        <option value="Maharashtra">Maharashtra</option>
                                         <option value="Punjab">Punjab</option>
-                                        <option value="Rajasthan">
-                                            Rajasthan
-                                        </option>
-                                        <option value="Sikkim">Sikkim</option>
-                                        <option value="Tamil Nadu">
-                                            Tamil Nadu
-                                        </option>
-                                        <option value="Telangana">
-                                            Telangana
-                                        </option>
-                                        <option value="Tripura">Tripura</option>
-                                        <option value="Uttaranchal">
-                                            Uttarakhand
-                                        </option>
-                                        <option value="Uttar Pradesh">
-                                            Uttar Pradesh
-                                        </option>
-                                        <option value="West Bengal">
-                                            West Bengal
-                                        </option>
+                                        <option value="Rajasthan">Rajasthan</option>
+                                        <option value="Tamil Nadu">Tamil Nadu</option>
+                                        <option value="Uttar Pradesh">Uttar Pradesh</option>
+                                        <option value="Uttarakhand">Uttarakhand</option>
+                                        <option value="West Bengal">West Bengal</option>
                                     </select>
                                 </label>
                             </div>
@@ -328,28 +203,11 @@ const CareerForm = () => {
                                         onChange={handleChange}
                                         required
                                     >
-                                        <option value="content">
-                                            Content Writing
-                                        </option>
-                                        <option value="research">
-                                            Research Work
-                                        </option>
-                                        <option value="presentation">
-                                            Presentations
-                                        </option>
-                                        <option value="workshop">
-                                            Organizing Workshop
-                                        </option>
-                                        <option value="field">
-                                            Field Activities
-                                        </option>
-                                        <option value="social">
-                                            Social Media
-                                        </option>
-                                        <option value="leadership">
-                                            Team leadership
-                                        </option>
-                                        <option value="other">Other</option>
+                                        <option value="Engineering & IoT">Engineering & IoT</option>
+                                        <option value="Full Stack Development">Full Stack Development</option>
+                                        <option value="Sales & Operations">Sales & Operations</option>
+                                        <option value="Content & Marketing">Content & Marketing</option>
+                                        <option value="Field Support">Field Support</option>
                                     </select>
                                 </label>
                             </div>
@@ -373,28 +231,28 @@ const CareerForm = () => {
                                         checked={formData.receiveUpdates}
                                         onChange={handleChange}
                                     />
-                                    I want to receive updates about the
-                                    internship/job vacancies
+                                    I want to receive updates about career opportunities
                                 </label>
                             </div>
                             <div className="button-container">
                                 <button
                                     type="submit"
                                     className="internship-button"
+                                    disabled={loading}
                                 >
-                                    {!loading && <p>Submit</p>}
+                                    {!loading && <span>Submit Application</span>}
                                     <PulseLoader
                                         loading={loading}
                                         color="#fff"
+                                        size={8}
                                     />
                                 </button>
                             </div>
                         </form>
-                    )}
-                    {submissionSuccessful && (
-                        <div className="submission-success-message">
-                            <h2>Form submitted successfully!</h2>
-                            <p> We will reach you soon!</p>
+                    ) : (
+                        <div className="submission-success-message" style={{ textAlign: "center", padding: "3rem" }}>
+                            <h2>Application Submitted Successfully!</h2>
+                            <p>Thank you for your interest in Marvinno. Our team will review your application and contact you soon.</p>
                         </div>
                     )}
                 </div>

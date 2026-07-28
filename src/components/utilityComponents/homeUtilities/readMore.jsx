@@ -27,12 +27,3 @@ const ReadMore = ({ text }) => {
 };
 
 export default ReadMore;
-
-// <div>
-//     {isReadMoreShown ? text : text.substr(0, 10)}
-//     <p className="centerReadMoreButton">
-//         <button className="ReadMoreButton" onClick={toggleBtn}>
-//             {isReadMoreShown ? "Less" : "More"}
-//         </button>
-//     </p>
-// </div>

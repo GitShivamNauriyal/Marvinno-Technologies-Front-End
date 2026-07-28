@@ -52,7 +52,6 @@ export default function Footer() {
     return (
         <div className="footer-container">
             <div className="footer-margin">
-                {/* Products Section */}
                 <div className="footer-div-grid div1">
                     <Link
                         className="heading-center-more products-heading-footer"
@@ -73,11 +72,10 @@ export default function Footer() {
                     ))}
                 </div>
 
-                {/* More Links Section */}
                 <div className="footer-div-grid div2">
-                    <a className="heading-center-more heading-footer" href="/">
+                    <Link className="heading-center-more heading-footer" to="/">
                         More
-                    </a>
+                    </Link>
                     <br />
                     <li className="li-items-footer">
                         <Link className="anchor-tag-items-footer" to="/about">
@@ -109,6 +107,7 @@ export default function Footer() {
                         <a
                             className="anchor-tag-items-footer"
                             target="_blank"
+                            rel="noopener noreferrer"
                             href={termsAndConditions}
                         >
                             Terms & Conditions
@@ -117,7 +116,6 @@ export default function Footer() {
                     <li className="li-items-footer">
                         <Link
                             className="anchor-tag-items-footer"
-                            // target="_blank"
                             to="/privacy_policy"
                         >
                             Privacy Policy
@@ -125,7 +123,6 @@ export default function Footer() {
                     </li>
                 </div>
 
-                {/* Social Media Section */}
                 <div className="footer-div-grid div3">
                     <p className="heading-footer">Connect With Us</p>
                     <div className="footer-connect-social-media-link-container">
@@ -141,7 +138,6 @@ export default function Footer() {
                         ))}
                     </div>
 
-                    {/* Footer Contact Details */}
                     <p className="footer-address">
                         Experience Center: Dilshad Garden, New Delhi
                     </p>
@@ -155,7 +151,8 @@ export default function Footer() {
                     <div className="footer-download-links">
                         <a
                             className="footer-download-images"
-                            target="blank"
+                            target="_blank"
+                            rel="noopener noreferrer"
                             href="https://play.google.com/store/apps/details?id=in.marvinno"
                         >
                             <img
@@ -167,7 +164,8 @@ export default function Footer() {
                         <br />
                         <a
                             className="footer-download-images"
-                            target="blank"
+                            target="_blank"
+                            rel="noopener noreferrer"
                             href="https://apps.apple.com/in/app/marvinno/id1615715918"
                         >
                             <img
@@ -182,7 +180,6 @@ export default function Footer() {
 
                 <hr className="line-break-footer" />
 
-                {/* Footer Branding */}
                 <div className="footer-div-grid div4 footer-div4">
                     <img
                         className="footer-marvinno-image"
@@ -190,8 +187,7 @@ export default function Footer() {
                         src={footerMarvinnoLogo}
                     />
                     <p className="footer-copyright-text">
-                        &#169; 2025 Marvinno Technologies India Pvt. Ltd. All
-                        rights reserved.
+                        © {new Date().getFullYear()} Marvinno Technologies India Pvt. Ltd. All rights reserved.
                     </p>
                 </div>
             </div>

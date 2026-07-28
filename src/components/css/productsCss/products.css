@@ -719,10 +719,6 @@ body {
         line-height: 1.1rem;
         padding: 0;
     }
-    .p-spectrum-products-heading {
-        font-size: 2.2rem;
-        padding: 0 2rem;
-    }
     .download-products {
         padding: 0;
         padding-bottom: 4px;
@@ -865,7 +861,6 @@ a {
     display: flex;
     justify-content: space-between;
     margin-bottom: 1rem;
-    font-size: 1.1rem;
 }
 
 .displayStack__2 {
@@ -925,7 +920,6 @@ a {
 @media screen and (max-width: 740px) {
     .product {
         grid-template-columns: repeat(1, 0.27fr);
-        gap: 3rem;
     }
 }
 @media screen and (max-width: 440px) {
@@ -946,7 +940,486 @@ a {
     .productList {
         margin-top: 0;
     }
-    .displayStack_1 {
-        font-size: 1.4rem;
+}
+
+/* Modern 2026 E-Commerce Product Detail Page Styling */
+
+.product-detail-page-master {
+    margin-top: 5rem;
+}
+
+.bgColorProductDescription {
+    background-color: #0b1329;
+    min-height: calc(100vh - 80px);
+    padding: 2.5rem 1.5rem 5rem 1.5rem;
+    color: #f8fafc;
+    font-family: system-ui, -apple-system, sans-serif;
+}
+
+.product-detail-container {
+    max-width: 1320px;
+    margin: 0 auto;
+}
+
+.product-breadcrumb {
+    font-size: 0.88rem;
+    color: #94a3b8;
+    margin-bottom: 2rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.product-breadcrumb .active-breadcrumb {
+    color: #34d399;
+    font-weight: 600;
+}
+
+/* Amazon/Flipkart style 2-Column Grid Layout */
+.ecommerce-product-layout {
+    display: grid;
+    grid-template-columns: 1fr 1.1fr;
+    gap: 3.5rem;
+    align-items: start;
+}
+
+/* Gallery Column */
+.ecommerce-gallery-column {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    position: sticky;
+    top: 6rem;
+}
+
+.main-image-viewer-card {
+    position: relative;
+    background: rgba(30, 41, 59, 0.6);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    border-radius: 1.5rem;
+    padding: 2.5rem;
+    height: 420px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+}
+
+.product-badge-overlay {
+    position: absolute;
+    top: 1.2rem;
+    left: 1.2rem;
+    padding: 0.35rem 0.9rem;
+    background: rgba(16, 185, 129, 0.2);
+    border: 1px solid rgba(16, 185, 129, 0.4);
+    border-radius: 50px;
+    font-size: 0.75rem;
+    font-weight: 700;
+    color: #34d399;
+    letter-spacing: 0.05em;
+}
+
+.main-product-image {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+    filter: drop-shadow(0 20px 30px rgba(0, 0, 0, 0.35));
+    transition: transform 0.4s ease;
+}
+
+.main-image-viewer-card:hover .main-product-image {
+    transform: scale(1.04);
+}
+
+/* Thumbnails */
+.product-thumbnails-grid {
+    display: flex;
+    gap: 1rem;
+    overflow-x: auto;
+    padding-bottom: 0.5rem;
+}
+
+.thumbnail-card {
+    width: 80px;
+    height: 80px;
+    border-radius: 0.85rem;
+    background: rgba(30, 41, 59, 0.6);
+    border: 2px solid rgba(255, 255, 255, 0.1);
+    padding: 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.25s ease;
+    flex-shrink: 0;
+}
+
+.thumbnail-card img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}
+
+.thumbnail-card:hover, .thumbnail-card.active-thumbnail {
+    border-color: #10b981;
+    background: rgba(16, 185, 129, 0.1);
+    transform: translateY(-2px);
+}
+
+/* Trust Badges */
+.trust-badges-bar {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    margin-top: 0.5rem;
+    padding: 1.2rem;
+    background: rgba(30, 41, 59, 0.4);
+    border-radius: 1.2rem;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.trust-badge-item {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+.trust-icon {
+    font-size: 1.4rem;
+    color: #34d399;
+    flex-shrink: 0;
+}
+
+.trust-badge-item strong {
+    display: block;
+    font-size: 0.82rem;
+    color: #f8fafc;
+}
+
+.trust-badge-item p {
+    font-size: 0.72rem;
+    color: #94a3b8;
+    margin: 0;
+}
+
+/* E-Commerce Info Column */
+.ecommerce-info-column {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.category-pill {
+    display: inline-block;
+    padding: 0.3rem 0.8rem;
+    background: rgba(16, 185, 129, 0.15);
+    border-radius: 50px;
+    font-size: 0.78rem;
+    font-weight: 600;
+    color: #34d399;
+    margin-bottom: 0.6rem;
+}
+
+.product-main-title {
+    font-size: 2.8rem;
+    font-weight: 800;
+    letter-spacing: -0.03em;
+    color: #ffffff;
+    margin: 0 0 0.2rem 0;
+}
+
+.product-subtitle-fullform {
+    font-size: 1.2rem;
+    color: #cbd5e1;
+    margin: 0 0 1rem 0;
+}
+
+.ratings-sales-row {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    font-size: 0.9rem;
+    color: #cbd5e1;
+}
+
+.star-rating-box {
+    display: flex;
+    align-items: center;
+    gap: 0.25rem;
+    color: #fbbf24;
+}
+
+.rating-score {
+    font-weight: 700;
+    color: #ffffff;
+    margin-left: 0.3rem;
+}
+
+.sales-count {
+    color: #94a3b8;
+}
+
+.in-stock-badge {
+    color: #34d399;
+    font-weight: 600;
+}
+
+/* Price Card */
+.ecommerce-price-card {
+    background: linear-gradient(135deg, rgba(30, 41, 59, 0.8) 0%, rgba(15, 23, 42, 0.9) 100%);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    border-radius: 1.2rem;
+    padding: 1.5rem 1.8rem;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+.price-main-display {
+    display: flex;
+    align-items: baseline;
+    gap: 0.8rem;
+    margin-bottom: 0.5rem;
+}
+
+.price-currency {
+    font-size: 1rem;
+    color: #94a3b8;
+}
+
+.price-amount {
+    font-size: 2.5rem;
+    font-weight: 800;
+    color: #ffffff;
+    letter-spacing: -0.02em;
+}
+
+.price-tax-inclusive {
+    font-size: 0.82rem;
+    color: #34d399;
+    font-weight: 500;
+}
+
+.price-perks {
+    display: flex;
+    gap: 1.5rem;
+    font-size: 0.85rem;
+    color: #94a3b8;
+}
+
+/* Key Highlights 2x2 */
+.highlights-grid-container {
+    background: rgba(30, 41, 59, 0.5);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 1.2rem;
+    padding: 1.4rem;
+}
+
+.section-small-title {
+    font-size: 0.95rem;
+    font-weight: 700;
+    color: #ffffff;
+    margin: 0 0 1rem 0;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.highlights-2x2-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.9rem;
+}
+
+.highlight-pill-item {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    padding: 0.75rem 1rem;
+    background: rgba(15, 23, 42, 0.6);
+    border-radius: 0.85rem;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    font-size: 0.88rem;
+    color: #e2e8f0;
+}
+
+.hl-icon {
+    color: #10b981;
+    font-size: 1rem;
+    flex-shrink: 0;
+}
+
+/* Variant chips */
+.variant-specs-row {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.variant-chip {
+    flex: 1;
+    min-width: 160px;
+    background: rgba(30, 41, 59, 0.5);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 0.9rem;
+    padding: 0.9rem 1.1rem;
+}
+
+.chip-label {
+    display: block;
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: #94a3b8;
+    margin-bottom: 0.2rem;
+}
+
+.chip-value {
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: #ffffff;
+}
+
+/* Checkout Box */
+.checkout-action-box {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+    background: rgba(15, 23, 42, 0.7);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    border-radius: 1.2rem;
+    padding: 1.5rem;
+}
+
+.quantity-selector-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.qty-label {
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: #e2e8f0;
+}
+
+.quantity-btn-group {
+    display: flex;
+    align-items: center;
+    background: rgba(30, 41, 59, 0.8);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    border-radius: 0.75rem;
+    padding: 0.25rem;
+}
+
+.quantity-btn-group button {
+    width: 36px;
+    height: 36px;
+    border: none;
+    background: rgba(255, 255, 255, 0.1);
+    color: #ffffff;
+    font-size: 1.2rem;
+    font-weight: 600;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.quantity-btn-group button:hover {
+    background: rgba(255, 255, 255, 0.25);
+}
+
+.qty-number {
+    padding: 0 1.2rem;
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: #ffffff;
+}
+
+.action-buttons-row {
+    display: flex;
+    gap: 1rem;
+}
+
+.cart-cta-button {
+    width: 100%;
+    padding: 1rem;
+    border: none;
+    border-radius: 0.9rem;
+    background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+    color: #ffffff;
+    font-size: 1.1rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 8px 20px rgba(16, 185, 129, 0.35);
+}
+
+.cart-cta-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 12px 28px rgba(16, 185, 129, 0.5);
+    background: linear-gradient(135deg, #059669 0%, #047857 100%);
+}
+
+/* Specs Accordion Table */
+.tech-specs-table-container {
+    background: rgba(30, 41, 59, 0.5);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 1.2rem;
+    padding: 1.5rem;
+}
+
+.specs-table-header {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: #ffffff;
+    margin: 0 0 1rem 0;
+    padding-bottom: 0.8rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.specs-table-body {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+}
+
+.spec-table-row {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 0.6rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.spec-table-row:last-child {
+    border-bottom: none;
+}
+
+.spec-table-key {
+    font-size: 0.88rem;
+    color: #94a3b8;
+}
+
+.spec-table-val {
+    font-size: 0.92rem;
+    font-weight: 600;
+    color: #f8fafc;
+}
+
+@media only screen and (max-width: 992px) {
+    .ecommerce-product-layout {
+        grid-template-columns: 1fr;
+        gap: 2.5rem;
+    }
+    
+    .ecommerce-gallery-column {
+        position: relative;
+        top: 0;
+    }
+
+    .product-main-title {
+        font-size: 2.2rem;
     }
 }
+
+

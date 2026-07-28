@@ -1,10 +1,12 @@
 import React from "react";
-import Carousel from "react-multi-carousel";
+import CarouselPkg from "react-multi-carousel";
 import Team from "./Team";
 import AOS from "aos";
 
 import "../../../css/aboutCss/teamSection.css";
 import "react-multi-carousel/lib/styles.css";
+
+const Carousel = CarouselPkg.default || CarouselPkg;
 
 const TeamSection = () => {
     AOS.init();
@@ -25,7 +27,6 @@ const TeamSection = () => {
     return (
         <div>
             <div className="products-team" data-aos="fade-up">
-                {/* <hr /> */}
                 <p className="about-section-headings">Team MARVINNO </p>
                 <hr />
                 <Carousel
@@ -65,12 +66,6 @@ const TeamSection = () => {
                             role="DGM - Sales Operations"
                         />
                     </div>
-                    {/* <div className="carousel-content">
-                        <Team
-                            name="Mr. Mohd Mujeeb"
-                            role="Full Stack  Web Developer"
-                        />
-                    </div> */}
                     <div className="carousel-content">
                         <Team
                             name="Mr. Ayush Dobriyal"
@@ -95,7 +90,6 @@ const TeamSection = () => {
                             role="On-Site Electrician"
                         />
                     </div>
-
                     <div className="carousel-content">
                         <Team
                             name="Shaded Feather Productions"

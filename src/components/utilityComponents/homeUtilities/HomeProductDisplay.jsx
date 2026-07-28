@@ -1,11 +1,13 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { PiArrowCircleUpRightThin } from "react-icons/pi";
-import Carousel from "react-multi-carousel";
+import CarouselPkg from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import cardData from "../productsUtilityComponents/cardDetails";
 import Module from "../productsUtilityComponents/module";
 import "../../css/homeCss/HomeProductDisplay.css";
+
+const Carousel = CarouselPkg.default || CarouselPkg;
 
 const HomeProductDisplay = () => {
     const responsive = {
@@ -64,7 +66,6 @@ const HomeProductDisplay = () => {
                         draggable={true}
                         showDots={false}
                         responsive={responsive}
-                        // ssr={true} // means to render carousel on server-side.
                         infinite={true}
                         removeArrowOnDeviceType={[
                             "desktop",
@@ -79,14 +80,6 @@ const HomeProductDisplay = () => {
                     >
                         {cardData.map((item) => (
                             <Module
-                                // id="1"
-                                // imgsrc="../card_image/S black.png"
-                                // price="₹3999"
-                                // name="module"
-                                // totalSales="99"
-                                // title="add"
-                                // rating="5"
-                                // url="/products/s1-module"
                                 key={item.id}
                                 id="0"
                                 imgsrc={item.img}

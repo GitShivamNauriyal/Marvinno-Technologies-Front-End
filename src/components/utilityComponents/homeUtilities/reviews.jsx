@@ -1,10 +1,12 @@
 import React from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import Carousel from "react-multi-carousel";
+import CarouselPkg from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import fiveStarReview from "../../images/5StarImageReviews.png";
 import "../../css/homeCss/description.css";
+
+const Carousel = CarouselPkg.default || CarouselPkg;
 
 export default function Reviews({ users }) {
     AOS.init({ duration: 1500 });
@@ -33,9 +35,6 @@ export default function Reviews({ users }) {
                     dotListClass="custom-dot-list-style"
                     itemClass="carousel-item-padding-40-px"
                 >
-                    {/* Mapping the whole object and displaying the data in a carousel */}
-                    {/* How this mapping works is that it takes user and index as parameters
-                     and then maps the object to display the data in a carousel. */}
                     {Object.values(users).map((user, index) => (
                         <div key={index} className="complete-reviews-div">
                             <img

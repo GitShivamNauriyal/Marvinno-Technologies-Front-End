@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import blogsImage1 from "../../../images/blogImage-1.jpeg";
 import blogsImage2 from "../../../images/blogImage-2.jfif";
 import blogsImage3 from "../../../images/blogImage-3.jpg";
@@ -24,13 +25,13 @@ const BlogsSection = () => {
                             </div>
                             <div className="blog-text-content">
                                 <p className="heading-blogs-name">
-                                    <a
+                                    <Link
                                         className="blogName"
-                                        href="/blogs/indore"
+                                        to="/blogs/indore"
                                     >
                                         Marvinno Has Recently Exhibited its
                                         products line
-                                    </a>
+                                    </Link>
                                 </p>
                                 <p className="blogDescription">
                                     At the 2nd Electric Expo held in Indore, MP
@@ -39,12 +40,12 @@ const BlogsSection = () => {
                                     devices but Marvinno stood out...
                                 </p>
                                 <p className="center-button-continue-reading">
-                                    <a
+                                    <Link
                                         className="continue-reading-button"
-                                        href="/blogs/indore"
+                                        to="/blogs/indore"
                                     >
                                         CONTINUE
-                                    </a>
+                                    </Link>
                                 </p>
                             </div>
                         </div>
@@ -65,6 +66,8 @@ const BlogsSection = () => {
                                     <a
                                         className="blogName"
                                         href="https://www.digilantern.com/blogs/healthcare-industry-from-transactions-to-strong-brand-identity/"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
                                     >
                                         FROM TRANSACTIONS TO STRONG BRAND
                                         IDENTITY
@@ -80,6 +83,8 @@ const BlogsSection = () => {
                                     <a
                                         className="continue-reading-button"
                                         href="https://www.digilantern.com/blogs/healthcare-industry-from-transactions-to-strong-brand-identity/"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
                                     >
                                         CONTINUE
                                     </a>
@@ -103,6 +108,8 @@ const BlogsSection = () => {
                                     <a
                                         className="blogName"
                                         href="https://www.digilantern.com/blogs/medical-web-solutions-or-word-of-mouth/"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
                                     >
                                         MEDICAL WEB SOLUTIONS OR A WORD OF
                                         MOUTH?
@@ -119,6 +126,8 @@ const BlogsSection = () => {
                                     <a
                                         className="continue-reading-button"
                                         href="https://www.digilantern.com/blogs/medical-web-solutions-or-word-of-mouth/"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
                                     >
                                         CONTINUE
                                     </a>

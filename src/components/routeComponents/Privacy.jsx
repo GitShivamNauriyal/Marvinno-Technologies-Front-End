@@ -1,5 +1,6 @@
 import React from "react";
-import PrivacyPolicy from "../utilityComponents/commonUtilities/PrivacyPolicy";
+import PrivacyPolicy from "../utilityComponents/commonUtilities/UserPPolicy";
+
 const Privacy = () => {
     return (
         <div>

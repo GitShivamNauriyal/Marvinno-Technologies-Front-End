@@ -1,149 +1,227 @@
+/* Make A Payment Modern 2026 Glassmorphic Design */
+
 .make-a-payment-section {
     display: flex;
-    margin: auto;
-    padding: 4rem 2rem;
-    min-width: 90%;
-    justify-content: space-evenly;
-    border: 1px solid rgb(0, 0, 0, 0.2);
-    border-radius: 2rem;
-    background: linear-gradient(45deg, #266a7622, #fff);
-    cursor: help;
-    align-items: stretch;
+    margin: 2rem auto;
+    padding: 2.5rem 3rem;
+    width: 90%;
+    max-width: 1200px;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    border-radius: 1.5rem;
+    background: linear-gradient(135deg, rgba(38, 106, 118, 0.12) 0%, rgba(39, 173, 84, 0.08) 100%);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+    transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
-.make-a-payment-heading {
-    font-size: 2rem;
-    translate: 0 -4px;
-    color: #555;
-    display: flex;
-    align-items: center;
-    user-select: none;
-    margin: auto 0;
+.make-a-payment-section:hover {
+    box-shadow: 0 15px 35px rgba(38, 106, 118, 0.15);
+    border-color: rgba(38, 106, 118, 0.3);
+}
+
+.make-a-payment-heading h2 {
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: #ffffff;
+    margin: 0;
+    letter-spacing: -0.02em;
+}
+
+.make-a-payment-heading p {
+    margin: 0.4rem 0 0 0;
+    font-size: 0.95rem;
+    color: #cbd5e1;
 }
 
 .make-a-payment-button {
-    color: white;
-    background: linear-gradient(45deg, #266a76cc, #27ad5499);
-    padding: 1rem;
-    border-radius: 1.2rem;
-    border: 1px solid rgb(0, 0, 0, 0.1);
+    color: #ffffff;
+    background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+    padding: 0.9rem 2rem;
+    border-radius: 1rem;
     border: none;
-    font-size: 1.5rem;
-    transition: all 0.3s ease;
+    font-size: 1.1rem;
+    font-weight: 600;
+    transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
     cursor: pointer;
     user-select: none;
-    letter-spacing: 0.05rem;
+    box-shadow: 0 4px 15px rgba(16, 185, 129, 0.3);
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
 }
 
 .make-a-payment-button:hover {
-    scale: 1.01;
-    transform: translateY(-0.5rem);
-    box-shadow: 4px 4px 8px rgb(0, 0, 0, 0.3);
+    transform: translateY(-3px) scale(1.02);
+    box-shadow: 0 8px 25px rgba(16, 185, 129, 0.45);
+    background: linear-gradient(135deg, #059669 0%, #047857 100%);
 }
 
-@media only screen and (max-width: 800px) {
-    .make-a-payment-section {
-        padding: 1rem;
-    }
-    .make-a-payment-heading {
-        font-size: 0.7rem;
-    }
-    .make-a-payment-button {
-        padding: 0.5rem;
-        font-size: 1rem;
-        translate: 0 0;
-    }
-}
-@media only screen and (max-width: 500px) {
-    .make-a-payment-heading {
-        font-size: 0.6rem;
-        translate: 0 2px;
-    }
-    .make-a-payment-heading h2 {
-        font-weight: 400;
-    }
+.make-a-payment-button:active {
+    transform: translateY(0) scale(0.98);
 }
 
-/* Modal Overlay */
+/* Modal Overlay & Backdrop Blur */
 .modal-overlay {
     position: fixed;
-    inset: 0;
-    background: rgba(0, 0, 0, 0.5);
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(15, 23, 42, 0.75);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
     display: flex;
     align-items: center;
     justify-content: center;
-    z-index: 999;
+    z-index: 9999999;
+    padding: 1.5rem;
+    box-sizing: border-box;
+    animation: fadeInOverlay 0.3s cubic-bezier(0.16, 1, 0.3, 1) forwards;
 }
 
-/* Modal Box */
+/* Modal Dialog Box */
 .modal {
-    background: white;
-    padding: 20px;
-    width: 90%;
-    max-width: 500px;
-    min-width: 300px;
-    border-radius: 8px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    background: #ffffff;
+    padding: 2.2rem;
+    width: 100%;
+    max-width: 480px;
+    border-radius: 1.5rem;
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.4);
     position: relative;
+    border: 1px solid rgba(226, 232, 240, 0.9);
+    z-index: 10000000;
+    animation: scaleUpModal 0.35s cubic-bezier(0.16, 1, 0.3, 1) forwards;
 }
 
-/* Modal Title */
 .modal-title {
-    font-size: 1.4rem;
-    font-weight: 500;
-    margin-bottom: 0.75rem;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #0f172a;
+    margin-bottom: 0.3rem;
 }
 
-/* Form */
-.payment-form div {
-    margin-bottom: 10px;
+.modal-subtitle {
+    font-size: 0.88rem;
+    color: #64748b;
+    margin-bottom: 1.5rem;
+}
+
+/* Form inputs */
+.payment-form .form-field {
+    margin-bottom: 1.1rem;
 }
 
 .payment-form label {
     display: block;
-    font-weight: 500;
-    margin-bottom: 4px;
-    color: #333;
+    font-weight: 600;
+    font-size: 0.88rem;
+    margin-bottom: 0.4rem;
+    color: #334155;
 }
 
 .payment-form input {
     width: 100%;
-    padding: 8px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
+    padding: 0.75rem 1rem;
+    border: 1.5px solid #cbd5e1;
+    border-radius: 0.75rem;
+    font-size: 0.95rem;
+    color: #0f172a;
+    background-color: #f8fafc;
+    transition: all 0.25s ease;
+    box-sizing: border-box;
+}
+
+.payment-form input:focus {
+    outline: none;
+    border-color: #10b981;
+    background-color: #ffffff;
+    box-shadow: 0 0 0 4px rgba(16, 185, 129, 0.15);
+}
+
+.payment-form .error {
+    color: #ef4444;
+    font-size: 0.8rem;
+    margin-top: 0.3rem;
+    font-weight: 500;
 }
 
 /* Submit Button */
 .submit-button {
     width: 100%;
-    padding: 10px;
-    background-color: #28a745;
+    padding: 0.9rem;
+    background: linear-gradient(135deg, #10b981 0%, #059669 100%);
     color: white;
     border: none;
-    font-size: 16px;
+    font-size: 1rem;
+    font-weight: 600;
     cursor: pointer;
-    border-radius: 4px;
-    transition: background 0.3s ease;
+    border-radius: 0.85rem;
+    transition: all 0.25s ease;
+    margin-top: 0.5rem;
+    box-shadow: 0 4px 12px rgba(16, 185, 129, 0.25);
 }
 
 .submit-button:hover {
-    background-color: #218838;
+    background: linear-gradient(135deg, #059669 0%, #047857 100%);
+    transform: translateY(-1px);
+    box-shadow: 0 6px 20px rgba(16, 185, 129, 0.35);
 }
 
 /* Close Button */
 .close-button {
     position: absolute;
-    top: 8px;
-    right: 12px;
-    background: none;
+    top: 1.2rem;
+    right: 1.2rem;
+    background: #f1f5f9;
     border: none;
-    font-size: 20px;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    font-size: 14px;
     cursor: pointer;
-    color: #555;
+    color: #64748b;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.2s ease;
 }
 
 .close-button:hover {
-    color: #000;
+    background: #e2e8f0;
+    color: #0f172a;
+    transform: rotate(90deg);
 }
 
-/*make a payment section end*/
+/* Animations */
+@keyframes fadeInOverlay {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes scaleUpModal {
+    from {
+        opacity: 0;
+        transform: scale(0.92) translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1) translateY(0);
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .make-a-payment-section {
+        flex-direction: column;
+        gap: 1.2rem;
+        text-align: center;
+        padding: 1.8rem 1.2rem;
+    }
+}

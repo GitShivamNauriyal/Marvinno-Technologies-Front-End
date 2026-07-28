@@ -1,35 +1,25 @@
 import React from "react";
 import { Link } from "react-router-dom";
-
 import { useTypewriter } from "react-simple-typewriter";
 import { PiArrowCircleUpRightThin } from "react-icons/pi";
-
 import AOS from "aos";
 import "aos/dist/aos.css";
 
 import BackgroundParticles from "./AboutHero";
-
 import "../../css/aboutCss/aboutDescription.css";
 
 import navbarLogo from "../../images/navbarLogoBlackText.png";
-// import backgroundVideo from "../../images/backgroundVideo.mp4";
 import customerExperienceImage from "../../images/customerExperienceAbout.png";
 import qualityImage from "../../images/qualityIconAbout.png";
 import innovationImage from "../../images/innovationAbout.png";
 import trustImage from "../../images/trustAbout.png";
 
-//recognitions
 import OurRecognitions from "./descriptionComponents/OurRecognitions";
-//team
 import TeamSection from "./descriptionComponents/TeamSection";
-// how to videos
 import HowToVideos from "./descriptionComponents/HowToVideos";
-//blogs
 import BlogsSection from "./descriptionComponents/BlogsSection";
-//career form
 import CareerForm from "./descriptionComponents/CareerForm";
 
-// <img src={whoWeAreImage} className="aboutTopSectionImagesCss" alt="Who We Are Img" />
 export default function AboutDescription() {
     AOS.init({ duration: 1500 });
 
@@ -45,32 +35,30 @@ export default function AboutDescription() {
             image: customerExperienceImage,
             title: "Experience",
             description:
-                "We get it - trust and reliability are the superhero duo for awesome customer journeys. Our clients are our VIPs, getting primo services and solutions every time.",
+                "We treat our customers as VIPs, delivering personalized automation support and seamless onboarding for every smart home deployment.",
         },
         {
             image: qualityImage,
             title: "Quality",
             description:
-                "Our promise? To lock arms with Quality and march as champions in the realm of Home Automation Solutions and Services!",
+                "We engineer each product with rigorous testing, premium materials, and certified components to ensure zero-defect long-term reliability.",
         },
         {
             image: innovationImage,
             title: "Innovation",
             description:
-                "Our promise? To lock arms with Quality and march as champions in the realm of Home Automation Solutions and Services!",
+                "Continuous R&D drives our IoT platform forward, delivering OTA software updates, custom touch interfaces, and intelligent automation routines.",
         },
         {
             image: trustImage,
             title: "Trust",
             description:
-                "Our promise? To lock arms with Quality and march as champions in the realm of Home Automation Solutions and Services!",
+                "Built on complete transparency, Made-in-India manufacturing, 24/7 dedicated support, and 12-month comprehensive warranty backing.",
         },
     ];
 
     return (
         <div className="whole-about">
-            {/* <BackgroundParticles /> */}
-
             <div className="products-who-we-are-div">
                 <BackgroundParticles
                     className="particles-background"
@@ -84,11 +72,6 @@ export default function AboutDescription() {
                     vy={-0.1}
                 />
                 <div className="about-logo-padding">
-                    {/* <img
-                        className="navBarLogoImageHeight"
-                        src={navbarLogo}
-                        alt="..."
-                    /> */}
                     <div className="about-company-name">
                         <h1>Marvinno Technologies</h1>
                     </div>
@@ -101,7 +84,6 @@ export default function AboutDescription() {
                     <h1>
                         YOUR<span> </span>
                         <span className="highlight">{typeEffect}</span>
-                        {/* <Cursor /> */}
                         <span className="products-who-we-are-div-static-quote">
                             , OUR TECHNOLOGY!!
                         </span>
@@ -138,7 +120,7 @@ export default function AboutDescription() {
                 <img
                     className="about-paragraph-description-image"
                     src={navbarLogo}
-                    alt="..."
+                    alt="Marvinno Logo"
                 />
                 <hr />
                 <div
@@ -147,15 +129,7 @@ export default function AboutDescription() {
                     data-aos-duration="1000"
                 >
                     <p className="aboutTopSectionDescriptionCss">
-                        Marvinno, the tech wizards behind the curtain, are here
-                        to sprinkle some IoT magic into your homes! From
-                        scribbles on a napkin to high-tech solutions for clients
-                        across the globe, we've got your back. Dive into the
-                        world of smart services tailored just for you, crafted
-                        with passion and precision by our team at Marvinno
-                        Technologies India Pvt. Ltd. in New Delhi. We're not
-                        just about technology - we're about creating tailored
-                        experiences that make your dreams come true!
+                        Marvinno Technologies India Pvt. Ltd., headquartered in New Delhi, is a pioneer in Made-in-India smart home automation. We design, manufacture, and deploy intelligent touch switches, curtain controls, security modules, and IoT solutions that seamlessly integrate into existing switchboards without additional wiring.
                     </p>
                 </div>
                 <Link to="/products">
@@ -166,9 +140,9 @@ export default function AboutDescription() {
                 </Link>
             </div>
 
-            {/* PROMICES SECTION */}
+            {/* PROMISES SECTION */}
             <div className="about-section-2">
-                <p className="about-section-headings">Our Promises</p>
+                <p className="about-section-headings">Our Core Promises</p>
                 <hr />
                 <div className="centerAboutSection" data-aos="fade-up">
                     {sections.map((section, index) => (
@@ -177,7 +151,7 @@ export default function AboutDescription() {
                                 <img
                                     className="resizeImageAboutPage"
                                     src={section.image}
-                                    alt={`${section.title} Img`}
+                                    alt={`${section.title} Icon`}
                                 />
                             </p>
                             <h4 className="headingPromises">{section.title}</h4>

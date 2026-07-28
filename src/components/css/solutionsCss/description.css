@@ -1,132 +1,187 @@
-* {
-    margin: 0%;
-    padding: 0%;
-}
+/* Modern 2026 Solutions Page Styling */
 
 .solutions-master {
-    margin-top: 7.8rem;
+    margin-top: 5rem;
+    background: #0f172a;
+    min-height: 100vh;
+    padding-bottom: 5rem;
+    color: #f8fafc;
 }
 
-.a-solutions {
-    text-decoration: underline;
-    text-decoration-color: #3e8a2dce;
-    text-decoration-thickness: 2px;
-    text-underline-offset: 3px;
-}
-
-/* readmore button */
-
-.ReadMoreButton-solutions {
-    text-decoration: none;
-    margin: 5% 0% 0% 0%;
-    width: fit-content;
-    border-radius: 5%;
-    background-color: #3e8a2dce;
-    color: white;
-    padding: 1% 5%;
-    font-size: 1.2rem;
-    border-radius: 20px;
-    border: none;
-    transition: all 0.2s ease;
-}
-
-.ReadMoreButton-solutions:hover {
-    scale: 105%;
-}
-
-.centerReadMoreButton-solutions {
+/* Solutions Hero Banner */
+.solutions-hero-banner {
     text-align: center;
+    padding: 5rem 1.5rem 3.5rem 1.5rem;
+    background: radial-gradient(circle at 50% 20%, rgba(16, 185, 129, 0.15) 0%, rgba(15, 23, 42, 0) 70%);
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.solutions-hero-tag {
+    display: inline-block;
+    padding: 0.4rem 1.2rem;
+    background: rgba(16, 185, 129, 0.15);
+    border: 1px solid rgba(16, 185, 129, 0.3);
+    border-radius: 50px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: #34d399;
+    margin-bottom: 1rem;
+}
+
+.solutions-hero-title {
+    font-size: 3rem;
+    font-weight: 800;
+    letter-spacing: -0.03em;
+    color: #ffffff;
+    margin-bottom: 1rem;
+    background: linear-gradient(135deg, #ffffff 0%, #cbd5e1 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.solutions-hero-subtitle {
+    font-size: 1.15rem;
+    color: #94a3b8;
+    line-height: 1.6;
+    margin: 0;
+}
+
+.solutions-container {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+}
+
+.solutions-div-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2.5rem;
+}
+
+/* Modern Solution Card */
+.div-solutions-card {
+    background: rgba(30, 41, 59, 0.7);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 1.5rem;
+    overflow: hidden;
+    transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+}
+
+.div-solutions-card:hover {
+    transform: translateY(-8px);
+    border-color: rgba(16, 185, 129, 0.4);
+    box-shadow: 0 25px 45px rgba(16, 185, 129, 0.15);
+}
+
+.solutions-card-image-wrapper {
+    position: relative;
+    width: 100%;
+    height: 240px;
+    overflow: hidden;
 }
 
 .img-solutions {
     width: 100%;
-    height: auto;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
-.div-solutions {
-    background-color: white;
-    width: 100%;
-    border-radius: 20px;
-    padding: 5%;
-    margin: 0% auto;
-    padding-bottom: 3%;
+.div-solutions-card:hover .img-solutions {
+    transform: scale(1.06);
 }
 
-.solutions-div-grid {
-    background-color: #101c23;
-    padding: 3%;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 20px;
+.solutions-card-badge {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    padding: 0.4rem 1rem;
+    background: rgba(15, 23, 42, 0.75);
+    backdrop-filter: blur(8px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 50px;
+    font-size: 0.78rem;
+    font-weight: 600;
+    color: #34d399;
+}
+
+.solutions-card-body {
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
 }
 
 .heading-solutions {
-    font-size: x-large;
-    margin-bottom: 20px;
+    font-size: 1.5rem;
     font-weight: 700;
-    text-transform: uppercase;
-    text-align: center;
+    color: #f8fafc;
+    margin-bottom: 0.8rem;
+    letter-spacing: -0.01em;
 }
 
-.description-solutions {
-    font-size: large;
-    margin: 20px 0px;
-    font-weight: 300;
-    text-align: justify;
+.description-solutions-intro {
+    font-size: 0.98rem;
+    color: #cbd5e1;
+    line-height: 1.6;
+    margin-bottom: 1.2rem;
 }
 
-@media (max-width: 800px) {
-    .div-solutions {
-        width: fit-content;
-        padding: 5%;
-        padding-bottom: 3%;
-    }
+/* ReadMore component styles */
+.solutions-readmore-wrapper {
+    margin-top: auto;
 
-    /* readmore solutions */
-    .ReadMoreButton-solutions:hover {
-        box-shadow: none;
-        font-size: medium;
-        color: white;
-    }
+.solutions-expanded-content {
+    background: rgba(15, 23, 42, 0.5);
+    border-radius: 0.85rem;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+}
 
-    .centerReadMoreButton-solutions {
-        text-align: center;
-    }
+.solutions-expanded-content p {
+    font-size: 0.92rem;
+    color: #94a3b8;
+    line-height: 1.65;
+    margin: 0;
+}
 
+.ReadMoreButton-solutions {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    padding: 0.6rem 1.4rem;
+    border-radius: 50px;
+    background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+    color: #ffffff;
+    font-size: 0.9rem;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 12px rgba(16, 185, 129, 0.25);
+}
+
+.ReadMoreButton-solutions:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(16, 185, 129, 0.4);
+    background: linear-gradient(135deg, #059669 0%, #047857 100%);
+}
+
+@media (max-width: 900px) {
     .solutions-div-grid {
         grid-template-columns: 1fr;
-        gap: 20px;
-        padding: 3.999%;
     }
-
-    .heading-solutions {
-        font-size: x-large;
-    }
-
-    .description-solutions {
-        font-size: large;
-    }
-}
-
-@media (max-width: 500px) {
-    .solutions-master {
-        margin-top: 5rem;
-    }
-    .heading-solutions {
-        font-size: large;
-    }
-
-    .description-solutions {
-        font-size: medium;
-    }
-}
-
-@media (max-width: 360px) {
-    .heading-solutions {
-        font-size: small;
-    }
-
-    .description-solutions {
-        font-size: x-small;
+    
+    .solutions-hero-title {
+        font-size: 2.2rem;
     }
 }

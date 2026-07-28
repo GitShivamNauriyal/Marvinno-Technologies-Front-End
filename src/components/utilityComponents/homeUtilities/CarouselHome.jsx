@@ -1,12 +1,13 @@
 import React from "react";
-// import { Carousel } from "react-bootstrap";
-import Carousel from "react-multi-carousel";
+import CarouselPkg from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import homePageImage1 from "../../images/1.jpg";
 import homePageImage2 from "../../images/2.jpg";
 import homePageImage3 from "../../images/3.jpg";
 import homePageImage4 from "../../images/4.jpg";
 import homePageImage5 from "../../images/5.jpg";
+
+const Carousel = CarouselPkg.default || CarouselPkg;
 
 export default function CarouselHome() {
     const responsive = {
@@ -35,61 +36,23 @@ export default function CarouselHome() {
                 autoPlaySpeed={5 * 1000}
                 containerClass="carousel-container"
                 dotListClass="custom-dot-list-style"
-                // itemClass="carousel-item-padding-40-px"
             >
                 <div className="fs-carousel-image">
-                    <img src={homePageImage1} alt="Image_1 Loading..." />
+                    <img src={homePageImage1} alt="Image 1" />
                 </div>
                 <div className="fs-carousel-image">
-                    <img src={homePageImage2} alt="Image_2 Loading..." />
+                    <img src={homePageImage2} alt="Image 2" />
                 </div>
                 <div className="fs-carousel-image">
-                    <img src={homePageImage3} alt="Image_3 Loading..." />
+                    <img src={homePageImage3} alt="Image 3" />
                 </div>
                 <div className="fs-carousel-image">
-                    <img src={homePageImage4} alt="Image_4 Loading..." />
+                    <img src={homePageImage4} alt="Image 4" />
                 </div>
                 <div className="fs-carousel-image">
-                    <img src={homePageImage5} alt="Image_5 Loading..." />
+                    <img src={homePageImage5} alt="Image 5" />
                 </div>
             </Carousel>
-            {/* <Carousel>
-                <Carousel.Item interval={3000}>
-                    <img
-                        className="d-block w-100"
-                        src={homePageImage1}
-                        alt="First slide"
-                    />
-                </Carousel.Item>
-                <Carousel.Item interval={3000}>
-                    <img
-                        className="d-block w-100"
-                        src={homePageImage2}
-                        alt="Second slide"
-                    />
-                </Carousel.Item>
-                <Carousel.Item interval={3000}>
-                    <img
-                        className="d-block w-100"
-                        src={homePageImage3}
-                        alt="Third slide"
-                    />
-                </Carousel.Item>
-                <Carousel.Item interval={3000}>
-                    <img
-                        className="d-block w-100"
-                        src={homePageImage4}
-                        alt="Third slide"
-                    />
-                </Carousel.Item>
-                <Carousel.Item interval={3000}>
-                    <img
-                        className="d-block w-100"
-                        src={homePageImage5}
-                        alt="Third slide"
-                    />
-                </Carousel.Item>
-            </Carousel> */}
         </div>
     );
 }
