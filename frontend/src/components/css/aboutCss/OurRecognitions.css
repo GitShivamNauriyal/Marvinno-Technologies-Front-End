@@ -1,0 +1,100 @@
+.recognitions-master {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem 10px;
+    background: linear-gradient(
+        #3a6d7611,
+        #fff,
+        #fff,
+        #fff,
+        #266a7622,
+        #266a7622
+    );
+}
+
+.recognitions-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding: 1rem 4rem;
+    gap: 1rem;
+}
+
+.recognitions-grid-item {
+    position: relative;
+    border-radius: 2rem;
+    padding: 1rem;
+    transition: all 0.4s ease;
+    display: flex;
+    flex-direction: column;
+}
+
+.recognitions-grid-item:hover {
+    box-shadow: 0 2px 16px 2px rgba(0, 0, 0, 0.02);
+    translate: 0 -8px;
+    /* background-color: #fff; */
+}
+
+.recognitions-grid-item:hover .recognitions-grid-item-image {
+    border-radius: 50%;
+}
+
+.recognitions-grid-item:hover .recognitons-grid-item-heading {
+    opacity: 100%;
+    translate: 0 0;
+}
+
+.recognitions-grid-item-image {
+    background-color: #fff;
+    padding: 0.5rem;
+    object-fit: contain;
+    overflow: hidden;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 1rem;
+    transition: all 0.2s ease;
+}
+
+.recognitions-grid-item-image img {
+    width: 100%;
+    aspect-ratio: 1;
+    object-fit: contain;
+}
+
+.recognitons-grid-item-heading {
+    margin: auto;
+    text-align: center;
+    padding: 1rem 0;
+    opacity: 0%;
+    transition: all 0.2s ease;
+    translate: 0 16px;
+    color: #266a76;
+    font-size: 1.2rem;
+}
+
+.recognitons-grid-item-heading span {
+    display: inline-block;
+    background: linear-gradient(90deg, #2e9e40, #1c9c66);
+    color: transparent;
+    background-clip: text;
+}
+
+@media screen and (max-width: 1200px) {
+    .recognitions-grid {
+        padding: 1rem 2rem;
+        gap: 0.2rem;
+    }
+}
+@media screen and (max-width: 900px) {
+    .recognitions-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .recognitions-grid {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+}

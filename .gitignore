@@ -1,3 +1,7 @@
+# ==========================================
+# Monorepo .gitignore — Marvinno Technologies
+# ==========================================
+
 # Logs
 logs
 *.log
@@ -7,16 +11,33 @@ yarn-error.log*
 pnpm-debug.log*
 lerna-debug.log*
 
-#dependencies
+# Dependencies — both frontend & backend
 node_modules
-dist
-dist-ssr
+**/node_modules
+
+# Frontend build output
+frontend/dist
+frontend/dist-ssr
+frontend/build
 *.local
 
-# testing
-/coverage
+# Backend build output
+backend/dist
 
-#production
+# Environment files — NEVER commit these
+.env
+.env.local
+.env.*.local
+**/.env
+**/.env.local
+**/.env.production
+**/.env.development
+
+# Testing
+/coverage
+**/coverage
+
+# Legacy/ignored dirs from old structure
 /build
 /ignore
 /Marvino

@@ -1,0 +1,803 @@
+@import url("https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+body {
+    margin: 0%;
+    padding: 0%;
+    width: 100%;
+    /* font-family: "Montserrat", sans-serif; */
+    font-family: "Kanit", sans-serif;
+}
+
+html,
+body {
+    width: auto !important;
+    overflow-x: hidden !important;
+}
+
+.home-description {
+    padding-bottom: 2rem;
+    position: relative;
+}
+
+.a-home {
+    text-decoration: underline;
+    text-decoration-color: #3e8a2dce;
+    text-decoration-thickness: 2px;
+    text-underline-offset: 3px;
+}
+
+.carousel-container-master {
+    margin-top: 7.8rem;
+}
+
+.fs-carousel-image {
+    position: relative;
+}
+.fs-carousel-image img {
+    /* position: relative; */
+    aspect-ratio: 16/9;
+    width: 100%;
+    object-fit: cover;
+}
+
+.react-multi-carousel-dot button {
+    /* display:inline-block; */
+    width: 52px;
+    height: 3px;
+    border-radius: 2px;
+    opacity: 1;
+    padding: 5px 5px 5px 5px;
+    box-shadow: none;
+    transition: background 0.5s;
+    border-style: none;
+    border-width: 0;
+    padding: 0;
+    margin: 0;
+    margin-right: 12px;
+    margin-bottom: 16px;
+    outline: 0;
+    cursor: pointer;
+}
+
+.react-multi-carousel-dot button:hover {
+    background: #6c6b6b;
+}
+.react-multi-carousel-dot button:active {
+    background: #333;
+}
+
+.react-multiple-carousel__arrow {
+    z-index: 99;
+}
+
+.alignIconsCenter {
+    background-color: rgb(250, 248, 245);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.iconSize {
+    height: 20vh;
+    width: fit-content;
+    border-radius: 10vh;
+    padding: 4vh;
+}
+
+.alignIconsCenterElements {
+    margin-left: 38vh;
+}
+
+.logoAndText {
+    text-align: center;
+    margin-top: 1rem;
+}
+
+.textPositionUnderLogo {
+    margin-top: 1em;
+    letter-spacing: 0.1em;
+    font-weight: lighter;
+    font-size: medium;
+}
+
+.headingCssNumbers {
+    text-align: center;
+    letter-spacing: 0.1em;
+    word-spacing: 0.1em;
+    text-transform: uppercase;
+    font-style: italic;
+    color: rgb(255, 255, 255);
+}
+
+.numbersCssFootprints {
+    text-align: center;
+    letter-spacing: 0.1em;
+    color: rgb(19, 17, 14);
+}
+
+.numberDescriptionFootprints {
+    text-align: center;
+    font-size: 3vh;
+    color: rgb(212, 212, 212);
+    margin-top: 3vh;
+}
+
+.lineBreakCss {
+    padding: 0.15vh;
+}
+
+.lineBreakCssFooter {
+    padding: 0.2vh;
+    color: aliceblue;
+}
+
+.reviewsAlignCenterCss {
+    margin: 0% auto;
+}
+
+.reviewStar {
+    width: 14vh;
+    margin-bottom: 1em;
+}
+
+.centerReviewCSS {
+    text-align: center;
+}
+
+.centerReviewCSSHeading {
+    background-color: white;
+    text-align: center;
+    font-size: xx-large;
+    padding: 2% 0%;
+    font-weight: 700;
+    margin-bottom: 0%;
+}
+
+.imgCenterReview {
+    margin-top: 1em;
+    text-align: center;
+    border-radius: 60%;
+    width: 100%;
+    height: auto;
+}
+
+.descriptionReviews {
+    margin-bottom: 3%;
+}
+
+.home-cards-span {
+    color: white;
+}
+
+/*-----------------------home description (three boxes)------------------------*/
+
+.home-flex-row {
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+    padding: 3rem 2rem;
+}
+
+.toCenterTemplateCss {
+    position: relative;
+    flex: 1;
+    /* max-width: 40%; */
+}
+.cardBodyWidth {
+    position: relative;
+    padding: 2rem;
+    background: linear-gradient(#5bc743b2, #ffffff);
+    background-repeat: no-repeat;
+    background-position-y: -32rem;
+    box-shadow: 0 4px 16px 4px rgb(0, 0, 0, 0.1);
+    border-radius: 1rem;
+    transition: all 0.6s ease-out;
+    border: 1px solid rgba(0, 0, 0, 0.07);
+}
+.cardBodyWidth:hover {
+    border: 1px solid white;
+    background-position-y: 0rem;
+}
+.cardBodyWidth:hover .paraHeadingCss {
+    color: white;
+}
+.cardBodyWidth img {
+    object-fit: contain;
+    width: 100%;
+}
+
+.card-img-top {
+    object-fit: contain;
+}
+
+.home-description .toCenterTemplateCss {
+    position: relative;
+}
+/* 
+.home-description .toCenterTemplateCss .read-more-content {
+    z-index: 999;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: #f9f9f9;
+    padding: 1rem;
+    border: 1px solid #ccc;
+    width: 100%;
+    border-radius: 1rem;
+} */
+
+/* readMoreButton styling */
+.ReadMoreButton {
+    background-color: #3e8a2dce;
+    width: fit-content;
+    color: white;
+    padding: 0.7rem 2rem;
+    border-radius: 2rem;
+    border: none;
+    transition: all 0.2s ease;
+    margin: auto;
+    margin-top: 1rem;
+}
+
+.ReadMoreButton:hover {
+    scale: 104%;
+    color: white;
+}
+
+.centerReadMoreButton {
+    text-align: left;
+    /* position: absolute; */
+    margin: 0;
+}
+
+/* 
+.toCenterTemplateCss-3 {
+    margin-right: 5%;
+}
+
+.toCenterTemplateCss-2 {
+    margin-right: 2.3%;
+} */
+
+.paraHeadingCss {
+    font-family: "Montserrat", sans-serif;
+    background: linear-gradient(45deg, #48a136, #3e8a2dce);
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+    display: inline-block;
+    text-align: center;
+    font-size: 1.4em;
+    font-weight: 600;
+    letter-spacing: 0.05em;
+    width: 100%;
+    margin-bottom: 1rem;
+    padding: 0rem 0.2rem;
+    transition: all 0.5s ease;
+}
+
+.paraPaddingDescription,
+.paraPaddingDescription1 {
+    font-family: "Montserrat", sans-serif;
+    padding: 0.8rem 0rem 0rem 0rem;
+    font-size: 0.8em;
+    text-align: justify;
+}
+
+.imageRight {
+    width: auto;
+}
+
+.home-social-media-link-container {
+    display: flex;
+    gap: 3rem;
+    justify-content: flex-start;
+    padding: 1rem 0.5rem 0 0.5rem;
+    flex-wrap: wrap;
+}
+.home-social-media-link-container a {
+    color: black;
+}
+
+.headingCSS {
+    font-size: 2.5rem;
+    /* margin-bottom: 7%; */
+    background: linear-gradient(45deg, #0a3642e9, #25511bce, #0a3642e9);
+    color: transparent;
+    background-clip: text;
+    display: inline-block;
+    text-transform: uppercase;
+    font-weight: 700;
+    /* font-family: 'Borel', cursive; */
+}
+
+/* ---------new reviews---------------- */
+
+.reviews-heading-container {
+    padding-top: 2rem;
+    display: flex;
+    place-content: center;
+}
+.reviews-heading-container h1 {
+    font-family: "Montserrat", sans-serif;
+    text-align: center;
+    display: inline-block;
+    background: linear-gradient(45deg, #5bc743, #266a76);
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+    letter-spacing: -1px;
+    font-size: 3.5em;
+    border-bottom: 1px solid #ccc;
+}
+
+.reviews-carousel-container {
+    padding: 40px 80px;
+}
+
+.reviews-star-rating {
+    height: 38px;
+    text-align: center;
+    width: auto;
+}
+
+.center-review-image {
+    text-align: center;
+}
+
+.complete-reviews-div {
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 3rem;
+}
+
+.image-reviews {
+    height: 300px;
+    aspect-ratio: 3/4;
+    /* width: auto; */
+    border-radius: 8px;
+    place-self: center center;
+    box-shadow: 0px 0px 0px 0px;
+    object-fit: cover;
+}
+
+.data-review {
+    place-self: center center;
+    padding: 25px;
+}
+
+.review-para {
+    font-size: medium;
+    text-align: center;
+    margin: 0px;
+    text-transform: capitalize;
+}
+
+.review-person-name {
+    font-size: medium;
+    font-weight: bold;
+    font-style: italic;
+    text-transform: capitalize;
+    text-align: center;
+    margin: 10px 0px 0px 0px;
+}
+
+.review-person-city {
+    font-size: medium;
+    font-weight: bold;
+    font-style: italic;
+    text-transform: capitalize;
+    text-align: center;
+    margin: 2px 0px 0px 0px;
+}
+
+.reviews-heading {
+    font-size: xx-large;
+    text-transform: capitalize;
+    font-weight: bold;
+    color: #1cbe24a7;
+    text-align: center;
+    margin: 30px;
+}
+
+.trending-info {
+    font-size: xx-large;
+    text-align: left;
+    text-align: center;
+    color: #1cbe24a7;
+    font-weight: 600;
+    margin: 30px 0px 20px 20px;
+}
+
+/* ------------------------media queries----------------------- */
+
+@media (max-width: 1050px) {
+    .headingFeaturesCss {
+        text-align: center;
+        /* width: 200%; */
+        font-size: x-small;
+        margin: 3.1px 0px;
+    }
+
+    .descriptionFeaturesCss {
+        font-size: xx-small;
+    }
+
+    .paraPaddingDescription,
+    .paraPaddingDescription1 {
+        font-size: small;
+    }
+
+    .paraHeadingCss {
+        font-size: medium;
+    }
+    .imageDivCSS {
+        margin: 0%;
+        max-width: 100%;
+    }
+    .reviews-carousel-container {
+        padding: 40px;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    html,
+    body {
+        width: auto !important;
+        overflow-x: hidden !important;
+    }
+
+    .home-flex-row {
+        flex-direction: column;
+    }
+
+    /* no hovering */
+    .ReadMoreButton:hover {
+        box-shadow: none;
+        font-size: small;
+        color: white;
+    }
+
+    /* discover infinite possibilities & etc..... cards */
+    .toCenterTemplateCss {
+        width: fit-content;
+        /* max-width: 90%; */
+        margin: 0% auto;
+    }
+
+    .backgroundShadowOfTemplate {
+        width: 100%;
+        margin: 0%;
+        padding: 2rem 1rem;
+    }
+
+    .paraHeadingCss {
+        font-size: medium;
+    }
+
+    .paraPaddingDescription,
+    .paraPaddingDescription1 {
+        font-size: small;
+    }
+
+    /* ------------------------- new reviews---------------------------------*/
+    .reviews-heading-container h1 {
+        font-size: 2.5em;
+    }
+
+    .reviews-carousel-container {
+        padding: 40px 0;
+    }
+
+    .complete-reviews-div {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 20px;
+        padding: 20px;
+    }
+
+    .reviews-star-rating {
+        height: 35px;
+        width: auto;
+    }
+
+    .image-reviews {
+        height: 200px;
+        width: auto;
+        box-shadow: 0px 0px 0px 0px;
+    }
+
+    .data-review {
+        place-self: center center;
+        padding: 0px 10px;
+    }
+
+    .review-para {
+        font-size: small;
+    }
+
+    .review-person-name {
+        font-size: small;
+        margin: 5px 0px 0px 0px;
+    }
+
+    .review-person-city {
+        font-size: small;
+        margin: 1.5px 0px 0px 0px;
+    }
+
+    .reviews-heading,
+    .trending-info {
+        font-size: x-large;
+        text-align: center;
+    }
+
+    /* marvinno app, voice control using alexa flaunt your smart home css */
+    .completeDivFlexbox {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .imageCSS {
+        grid-row: 1/2;
+    }
+
+    .imageDivCSS,
+    .imageCSSCenter,
+    .imageCSS,
+    .completeDivFlexbox {
+        margin: 0%;
+    }
+
+    .dataCss {
+        width: fit-content;
+        grid-row: 2/3;
+    }
+
+    .headingCSS {
+        font-size: large;
+        margin: 0% 0% 4% 0%;
+    }
+}
+
+@media (max-width: 460px) {
+    .carousel-container-master {
+        margin-top: 5rem;
+    }
+
+    .reviews-heading-container h1 {
+        font-size: 2em;
+    }
+}
+@media (max-width: 360px) {
+    .featuresDiv {
+        margin-bottom: 4%;
+    }
+
+    .headingCSS {
+        font-size: medium;
+    }
+
+    .reviewNameCss {
+        font-size: medium;
+    }
+
+    .descriptionReviews {
+        font-size: small;
+    }
+
+    .blockQuote {
+        font-size: x-small;
+    }
+
+    .data-review {
+        place-self: center center;
+    }
+
+    .review-para {
+        font-size: xx-small;
+        margin-top: 5px;
+    }
+
+    .review-person-name {
+        font-size: xx-small;
+        margin: 2.5px 0px 0px 0px;
+    }
+
+    .review-person-city {
+        font-size: xx-small;
+        margin: 1px 0px 0px 0px;
+    }
+
+    .reviews-heading,
+    .trending-info {
+        font-size: large;
+    }
+
+    .image-reviews {
+        height: 170px;
+        width: auto;
+    }
+
+    .reviews-star-rating {
+        height: 25px;
+        width: auto;
+    }
+}
+
+@media (max-width: 370px) {
+    .descriptionFeaturesCss {
+        text-align: center;
+        font-weight: lighter;
+        font-size: x-small;
+    }
+
+    .featuresDiv {
+        margin: 0%;
+    }
+
+    .headingFeaturesCss {
+        width: 200%;
+        font-weight: 200;
+        font-size: small;
+    }
+
+    .reviews-star-rating {
+        height: 25px;
+        width: auto;
+    }
+}
+
+/* ----- Banner for product section ----*/
+.banner-container {
+    width: 100%;
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* Align items to the bottom */
+    overflow: hidden; /* Ensure no overflow */
+}
+
+.banner {
+    background: url("../../images/homePageImage-2.png") no-repeat center top; /* Align the image to the bottom */
+    background-size: cover;
+    width: 100vw;
+    height: 100%; /* Fill the container */
+}
+
+/* -----   home apps and social media section ---*/
+
+.app-alexa-social-div {
+    padding: 10px;
+}
+/* Flexbox container styling */
+.completeDivFlexbox {
+    display: flex;
+    justify-content: space-between;
+    gap: 12px;
+    align-items: stretch; /* Ensure children items stretch to the same height */
+    padding: 2rem;
+    margin: 3rem 0;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* .completeDivFlexbox:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+} */
+
+/* Text content styling */
+
+.dataCss-2,
+.dataCss-3,
+.dataCss-1 {
+    margin: 2%;
+}
+
+.dataCss {
+    background-color: rgba(229, 229, 229, 0.5);
+    flex: 1; /* Flex grow to take up available space */
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center text vertically */
+}
+
+.headingCSS {
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: #2c3e50;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.descriptionCSS {
+    font-size: 1rem;
+    color: #666;
+    line-height: 1.8;
+    margin-bottom: 25px;
+}
+
+/* Image styling */
+.imageDivCSS {
+    max-width: 30vw;
+    flex: 1; /* Flex grow to take up available space */
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Center image vertically and horizontally */
+    text-align: center;
+}
+
+.imageCSSCenter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.imageCSS {
+    max-width: 100%;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.imageCSS:hover {
+    transform: scale(1.04);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+.app-download-links {
+    display: flex;
+}
+
+/* Social media icons footer */
+.icons-footer {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.link-social-media-footer {
+    width: 40px;
+    height: 40px;
+    transition: all 0.3s ease;
+}
+
+.link-social-media-footer:hover {
+    scale: 105%;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+@media screen and (max-width: 800px) {
+    .completeDivFlexbox {
+        flex-direction: column;
+    }
+    .imageDivCSS {
+        order: 1;
+        max-width: 100vw;
+    }
+    .dataCss {
+        order: 2;
+    }
+}
+@media screen and (max-width: 500px) {
+    .completeDivFlexbox {
+        gap: 12px;
+        padding: 10px;
+        margin: 2rem 0;
+    }
+    .headingCSS {
+        font-size: 1.2rem;
+        letter-spacing: 1px;
+    }
+    .descriptionCSS {
+        font-size: 1rem;
+        line-height: 1.3;
+        line-height: 1.2;
+    }
+}
