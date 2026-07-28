@@ -16,6 +16,7 @@ node_modules
 **/node_modules
 
 # Frontend build output
+/dist
 frontend/dist
 frontend/dist-ssr
 frontend/build
