@@ -24,7 +24,7 @@
 .make-a-payment-heading h2 {
     font-size: 1.8rem;
     font-weight: 600;
-    color: #ffffff;
+    color: #333;
     margin: 0;
     letter-spacing: -0.02em;
 }
@@ -32,7 +32,7 @@
 .make-a-payment-heading p {
     margin: 0.4rem 0 0 0;
     font-size: 0.95rem;
-    color: #cbd5e1;
+    color: #444;
 }
 
 .make-a-payment-button {
@@ -201,6 +201,7 @@
     from {
         opacity: 0;
     }
+
     to {
         opacity: 1;
     }
@@ -211,6 +212,7 @@
         opacity: 0;
         transform: scale(0.92) translateY(10px);
     }
+
     to {
         opacity: 1;
         transform: scale(1) translateY(0);
