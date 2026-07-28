@@ -71,12 +71,19 @@ const CareerForm = () => {
         }
 
         try {
-            await ApiService.submitContactInquiry(formData);
+            await ApiService.submitContactInquiry({
+                firstname: `${formData.firstName} ${formData.lastName}`,
+                phone: formData.phoneNumber,
+                email: formData.email,
+                address: `${formData.state} (DOB: ${formData.dateOfBirth})`,
+                message: `[CAREER APPLICATION]\nInterest: ${formData.interest}\nTerms Agreed: ${formData.termsAgreed}\nReceive Updates: ${formData.receiveUpdates}`,
+            });
             setLoading(false);
             setSubmissionSuccess(true);
         } catch (error) {
             console.error("Submission error:", error);
             setLoading(false);
+            alert(error.response?.data?.message || "Failed to submit career application. Ensure backend server is running.");
         }
     };
 

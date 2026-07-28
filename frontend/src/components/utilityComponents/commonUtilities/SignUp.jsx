@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
+import ApiService from "../../../services/apiService";
 import "../../css/commonComponentsCss/SignUpPage.css";
 import navbarLogo from "../../images/navbarLogoBlackText.png";
 import homeNavbarIcon from "../../images/homeIconNavbar.png";
@@ -12,24 +13,37 @@ const SignUpPage = () => {
     const [password, setPassword] = useState("");
     const [confirmPassword, setConfirmPassword] = useState("");
     const [address, setAddress] = useState("");
+    const [loading, setLoading] = useState(false);
+    const [errorMsg, setErrorMsg] = useState("");
 
-    const handleSignUp = (e) => {
+    const handleSignUp = async (e) => {
         e.preventDefault();
+        setErrorMsg("");
+
         if (password !== confirmPassword) {
-            alert("Passwords do not match!");
+            setErrorMsg("Passwords do not match!");
             return;
         }
 
-        const userData = {
-            id: Date.now().toString(),
-            name: name,
-            email: email,
-            phone: phone,
-            address: address,
-        };
-        localStorage.setItem("marvinno_user", JSON.stringify(userData));
-        window.dispatchEvent(new Event("userStateUpdated"));
-        navigate("/products");
+        setLoading(true);
+
+        try {
+            const res = await ApiService.signUp({ name, email, phone, password, address });
+            setLoading(false);
+
+            if (res.success && res.token) {
+                localStorage.setItem("marvinno_token", res.token);
+                localStorage.setItem("marvinno_user", JSON.stringify(res.user));
+                window.dispatchEvent(new Event("userStateUpdated"));
+                navigate("/products");
+            } else {
+                setErrorMsg(res.message || "Registration failed.");
+            }
+        } catch (err) {
+            setLoading(false);
+            const msg = err.response?.data?.message || "Cannot connect to server. Ensure backend is running.";
+            setErrorMsg(msg);
+        }
     };
 
     return (
@@ -41,6 +55,22 @@ const SignUpPage = () => {
                     alt="Marvinno LOGO"
                 />
                 <h2>Create Your Account</h2>
+
+                {errorMsg && (
+                    <div className="signup-error-alert" style={{
+                        padding: "0.75rem",
+                        marginBottom: "1rem",
+                        borderRadius: "0.5rem",
+                        backgroundColor: "rgba(239, 68, 68, 0.15)",
+                        border: "1px solid #ef4444",
+                        color: "#ef4444",
+                        fontSize: "0.9rem",
+                        textAlign: "center"
+                    }}>
+                        {errorMsg}
+                    </div>
+                )}
+
                 <form onSubmit={handleSignUp} className="signup-form">
                     <div className="form-group">
                         <label htmlFor="name">Full Name</label>
@@ -115,8 +145,8 @@ const SignUpPage = () => {
                             placeholder="Enter your address"
                         />
                     </div>
-                    <button type="submit" className="signup-button">
-                        Sign Up
+                    <button type="submit" className="signup-button" disabled={loading}>
+                        {loading ? "Creating Account..." : "Sign Up"}
                     </button>
                 </form>
                 <div className="signup-options">

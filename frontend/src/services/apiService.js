@@ -1,7 +1,7 @@
 import axios from "axios";
 
-// Base API configuration prepared for backend deployment
-const API_BASE_URL = import.meta.env.VITE_API_BASE_URL || "https://api.marvinno.in/v1";
+// Base API configuration: default to local backend in dev, or VITE_API_BASE_URL in production
+const API_BASE_URL = import.meta.env.VITE_API_BASE_URL || "http://localhost:5000/api";
 
 const apiClient = axios.create({
     baseURL: API_BASE_URL,
@@ -11,29 +11,74 @@ const apiClient = axios.create({
     },
 });
 
+// Interceptor to attach JWT token to all authorized requests
+apiClient.interceptors.request.use(
+    (config) => {
+        const token = localStorage.getItem("marvinno_token");
+        if (token) {
+            config.headers.Authorization = `Bearer ${token}`;
+        }
+        return config;
+    },
+    (error) => Promise.reject(error)
+);
+
 export const ApiService = {
     // Auth endpoints
     login: async (credentials) => {
-        // Mock fallback for current frontend mode; easy to switch to API request
-        console.log("[API Service] Auth login requested:", credentials);
-        return { success: true, message: "Login endpoint ready for DB integration" };
+        const response = await apiClient.post("/auth/login", credentials);
+        return response.data;
     },
 
     signUp: async (userData) => {
-        console.log("[API Service] Auth signup requested:", userData);
-        return { success: true, message: "Signup endpoint ready for DB integration" };
+        const response = await apiClient.post("/auth/signup", userData);
+        return response.data;
+    },
+
+    getProfile: async () => {
+        const response = await apiClient.get("/auth/me");
+        return response.data;
     },
 
     // Inquiry & Contact endpoint
     submitContactInquiry: async (inquiryData) => {
-        console.log("[API Service] Contact inquiry submitted:", inquiryData);
-        return { success: true, message: "Inquiry received" };
+        const response = await apiClient.post("/contact", inquiryData);
+        return response.data;
     },
 
-    // Payment Processing endpoint
+    // Manual Payment Processing endpoint (Walk-in / local purchases)
     processPayment: async (paymentDetails) => {
-        console.log("[API Service] Payment submitted:", paymentDetails);
-        return { success: true, message: "Payment processed" };
+        const response = await apiClient.post("/payments/manual", paymentDetails);
+        return response.data;
+    },
+
+    // Products
+    getProducts: async () => {
+        const response = await apiClient.get("/products");
+        return response.data;
+    },
+
+    // Cart Sync
+    getCart: async () => {
+        const response = await apiClient.get("/cart");
+        return response.data;
+    },
+
+    syncCartItem: async (cartItem) => {
+        const response = await apiClient.post("/cart", cartItem);
+        return response.data;
+    },
+
+    // Coupons
+    validateCoupon: async (code) => {
+        const response = await apiClient.post("/coupons/validate", { code });
+        return response.data;
+    },
+
+    // Orders
+    createOrder: async (orderData) => {
+        const response = await apiClient.post("/orders", orderData);
+        return response.data;
     },
 };
 

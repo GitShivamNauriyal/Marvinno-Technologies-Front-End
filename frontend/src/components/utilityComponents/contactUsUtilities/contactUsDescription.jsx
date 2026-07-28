@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { CiGlobe, CiMail, CiServer, CiPhone } from "react-icons/ci";
 import { PiMapPinLight } from "react-icons/pi";
 import {
@@ -6,39 +6,52 @@ import {
     PiFacebookLogo,
     PiInstagramLogo,
     PiYoutubeLogo,
-    // PiPinterestLogo,
     PiLinkedinLogoLight,
 } from "react-icons/pi";
 import "../../css/contactUsCss/contactUsDescription.css";
-import emailjs from "emailjs-com";
+import ApiService from "../../../services/apiService";
 
-export default function contactUsDescription() {
-    // function is created in the component itself
-    const sendemail = (e) => {
+export default function ContactUsDescription() {
+    const [formData, setFormData] = useState({
+        firstname: "",
+        phone: "",
+        email: "",
+        address: "",
+        message: "",
+    });
+    const [loading, setLoading] = useState(false);
+    const [successMsg, setSuccessMsg] = useState("");
+    const [errorMsg, setErrorMsg] = useState("");
+
+    const handleChange = (e) => {
+        setFormData({ ...formData, [e.target.name]: e.target.value });
+    };
+
+    const handleSubmit = async (e) => {
         e.preventDefault();
-        let count = 0;
-        const element = document.querySelectorAll(".inputArea");
-        element.forEach((element) => {
-            if (element.value !== "") {
-                count++;
+        setLoading(true);
+        setSuccessMsg("");
+        setErrorMsg("");
+
+        try {
+            const res = await ApiService.submitContactInquiry(formData);
+            setLoading(false);
+            if (res.success) {
+                setSuccessMsg("Your message has been delivered successfully! Our team will get back to you soon.");
+                setFormData({
+                    firstname: "",
+                    phone: "",
+                    email: "",
+                    address: "",
+                    message: "",
+                });
+            } else {
+                setErrorMsg(res.message || "Failed to deliver message.");
             }
-        });
-        if (count === 5) {
-            emailjs
-                .sendForm(
-                    "service_oopj7xd",
-                    "template_tyo57ji",
-                    e.target,
-                    "fu2iHxpmP9q3P39mT"
-                )
-                .then(() => alert("Message has been Delivered successfully"))
-                .catch(() =>
-                    alert(
-                        "OOPS something went wrong, Try Contacting the other way"
-                    )
-                );
-        } else {
-            alert("Invalid Entries");
+        } catch (err) {
+            setLoading(false);
+            const msg = err.response?.data?.message || "Error submitting inquiry. Ensure backend is running.";
+            setErrorMsg(msg);
         }
     };
 
@@ -71,9 +84,6 @@ export default function contactUsDescription() {
                             <a href="https://www.twitter.com/marvinnotech">
                                 <PiXLogo className="connect-social-media-link" />
                             </a>
-                            {/* <a href="https://pin.it/3gPNrJy">
-                            <PiPinterestLogo className="connect-social-media-link" />
-                        </a> */}
                             <a href="https://www.linkedin.com/company/marvinno-technologies/">
                                 <PiLinkedinLogoLight className="connect-social-media-link" />
                             </a>
@@ -94,14 +104,41 @@ export default function contactUsDescription() {
                     </div>
 
                     <div className="contact-us-form">
-                        <form onSubmit={sendemail}>
+                        <form onSubmit={handleSubmit}>
                             <h2 className="connect-form-heading">Contact Us</h2>
+
+                            {successMsg && (
+                                <div style={{
+                                    padding: "0.8rem",
+                                    marginBottom: "1rem",
+                                    borderRadius: "0.5rem",
+                                    backgroundColor: "rgba(16, 185, 129, 0.15)",
+                                    border: "1px solid #10b981",
+                                    color: "#10b981",
+                                    fontSize: "0.9rem",
+                                    textAlign: "center"
+                                }}>
+                                    {successMsg}
+                                </div>
+                            )}
+
+                            {errorMsg && (
+                                <div style={{
+                                    padding: "0.8rem",
+                                    marginBottom: "1rem",
+                                    borderRadius: "0.5rem",
+                                    backgroundColor: "rgba(239, 68, 68, 0.15)",
+                                    border: "1px solid #ef4444",
+                                    color: "#ef4444",
+                                    fontSize: "0.9rem",
+                                    textAlign: "center"
+                                }}>
+                                    {errorMsg}
+                                </div>
+                            )}
+
                             <div className="formDiv">
-                                <label
-                                    className="connect-label firstNAMEWidth"
-                                    for="firstname"
-                                    name=""
-                                >
+                                <label className="connect-label firstNAMEWidth" htmlFor="firstname">
                                     Name
                                 </label>
                                 <div className="firstNameDiv contact-up-form-input-box">
@@ -111,14 +148,12 @@ export default function contactUsDescription() {
                                         name="firstname"
                                         className="inputArea"
                                         placeholder="Your Name"
+                                        value={formData.firstname}
+                                        onChange={handleChange}
                                         required
                                     />
                                 </div>
-                                <label
-                                    className="connect-label mobileWidth"
-                                    for="phonenumber"
-                                    name=""
-                                >
+                                <label className="connect-label mobileWidth" htmlFor="phonenumber">
                                     Phone Number
                                 </label>
                                 <div className="mobileDiv contact-up-form-input-box">
@@ -128,14 +163,12 @@ export default function contactUsDescription() {
                                         name="phone"
                                         className="inputArea"
                                         placeholder="Your Phone Number"
+                                        value={formData.phone}
+                                        onChange={handleChange}
                                         required
                                     />
                                 </div>
-                                <label
-                                    className="connect-label emailWidth"
-                                    for="emailid"
-                                    name=""
-                                >
+                                <label className="connect-label emailWidth" htmlFor="emailid">
                                     Email
                                 </label>
                                 <div className="emailDiv contact-up-form-input-box">
@@ -145,14 +178,12 @@ export default function contactUsDescription() {
                                         name="email"
                                         className="inputArea"
                                         placeholder="Your Email Address"
+                                        value={formData.email}
+                                        onChange={handleChange}
                                         required
                                     />
                                 </div>
-                                <label
-                                    className="connect-label addressWidth"
-                                    for="address"
-                                    name=""
-                                >
+                                <label className="connect-label addressWidth" htmlFor="address">
                                     Address
                                 </label>
                                 <div className="addressDiv contact-up-form-input-box">
@@ -162,14 +193,12 @@ export default function contactUsDescription() {
                                         name="address"
                                         className="inputArea"
                                         placeholder="Your Address"
+                                        value={formData.address}
+                                        onChange={handleChange}
                                         required
                                     />
                                 </div>
-                                <label
-                                    className="connect-label commentsWidth"
-                                    for="comment"
-                                    name=""
-                                >
+                                <label className="connect-label commentsWidth" htmlFor="comment">
                                     Comments
                                 </label>
                                 <div className="commentsDiv contact-up-form-input-box">
@@ -179,15 +208,17 @@ export default function contactUsDescription() {
                                         rows="8"
                                         className="inputArea"
                                         placeholder="Your Message for us..."
+                                        value={formData.message}
+                                        onChange={handleChange}
                                         required
                                     />
                                 </div>
                                 <p className="center-submit-connect">
-                                    {" "}
                                     <input
                                         type="submit"
                                         className="submitHeading ReadMoreButton"
-                                        value="Submit"
+                                        value={loading ? "Sending..." : "Submit"}
+                                        disabled={loading}
                                     />
                                 </p>
                             </div>
