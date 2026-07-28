@@ -1,133 +1,114 @@
-<!-- # React + Vite
+# Marvinno Technologies - Front End 🚀
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
-
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh -->
-
-# Marvinno Technologies
-
-Front-End for Official Website of Marvinno Technologies Pvt. Ltd.
+Official front-end web application for **Marvinno Technologies Pvt. Ltd.**, built with React, Vite, and modern web standards.
 
 ## 🌐 Website
 
-Visit our official website: [Marvinno Technologies](https://marvinno.in)
+Visit the live website: [marvinno.in](https://marvinno.in)
 
-## 🚀 Run Locally
+---
 
-Clone the project:
+## 🛠️ Tech Stack
 
-```bash
-git clone https://github.com/your-repo/marvinno-technologies.git
-```
+- **Framework & Core**: [React 19](https://react.dev/), [React Router v7](https://reactrouter.com/)
+- **Build Tool**: [Vite](https://vitejs.dev/)
+- **Styling**: Custom CSS, [Tailwind CSS v4](https://tailwindcss.com/), PostCSS
+- **Animations & Effects**: [Framer Motion](https://www.framer.com/motion/), [AOS](https://michalsnik.github.io/aos/)
+- **Icons & UI Utilities**: [React Icons](https://react-icons.github.io/react-icons/), React Multi-Carousel, React Spinners
 
-Navigate to the project directory:
+---
 
-```bash
-  cd public
-```
+## 🚀 Getting Started
 
-Install dependencies
+### Prerequisites
 
-```bash
-  npm install
-# OR
-  yarn install
+Make sure you have [Node.js](https://nodejs.org/) (v18 or higher recommended) and `npm` installed.
 
-```
+### Installation & Local Setup
 
-Start the server
+1. **Clone the repository**:
+   ```bash
+   git clone https://github.com/GitShivamNauriyal/Marvinno-Technologies-Front-End.git
+   ```
 
-```bash
-  npm start
-```
+2. **Navigate to the project directory**:
+   ```bash
+   cd Marvinno-Technologies-Front-End
+   ```
 
-The application will run on http://localhost:3000.
+3. **Install dependencies**:
+   ```bash
+   npm install
+   ```
 
-## 🛠️ Tech Stack (Client-Side)
+4. **Start the development server**:
+   ```bash
+   npm run dev
+   ```
+   The application will be running locally at `http://localhost:5173`.
 
--   **React**
--   **HTML**
--   **CSS**
--   **JavaScript**
+---
+
+## 📜 Available Scripts
+
+In the project directory, you can run:
+
+| Command | Description |
+| :--- | :--- |
+| `npm run dev` | Runs the app in development mode with Vite hot-reloading at `http://localhost:5173` |
+| `npm run build` | Bundles and optimizes the app for production in the `dist` folder |
+| `npm run preview` | Serves the production build locally for testing |
+| `npm run lint` | Runs ESLint to check for code quality and syntax issues |
+
+---
 
 ## 📁 Project Structure
 
 ```plaintext
---new file structure will be updated soon
-marvinno/
-├── public/                 # Static files
-├── src/                    # Source files
-│   ├── components/         # React components
-│   │   ├── css/            # CSS styles for components
-│   │   │   ├── aboutCss/
-│   │   │   ├── commonComponentsCss/
-│   │   │   ├── contactUsCss/
-│   │   │   ├── homeCss/
-│   │   │   ├── productsCss/
-│   │   │   └── solutionsCss/
-│   │   ├── images/         # Image assets
-│   │   ├── routeComponents/ # Routing-related components
-│   │   └── utilityComponents/ # Utilities for various components
-│   │       ├── aboutUtilities/
-│   │       ├── commonUtilities/
-│   │       ├── contactUsUtilities/
-│   │       ├── homeUtilities/
-│   │       ├── productsUtilityComponents/
-│   │       └── solutionsUtilities/
-│   ├── App.js              # Main React App component
-│   └── index.js            # Entry point for React
-├── .gitignore              # Git ignore file
-├── netlify.toml            # Netlify configuration
-├── package-lock.json       # Dependency lock file for npm
-├── package.json            # Project metadata and dependencies
-├── README.md               # Project documentation
-└── yarn.lock               # Dependency lock file for Yarn
-
+marvinno-technologies/
+├── public/                 # Static assets (favicons, images)
+├── src/                    # Application source code
+│   ├── components/         # Modular React UI components
+│   │   ├── css/            # CSS style sheets grouped by module
+│   │   ├── images/         # Asset images for components
+│   │   ├── routeComponents/# Top-level page routes
+│   │   └── utilityComponents/# Shared reusable sub-components
+│   ├── services/           # API services and helpers
+│   ├── App.jsx             # Main application component & routes
+│   ├── App.css             # Global app styles
+│   ├── index.css           # Core index stylesheet
+│   └── main.jsx            # React application entry point
+├── index.html              # HTML template entry point for Vite
+├── vite.config.js          # Vite configuration
+├── eslint.config.js        # ESLint configuration
+├── netlify.toml            # Netlify deployment configuration
+└── package.json            # Dependencies and scripts
 ```
 
-🔄 Continuous Improvement
+---
 
--   This repository is being actively updated to adopt the latest web development practices and tools.
+## 🔄 Continuous Improvement
 
--   The entire project has been migrated from the old React setup using vanilla JavaScript imports to React with modern jsx formats. -- (COMPLETED ON 8 JAN 2025)
--   We are now using Vite as the build tool, ensuring faster builds and development speed.
--   All new features of React, including Hooks, functional components, and concurrent rendering, are being leveraged to enhance performance and maintainability.
--   We are committed to continuously improving this project by:
+- **Vite Migration**: Migrated to Vite for ultra-fast HMR (Hot Module Replacement) and optimized production builds.
+- **React 19 Ready**: Updated to React 19 and modern functional components with hooks.
+- **Performance & UI Refactoring**: Ongoing enhancements for responsiveness, accessibility, modular component architecture, and modern visual aesthetics.
 
--   Refactoring code for better readability and modularity.
--   Upgrading dependencies regularly to stay up-to-date with the latest ecosystem.
--   Adding new features and optimizing existing functionality based on feedback.
+---
 
-## 👨‍💻 Authors
+## 👨‍💻 Authors & Maintainers
 
--   **Shivam Nauriyal**🗿
+- **Shivam Nauriyal**
 
-## 📝 About Me
+---
 
-I'm a passionate MERN stack developer with hands-on experience in web development.
+## 🔗 Connect
 
--   Designed and developed the website for **Marvinno Technologies Pvt. Ltd.**
--   Built RESTful APIs using **Node.js** and **Express.js** to support application functionality.
--   Built database using **PostgresSQL** and **Prisma**
--   Proefficient teacher of in _DSA_ in **C** and **C++**
--   **This is ONLY the coding side😏, contact to know more about me🚀👽😉**
+- **LinkedIn**: [Shivam Nauriyal](https://www.linkedin.com/in/shivam-nauriyal-506329285/)
+- **X (Twitter)**: [@shivam_nauriyal](https://x.com/shivam_nauriyal)
+- **Official Site**: [marvinno.in](https://marvinno.in)
 
-## 🔗 Connect with Me
+---
 
--   [LinkedIn](https://www.linkedin.com/in/shivam-nauriyal-506329285/)
--   [Twitter](https://x.com/shivam_nauriyal)
+## 📩 Feedback & Support
 
-## 📩 Feedback
-
-We value your feedback!
-Reach out to us at **shivamnauriyal1224@gmail.com** with any suggestions or queries.
-
-### Key Updates:
-
-1. MIGRATION COMPLETED ON 8 JAN 2025 => **Mentioned Vite Migration**: Added details about upgrading to Vite and using `jsx`.
-2. **Continuous Improvement**: Highlighted the ongoing updates, refactoring, and use of modern React features.
-3. **Future Goals Section**: Added plans for further optimization, modularity, and testing.
-4. **File Structure**: Updated file structure to reflect `.jsx` files.  This version aligns with the current trend of continuous improvement and showcases modern practices. Let me know if you need further edits!
+We value your feedback! For suggestions, questions, or business inquiries, feel free to reach out at **shivamnauriyal1224@gmail.com**.
