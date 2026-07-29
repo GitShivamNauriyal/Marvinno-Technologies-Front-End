@@ -1,7 +1,11 @@
 import axios from "axios";
 
-// Base API configuration: default to local backend in dev, or VITE_API_BASE_URL in production
-const API_BASE_URL = import.meta.env.VITE_API_BASE_URL || "http://localhost:5000/api";
+// Base API configuration: default to local backend in DEV mode, or live Render API in production
+const API_BASE_URL =
+    import.meta.env.VITE_API_BASE_URL ||
+    (import.meta.env.DEV
+        ? "http://localhost:5000/api"
+        : "https://marvinno-api.onrender.com/api");
 
 const apiClient = axios.create({
     baseURL: API_BASE_URL,
