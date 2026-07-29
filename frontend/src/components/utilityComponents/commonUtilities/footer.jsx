@@ -104,14 +104,9 @@ export default function Footer() {
                         </Link>
                     </li>
                     <li className="li-items-footer">
-                        <a
-                            className="anchor-tag-items-footer"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            href={termsAndConditions}
-                        >
+                        <Link className="anchor-tag-items-footer" to="/terms">
                             Terms & Conditions
-                        </a>
+                        </Link>
                     </li>
                     <li className="li-items-footer">
                         <Link

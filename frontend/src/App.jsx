@@ -9,6 +9,7 @@ import ProductDescription from "./components/utilityComponents/productsUtilityCo
 import BlogPhotos from "./components/routeComponents/BlogPhotos";
 import Solutions from "./components/routeComponents/solutions";
 import PrivacyPolicy from "./components/utilityComponents/commonUtilities/UserPPolicy";
+import TermsAndConditions from "./components/utilityComponents/commonUtilities/TermsAndConditions";
 
 import ScrollToTop from "./components/utilityComponents/commonUtilities/ScrollToTop";
 
@@ -99,6 +100,16 @@ export default function App() {
                     exact
                     path="/privacy_policy"
                     element={<PrivacyPolicy />}
+                />
+                <Route
+                    exact
+                    path="/terms"
+                    element={<TermsAndConditions />}
+                />
+                <Route
+                    exact
+                    path="/terms-and-conditions"
+                    element={<TermsAndConditions />}
                 />
                 <Route exact path="/products" element={<Products />} />
                 <Route exact path="/cart" element={<Cart />} />
