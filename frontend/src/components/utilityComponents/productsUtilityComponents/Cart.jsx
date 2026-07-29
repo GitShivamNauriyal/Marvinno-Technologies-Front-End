@@ -13,7 +13,7 @@ export default function Cart() {
     const [user, setUser] = useState(null);
     const [showAuthModal, setShowAuthModal] = useState(false);
     const [showCheckoutForm, setShowCheckoutForm] = useState(false);
-    
+
     // Coupon State
     const [couponCode, setCouponCode] = useState("");
     const [discountPercent, setDiscountPercent] = useState(0);
@@ -26,7 +26,7 @@ export default function Cart() {
         address: "",
         city: "",
         pincode: "",
-        state: "Madhya Pradesh",
+        state: "Uttarakhand",
     });
 
     useEffect(() => {
@@ -93,7 +93,7 @@ export default function Cart() {
             setDiscountPercent(10);
             setCouponMsg("✓ 10% Discount Applied Successfully!");
         } else if (couponCode.trim()) {
-            setCouponMsg("❌ Invalid Coupon Code. Try MARVINNO2026");
+            setCouponMsg("❌ Invalid Coupon Code.");
             setDiscountPercent(0);
         }
     };
@@ -160,13 +160,13 @@ export default function Cart() {
             // Simulated Payment Handler for development / offline testing
             console.log("[Razorpay Ready Handler Payload]", orderData);
             alert(`Razorpay SDK Template Triggered!\n\nOrder Total: ₹${grandTotal.toLocaleString("en-IN")}\nReceiver: ${shippingDetails.receiverName}\nShipping Address: ${shippingDetails.address}`);
-            
+
             try {
-                await ApiService.post("/orders", orderData);
+                await ApiService.createOrder(orderData);
             } catch (err) {
                 console.log("Mock API order log saved local");
             }
-            
+
             CartService.clearCart();
             setCartItems([]);
             setShowCheckoutForm(false);
