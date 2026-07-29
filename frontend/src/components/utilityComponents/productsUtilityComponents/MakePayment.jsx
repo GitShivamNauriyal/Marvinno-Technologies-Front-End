@@ -152,8 +152,10 @@ const MakeAPayment = () => {
     const handleSubmit = async (e) => {
         e.preventDefault();
         if (validateForm()) {
-            await ApiService.processPayment(formData);
-            alert("Payment request submitted successfully! Payment gateway is in demo mode.");
+            alert("Payment processes are not functional at the moment. Online payment gateway is currently under maintenance. Please contact info@marvinno.in for direct assistance.");
+            try {
+                await ApiService.processPayment(formData);
+            } catch (err) {}
             setIsOpen(false);
             setFormData({
                 name: "",

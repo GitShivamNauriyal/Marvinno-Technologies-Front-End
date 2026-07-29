@@ -112,7 +112,7 @@ export default function Cart() {
         setShippingDetails({ ...shippingDetails, [e.target.name]: e.target.value });
     };
 
-    // Razorpay Integration Ready Function
+    // Razorpay / Payment Handler
     const handleRazorpayPayment = async (e) => {
         e.preventDefault();
 
@@ -120,6 +120,8 @@ export default function Cart() {
             alert("Please fill in all required shipping address fields.");
             return;
         }
+
+        alert("Payment processes are not functional at the moment. Your delivery reservation details will be saved.");
 
         const orderData = {
             userId: user?.id || "guest",
@@ -237,6 +239,19 @@ export default function Cart() {
                                             <button className="back-to-cart-btn" onClick={() => setShowCheckoutForm(false)}>
                                                 &larr; Back to Cart
                                             </button>
+                                        </div>
+
+                                        <div className="payment-maintenance-notice" style={{
+                                            padding: "0.85rem 1rem",
+                                            marginBottom: "1.25rem",
+                                            borderRadius: "0.5rem",
+                                            backgroundColor: "rgba(234, 179, 8, 0.12)",
+                                            border: "1px solid #eab308",
+                                            color: "#ca8a04",
+                                            fontSize: "0.88rem",
+                                            lineHeight: "1.4"
+                                        }}>
+                                            <strong>Notice:</strong> Online payment processes are not functional at the moment. You may fill your delivery details to reserve items in your cart.
                                         </div>
 
                                         <form onSubmit={handleRazorpayPayment} className="shipping-form-grid">
