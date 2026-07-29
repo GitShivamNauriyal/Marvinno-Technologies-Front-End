@@ -15,8 +15,8 @@ Official full-stack monorepo web application for **Marvinno Technologies Pvt. Lt
 ### Monorepo Layout
 ```plaintext
 marvinno-technologies/
-├── frontend/           # React 19 + Vite Frontend Application (Netlify)
-└── backend/            # Express.js + MongoDB Mongoose REST API (Render.com)
+├── frontend/
+└── backend/
 ```
 
 ### Frontend Stack (`/frontend`)
@@ -43,12 +43,12 @@ The backend exposes 9 full-stack domain controllers:
 | **Auth** | `/api/auth` | User registration (`signup`), login, JWT verification, and user profile updates |
 | **Products** | `/api/products` | Smart switch product catalog (`Module S`, `Module X`, `Module Y`, `Module Z`, etc.) |
 | **Cart** | `/api/cart` | User cart synchronization across sessions |
-| **Coupons** | `/api/coupons` | Promo code validation (e.g. `MARVINNO2026` 10% launch discount) |
+| **Coupons** | `/api/coupons` | Promo code validation |
 | **Orders** | `/api/orders` | Checkout, order creation, and delivery tracking |
 | **Payments** | `/api/payments` | Manual walk-in sale logger & Razorpay order verification |
 | **Contact** | `/api/contact` | Customer inquiries and career application forms |
 | **Reviews** | `/api/reviews` | Customer ratings, reviews, and admin approval moderation |
-| **Admin** | `/api/admin` | Analytics dashboard (total users, total orders, sales revenue, inquiries) |
+| **Admin** | `/api/admin` | Analytics dashboard |
 
 ---
 
@@ -74,7 +74,6 @@ FRONTEND_URL=http://localhost:5173
 cd backend
 npm start
 ```
-*Output: `🚀 Marvinno API running on port 5000` & `✅ MongoDB Connected`*
 
 ### 4. Running the Frontend
 In a new terminal:
@@ -82,7 +81,6 @@ In a new terminal:
 cd frontend
 npm run dev
 ```
-*Access the app locally at `http://localhost:5173`*
 
 ---
 
@@ -93,7 +91,6 @@ To run the automated pre-flight backend test suite:
 cd backend
 node src/scripts/fastTestSuite.js
 ```
-*Validates 22/22 endpoints including auth, cart, orders, coupons, contact form, reviews, and admin analytics.*
 
 ---
 
@@ -111,7 +108,7 @@ node src/scripts/fastTestSuite.js
 | :--- | :--- |
 | `npm start` | Launches Express server connected to MongoDB |
 | `npm run dev` | Runs Express server with auto-restart (`nodemon`) |
-| `node src/scripts/seed.js` | Seeds initial launch data (e.g. `MARVINNO2026` coupon) |
+| `node src/scripts/seed.js` | Seeds initial launch data |
 
 ---
 
