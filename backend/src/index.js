@@ -21,12 +21,14 @@ const app = express();
 // DB
 connectDB();
 
-// CORS — allow Netlify frontend + local dev
+// CORS — allow Netlify frontend (marvinno.in) + local dev
 const allowedOrigins = [
-    process.env.FRONTEND_URL || "http://localhost:5173",
+    process.env.FRONTEND_URL,
     "https://marvinno.in",
     "https://www.marvinno.in",
-];
+    "http://localhost:5173",
+    "http://localhost:3000",
+].filter(Boolean);
 app.use(
     cors({
         origin: (origin, callback) => {
